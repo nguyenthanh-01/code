@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+typedef long long ll;
+
+int main() {
+	ll n;
+	scanf("%lld", &n);
+	ll ac = n * (n - 1) / 2;
+	printf("%lld \n", ac);
+    return 0;
+}
+
+/*
+C(n, k) = n > (n - k) / k!
+C(n, 2) = n * (n - 1) / 2
+*/
