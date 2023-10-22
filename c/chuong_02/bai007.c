@@ -13,14 +13,18 @@ int main() {
 		}
 	}
 	int c = sqrt(a);
-	if (c * c == a) b -= 1;
+	int ac = 0;
+	if (c * c == a) {
+		b--;
+		ac++;
+	}
 	printf("%d \n", b);
-	for (int i = 1; i < c; i++) {
+	for (int i = 1; i <= c; i++) {
 		if (a%i == 0) {
 			printf("%d ", i);
 		}
 	}
-	for (int i = c; i > 0; i--) {
+	for (int i = c - ac; i > 0; i--) {
 		if (a%i == 0) {
 			printf("%d ", a / i);
 		}
