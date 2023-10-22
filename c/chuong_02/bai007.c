@@ -15,7 +15,7 @@ int main() {
 	int c = sqrt(a);
 	if (c * c == a) b -= 1;
 	printf("%d \n", b);
-	for (int i = 1; i * i < a; i++) {
+	for (int i = 1; i < c; i++) {
 		if (a%i == 0) {
 			printf("%d ", i);
 		}
