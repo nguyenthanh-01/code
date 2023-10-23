@@ -14,7 +14,7 @@ int main() {
 	}
 	printf("\n");
 	
-	for (int i = a; i > 0; i--) {
+    for (int i = a; i > 0; i--) {
     	for (int j = 0; j < i; j++) {
     		printf("*");
 		}
@@ -22,7 +22,7 @@ int main() {
 	}
 	printf("\n");
 	
-	for (int i = 0; i < a; i++) {
+    for (int i = 0; i < a; i++) {
     	for (int j = 0; j < a; j++) {
     		if (j < a - 1 - i) {
     			printf(" ");
@@ -33,7 +33,7 @@ int main() {
 	}
 	printf("\n");
 	
-	for (int i = 0; i < a; i++) {
+    for (int i = 0; i < a; i++) {
     	for (int j = 0; j < a; j++) {
     		if (j > i - 1) {
     			printf("*");
@@ -44,7 +44,7 @@ int main() {
 	}
 	printf("\n");
 	
-	for (int i = 0; i < a; i++) {
+    for (int i = 0; i < a; i++) {
     	for (int j = 0; j <= i; j++) {
     		if (i == 0 || j == 0 || i == a - 1 || j == i) {
     			printf("*");
