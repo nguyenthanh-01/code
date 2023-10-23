@@ -5,8 +5,8 @@ typedef long long ll;
 int main() {
 	int n;
 	scanf("%d", &n);
-	ll ac = 1ll * n * (n + 1) / 2;
-	printf("%lld \n", ac);
+	ll ans = 1ll * n * (n + 1) / 2;
+	printf("%lld \n", ans);
 	return 0;
 }
 
