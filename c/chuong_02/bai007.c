@@ -6,25 +6,25 @@ typedef long long ll;
 int main() {
 	int a;
 	scanf("%d", &a);
-	int ac1 = 0;
+	int res = 0;
 	for (int i = 1; i * i <= a; i++) {
 		if (a%i == 0) {
-			ac1 += 2;
+			res += 2;
 		}
 	}
-	int ac2 = sqrt(a);
-	int ac3 = 0;
-	if (ac2 * ac2 == a) {
-		ac1--;
-		ac3++;
+	int flag = 0;
+	int tmp = sqrt(a);
+	if (tmp * tmp == a) {
+		res--;
+		flag++;
 	}
-	printf("%d \n", ac1);
-	for (int i = 1; i <= ac2; i++) {
+	printf("%d \n", res);
+	for (int i = 1; i <= tmp; i++) {
 		if (a%i == 0) {
 			printf("%d ", i);
 		}
 	}
-	for (int i = ac2 - ac3; i > 0; i--) {
+	for (int i = tmp - flag; i > 0; i--) {
 		if (a%i == 0) {
 			printf("%d ", a / i);
 		}
