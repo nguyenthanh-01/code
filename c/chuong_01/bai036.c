@@ -18,14 +18,14 @@ int main() {
         else printf("%.2lf \n", -1.0 * c / b);
     }
     else {
-        int res = b * b - 4 * a * c;
-        if (res < 0) vn;
-        else if (res == 0) {
+        int delta = b * b - 4 * a * c;
+        if (delta < 0) vn;
+        else if (delta == 0) {
             printf("%.2lf \n", -1.0 * b / (2 * a));
         }
         else {
-            double ans1 = (-b - sqrt(res)) / (2 * a);
-            double ans2 = (-b + sqrt(res)) / (2 * a);
+            double ans1 = (-b - sqrt(delta)) / (2 * a);
+            double ans2 = (-b + sqrt(delta)) / (2 * a);
             printf("%.2lf %.2lf \n", ans1, ans2);
         }
     }
