@@ -9,7 +9,9 @@ int main() {
 	int tmp = 0;
 	while (a) {
 		tmp = a%10;
-		if (tmp == 2 || tmp == 3 || tmp == 5 || tmp == 7) cnt++;
+		if (tmp == 2 || tmp == 3 || tmp == 5 || tmp == 7) {
+			cnt++;
+		}
 		a /= 10;
 	}
 	printf("%d", cnt);
