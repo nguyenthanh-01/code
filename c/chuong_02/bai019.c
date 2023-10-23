@@ -7,7 +7,7 @@ int main() {
 	scanf("%lld", &a);
 	a /= 28;
 	int res = a;
-	while (3 <= a) {
+	while (2 < a) {
 		res += a / 3;
 		int tmp = a % 3;
 		a = a / 3 + tmp;
