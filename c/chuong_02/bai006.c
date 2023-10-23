@@ -6,15 +6,15 @@ typedef long long ll;
 int main() {
 	ll a;
 	scanf("%lld", &a);
-	ll res1 = 0;
+	ll res = 0;
 	for (ll i = 1; i * i <= a; i++) {
 		if (a%i == 0) {
-			res1 += i;
-			res1 += (a / i);
+			res += i;
+			res += (a / i);
 		}
 	}
-	ll res2 = sqrt(a);
-	if (res2 * res2 == a) res1 -= res2;
-	printf("%lld \n", res1);
+	ll tmp = sqrt(a);
+	if (tmp * tmp == a) res -= tmp;
+	printf("%lld \n", res);
 	return 0;
 }
