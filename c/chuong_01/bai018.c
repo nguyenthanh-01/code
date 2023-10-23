@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-#define in(a) printf("%c \n", (a))
+#define xuat(a) printf("%c \n", (a))
 
 typedef long long ll;
 
 int main() {
 	char a;
 	scanf("%c", &a);
-	if (a <= 'Z') (a < 'A') ? in(a) : in(a + 32);
-	else if (a <= 'z') (a < 'a') ? in(a) : in(a - 32);
-	else in(a);
+	if (a <= 'Z') (a < 'A') ? xuat(a) : xuat(a + 32);
+	else if (a <= 'z') (a < 'a') ? xuat(a) : xuat(a - 32);
+	else xuat(a);
     return 0;
 }
