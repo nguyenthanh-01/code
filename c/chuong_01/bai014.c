@@ -5,14 +5,14 @@ typedef long long ll;
 int main() {
 	float a, b, c, d;
 	scanf("%f %f %f %f", &a, &b, &c, &d);
-	float ac = (a + b + c * 2 + d * 3) / 7;
-	if (ac < 5) {
+	float res = (a + b + c * 2 + d * 3) / 7;
+	if (res < 5) {
 		printf("YEU \n");
 	}
-	else if (ac < 6.5) {
+	else if (res < 6.5) {
 		printf("TRUNG BINH \n");
 	}
-	else if (ac < 8) {
+	else if (res < 8) {
 		printf("KHA \n");
 	}
 	else printf("GIOI \n");
