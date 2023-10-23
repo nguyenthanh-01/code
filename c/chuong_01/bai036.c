@@ -14,8 +14,7 @@ int main() {
             if (c == 0) vs;
             else vn;
         }
-        else if (c == 0) printf("0.00");
-        else printf("%.2lf \n", -1.0 * c / b);
+        else printf("%.2lf \n", c ? -1.0 * c / b : 0);
     }
     else {
         int delta = b * b - 4 * a * c;
@@ -45,4 +44,5 @@ delta == 0 x = -b / (2 * a)
 delta > 0
     x1 = (-b - delta ** 0.5) / (2 * a)
     x2 = (-b + delta ** 0.5) / (2 * a)
+error: a == 0 && b == 1 && c == 0 x = -c / b = -0 (double)
 */
