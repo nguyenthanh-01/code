@@ -5,13 +5,13 @@ typedef long long ll;
 int main() {
 	int a, b;
 	scanf("%d %d", &a, &b);
-	int ac1 = a + b;
-	int ac2 = a - b;
-	ll ac3 = 1ll * a * b;
-	printf("%d \n%d \n%lld \n", ac1, ac2, ac3);
+	int ans1 = a + b;
+	int ans2 = a - b;
+	ll ans3 = 1ll * a * b;
+	printf("%d \n%d \n%lld \n", ans1, ans2, ans3);
 	if (b) {
-		double ac4 = 1.0 * a / b;
-		printf("%.4lf \n", ac4);
+		double ans4 = 1.0 * a / b;
+		printf("%.4lf \n", ans4);
 	}
 	else printf("INVALID \n");
     return 0;
