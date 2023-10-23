@@ -17,3 +17,7 @@ int main() {
 	printf("%d", cnt);
 	return 0;
 }
+
+/*
+error: while (0) kết thúc nhưng 0 cũng là 1 số có 1 đơn vị
+*/
