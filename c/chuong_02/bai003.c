@@ -3,9 +3,13 @@
 typedef long long ll;
 
 int main() {
-  int a;
-  scanf("%d", &a);
-  printf("%lld \n", 1ll * (a / 3) * (a - a%3 + 3) / 2);
+  int n;
+  scanf("%d", &n);
+  int n1 = n - n%3;
+  int n0 = 3;
+  n /= 3;
+  ll ac = 1ll * n * (n1 + n0) / 2;
+  printf("%lld \n", ac);
   return 0;
 }
 
