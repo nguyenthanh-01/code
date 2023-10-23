@@ -13,7 +13,7 @@ int main() {
 		int tmp;
 		scanf("%d", &tmp);
 		if (tmp == 2022) {
-			flag++;
+			flag = 1;
 		}
 	}
 	flag ? yes : no;
