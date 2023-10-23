@@ -3,9 +3,10 @@
 typedef long long ll;
 
 int main() {
-  int a;
-  scanf("%d", &a);
-  printf("%lld \n", 1ll * a * (a + 1) / 2);
+  int n;
+  scanf("%d", &n);
+  ll ac = 1ll * n * (n + 1) / 2;
+  printf("%lld \n", ac);
   return 0;
 }
 
