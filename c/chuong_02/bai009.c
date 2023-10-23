@@ -11,7 +11,7 @@ int main() {
     	if (a%i == 0) {
     	    res *= i;
     	    res *= (a / i);
-		}
+        }
     }
     ll tmp = sqrt(a);
     if (tmp * tmp == a) res /= tmp;
