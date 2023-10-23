@@ -44,5 +44,5 @@ delta == 0 x = -b / (2 * a)
 delta > 0
     x1 = (-b - delta ** 0.5) / (2 * a)
     x2 = (-b + delta ** 0.5) / (2 * a)
-error: a == 0 && b == 1 && c == 0 x = -c / b = -0 (double)
+error: a == 0 && b == 1 && c == 0 x = -c / b = -0 (double) 
 */
