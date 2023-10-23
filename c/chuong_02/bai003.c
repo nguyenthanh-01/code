@@ -8,8 +8,8 @@ int main() {
 	int n1 = n - n%3;
 	int n0 = 3;
 	n /= 3;
-	ll ac = 1ll * n * (n1 + n0) / 2;
-	printf("%lld \n", ac);
+	ll ans = 1ll * n * (n1 + n0) / 2;
+	printf("%lld \n", ans);
 	return 0;
 }
 
