@@ -15,8 +15,8 @@ int main() {
 	int flag = 0;
 	int tmp = sqrt(a);
 	if (tmp * tmp == a) {
-		res--;
-		flag++;
+		res -= 1;
+		flag = 1;
 	}
 	printf("%d \n", res);
 	for (int i = 1; i <= tmp; i++) {
