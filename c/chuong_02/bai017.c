@@ -7,7 +7,7 @@ int main() {
 	scanf("%lld", &a);
 	int res = 0;
 	while (a) {
-		res += a%10;
+	    res += a%10;
 	    a /= 10;
 	}
 	printf("%d", res);
