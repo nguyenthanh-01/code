@@ -35,7 +35,7 @@ int main() {
     
     for (int i = 0; i < a; i++) {
         for (int j = 0; j < a; j++) {
-            if (j > i - 1) {
+            if (j >= i) {
                 printf("*");
             }
             else printf(" ");
