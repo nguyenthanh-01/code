@@ -36,13 +36,13 @@ pt2
 a == 0
     x = 0
     x = -c / b
-b == 0 vô nghiệm
-c == 0 vô số nghiệm
+b == 0 vo nghiem
+c == 0 vo so nghiem
 delta = b * b - 4 * a * c
-delta < 0 vô nghiệm
+delta < 0 vo nghiem
 delta == 0 x = -b / (2 * a)
 delta > 0
     x1 = (-b - delta ** 0.5) / (2 * a)
     x2 = (-b + delta ** 0.5) / (2 * a)
-error: a == 0 && b == 1 && c == 0 x = -c / b = -0 (double) 
+error: a == 0 && b == 1 && c == 0 x = -c / b = -0 (double)
 */
