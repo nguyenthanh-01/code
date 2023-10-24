@@ -46,7 +46,7 @@ int main() {
     
     for (int i = 0; i < a; i++) {
         for (int j = 0; j <= i; j++) {
-            if (i == 0 || j == 0 || i == a - 1 || j == i) {
+            if (j == 0 || j == i ||  i == a - 1) {
                 printf("*");
             }
             else printf(" ");
