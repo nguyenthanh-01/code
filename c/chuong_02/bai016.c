@@ -19,5 +19,5 @@ int main() {
 }
 
 /*
-error: while (0) kết thúc nhưng 0 cũng là 1 số có 1 đơn vị
+error: while (0) ket thuc nhung 0 cung la 1 so co 1 don vi
 */
