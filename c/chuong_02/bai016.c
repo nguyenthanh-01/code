@@ -19,5 +19,5 @@ int main() {
 }
 
 /*
-error: while (0) ket thuc nhung 0 cung la 1 so co 1 don vi
+error: while (0) = 0
 */
