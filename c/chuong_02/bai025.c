@@ -14,3 +14,7 @@ int main() {
     printf("%.4lf \n", res);
     return 0;
 }
+
+/*
+error: 0! = 1! = 1
+*/
