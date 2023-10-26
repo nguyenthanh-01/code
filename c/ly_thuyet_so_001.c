@@ -4,7 +4,7 @@
 typedef long long ll;
 
 ll gt (int);
-int snt (int);
+int nt (int);
 int tu (int);
 int du (int);
 int cp (ll);
@@ -14,7 +14,7 @@ int main() {
     int a;
     scanf("%d", &a);
     printf("1. giai thua: %lld \n", gt(a));
-    printf("2. so nguyen to: %d \n", snt(a));
+    printf("2. so nguyen to: %d \n", nt(a));
     printf("3. tong uoc: %d \n", tu(a));
     printf("3. dem uoc: %d \n", du(a));
     printf("4. so chinh phuong: %d \n", cp(a));
@@ -30,7 +30,7 @@ ll gt (int a) {
     return res;
 }
 
-int snt (int a) {
+int nt (int a) {
     for (int i = 2; i * i <= a; i++) {
         if (a%i == 0) {
             return 0;
