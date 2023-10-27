@@ -10,8 +10,7 @@ int main() {
     ll res = 0;
     for (ll i = 1; i < tmp; i++) {
         if (a%i == 0) {
-            res += i;
-            res += (a / i);
+            res += (i + a / i);
         }
     }
     if (a%tmp == 0) res += tmp;
