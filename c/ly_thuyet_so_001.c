@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 typedef long long ll;
 
@@ -40,30 +39,35 @@ int nt (int a) {
 }
 
 int tu (int a) {
+        int i = 1;
     int res = 0;
-    for (int i = 1; i * i <= a; i++) {
-        if (a%i == 0) {
+    while (i * i < a) {
+    if (a%i == 0) {
             res += (i + a / i);
+                }
+                i++;
         }
-    }
-    int tmp = sqrt(a);
-    return (tmp * tmp == a) ? res - tmp : res;
+    return (i * i == a) ? res + i : res;
 }
 
 int du (int a) {
+        int i = 1;
     int res = 0;
-    for (int i = 1; i * i <= a; i++) {
-        if (a%i == 0) {
+    while (i * i < a) {
+    if (a%i == 0) {
             res += 2;
+                }
+                i++;
         }
-    }
-    int tmp = sqrt(a);
-    return (tmp * tmp == a) ? res - 1 : res;
+    return (i * i == a) ? res + 1 : res;
 }
 
 int cp (ll a) {
-    int tmp = sqrt(a);
-    return (1ll * tmp * tmp == a) ? 1 : 0;
+    ll i = 1;
+    while (i * i < a) {
+    i++;
+        }
+    return (i * i == a) ? 1 : 0;
 }
 
 int hh (int a) {
