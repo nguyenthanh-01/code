@@ -75,5 +75,5 @@ int hh (int a) {
             res += (i + a / i);
         }
     }
-    return res == a;
+    return (tmp * tmp == a) ? (res - tmp == a) : (res == a);
 }
