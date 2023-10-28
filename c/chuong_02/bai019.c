@@ -12,6 +12,6 @@ int main() {
         int tmp = a % 3;
         a = a / 3 + tmp;
     }
-    printf("%d", res);
+    printf("%d \n", res);
     return 0;
 }
