@@ -8,14 +8,14 @@ int main() {
     scanf("%d", &a);
     int tmp = sqrt(a);
     int res = 0;
-    for (int i = 1; i < tmp; i++) {
+    for (int i = 1; i <= tmp; i++) {
         if (a%i == 0) {
             res += 2;
         }
     }
     int flag = 0;
-    if (a%tmp == 0) {
-        res += 1;
+    if (tmp * tmp == a) {
+        res -= 1;
         flag = 1;
     }
     printf("%d \n", res);
