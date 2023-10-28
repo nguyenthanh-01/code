@@ -14,7 +14,7 @@ int main() {
         cnt++;
         a /= 10;
     }
-    printf("%d", cnt);
+    printf("%d \n", cnt);
     return 0;
 }
 
