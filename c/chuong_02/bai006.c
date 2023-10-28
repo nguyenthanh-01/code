@@ -8,12 +8,12 @@ int main() {
     scanf("%lld", &a);
     ll tmp = sqrt(a);
     ll res = 0;
-    for (ll i = 1; i < tmp; i++) {
+    for (ll i = 1; i <= tmp; i++) {
         if (a%i == 0) {
             res += (i + a / i);
         }
     }
-    if (a%tmp == 0) res += tmp;
+    if (tmp * tmp == a) res -= tmp;
     printf("%lld \n", res);
     return 0;
 }
