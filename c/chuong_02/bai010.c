@@ -14,6 +14,7 @@ int main() {
         scanf("%d", &tmp);
         if (tmp == 2022) {
             flag = 1;
+            break;
         }
     }
     flag ? yes : no;
