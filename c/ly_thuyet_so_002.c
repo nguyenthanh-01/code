@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 typedef long long ll;
 
@@ -21,13 +22,12 @@ int main() {
 }
 
 void ts_nt(int a) {
-    int i = 2;
-    while (i * i <= a) {
+    int tmp = sqrt(a);
+    for (int i = 2; i <= tmp; i++) {
         while (a%i == 0) {
             printf("%d ", i);
             a /= i;
         }
-        i++;
     }
     if (a > 1) printf("%d \n", a);
 }
