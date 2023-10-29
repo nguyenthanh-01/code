@@ -60,6 +60,10 @@ ll th (int a, int b) {
     return gt(b, b - tmp) / gt(tmp, 1);
 }
 
+/*
+C(k, n) = C(n - k, n)
+*/
+
 ll gt (int a, int b) {
     ll res = 1;
     for (int i = a; i > b; i--) {
