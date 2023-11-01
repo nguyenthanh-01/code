@@ -17,7 +17,7 @@ int main() {
 
 int sphenic(ll a) {
     int cnt = 0;
-    for (int i = 2; i <= (int) sqrt(a); i++) {
+    for (int i = 2; i <= sqrt(a); i++) {
         int cnt1 = 0;
         while (a%i == 0) {
             cnt1++;
