@@ -22,8 +22,7 @@ int main() {
 }
 
 void ts_nt(int a) {
-    int tmp = sqrt(a);
-    for (int i = 2; i <= tmp; i++) {
+    for (int i = 2; i <= (int) sqrt(a); i++) {
         while (a%i == 0) {
             printf("%d ", i);
             a /= i;
