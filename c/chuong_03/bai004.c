@@ -12,7 +12,7 @@ int main() {
     return 0;
 }
 
-ll ts_nt(ll a) {
+ll ts_nt (ll a) {
     ll tmp;
     for (int i = 2; i <= sqrt(a); i++) {
         if (a%i == 0) tmp = i;
