@@ -20,7 +20,7 @@ void ts_nt (ll a) {
             a /= i;
         }
         if (cnt) {
-            printf("%lld^%d", i, cnt);
+            printf("%d^%d", i, cnt);
             if (a > 1) printf(" * ");
         }
     }
