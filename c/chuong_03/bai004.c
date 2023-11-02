@@ -3,17 +3,21 @@
 
 typedef long long ll;
 
-ll us_nt (ll);
+int us_nt (int);
 
 int main() {
-    ll a;
-    scanf("%lld", &a);
-    printf("%lld \n", us_nt(a));
+    int a;
+    scanf("%d", &a);
+    for (int i = 0; i < a; i++) {
+        int tmp;
+        scanf("%d", &tmp);
+        printf("%d \n", us_nt(tmp));
+    }
     return 0;
 }
 
-ll us_nt (ll a) {
-    ll tmp;
+int us_nt (int a) {
+    int tmp;
     for (int i = 2; i <= sqrt(a); i++) {
         if (a%i == 0) {
             tmp = i;
