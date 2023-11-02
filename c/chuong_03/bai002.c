@@ -3,7 +3,7 @@
 
 typedef long long ll;
 
-int sphenic(ll);
+int sphenic (ll);
 
 int main() {
     ll a;
@@ -15,7 +15,7 @@ int main() {
     return 0;
 }
 
-int sphenic(ll a) {
+int sphenic (ll a) {
     int cnt = 0;
     for (int i = 2; i <= sqrt(a); i++) {
         int cnt1 = 0;
