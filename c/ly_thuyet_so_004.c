@@ -50,3 +50,7 @@ void ts_nt (ll a) {
     if (a > 1) printf("%lld ", a);
     printf("\n");
 }
+
+/*
+error: i <= sqrt(a)
+*/
