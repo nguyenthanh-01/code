@@ -12,9 +12,9 @@ int main() {
     ll a;
     scanf("%lld", &a);
     if (cp(a)) {
-    	yes;
-	}
-	else no;
+        yes;
+    }
+    else no;
     return 0;
 }
 
