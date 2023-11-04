@@ -29,7 +29,3 @@ int sphenic (ll a) {
     if (a > 1) cnt++;
     return cnt == 3;
 }
-
-/*
-error: i <= sqrt(a)
-*/
