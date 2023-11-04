@@ -18,7 +18,7 @@ int main() {
 
 int us_nt (int a) {
     int tmp = 0;
-    for (int i = 2; i <= sqrt(a); i++) {
+    for (int i = 2; i * i <= a; i++) {
         if (a%i == 0) {
             tmp = i;
             while (a%i == 0) {
