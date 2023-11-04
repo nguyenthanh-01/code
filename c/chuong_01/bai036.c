@@ -14,7 +14,7 @@ int main() {
             if (c == 0) vs;
             else vn;
         }
-        else printf("%.2lf \n", c ? -1.0 * c / b : 0);
+        else printf("%.2lf \n", (0 - 1.0 * c) / b);
     }
     else {
         int delta = b * b - 4 * a * c;
