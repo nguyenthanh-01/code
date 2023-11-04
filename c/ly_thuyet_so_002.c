@@ -28,7 +28,8 @@ void ts_nt(int a) {
             a /= i;
         }
     }
-    if (a > 1) printf("%d \n", a);
+    if (a > 1) printf("%d ", a);
+    printf("\n");
 }
 
 int ucln (int a, int b) {
