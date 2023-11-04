@@ -13,14 +13,14 @@ int main() {
 }
 
 void ts_nt (ll a) {
-    for (int i = 2; i <= sqrt(a); i++) {
+    for (ll i = 2; i * i <= a; i++) {
         int cnt = 0;
         while (a%i == 0) {
             cnt++;
             a /= i;
         }
         if (cnt) {
-            printf("%d^%d", i, cnt);
+            printf("%lld^%d", i, cnt);
             if (a > 1) printf(" * ");
         }
     }
