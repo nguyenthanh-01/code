@@ -31,7 +31,7 @@ int sum (int a) {
 int smith (int a) {
     int tmp = a;
     int res = 0;
-    for (int i = 2; i <= sqrt(tmp); i++) {
+    for (int i = 2; i * i <= tmp; i++) {
         while (tmp%i == 0) {
             res += sum(i);
             tmp /= i;
