@@ -8,13 +8,13 @@ typedef long long ll;
 int cp (ll);
 
 int main() {
-	ll a;
-	scanf("%lld", &a);
-	if (cp(a)) {
-		yes;
-	}
-	else no;
-	return 0;
+    ll a;
+    scanf("%lld", &a);
+    if (cp(a)) {
+        yes;
+    }
+    else no;
+    return 0;
 }
 
 int cp (ll a) {
