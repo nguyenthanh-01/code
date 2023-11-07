@@ -11,7 +11,7 @@ int main() {
     int a, b;
     scanf("%d %d", &a, &b);
     for (int i = a; i <= b; i++) {
-        if (ck_8(i) == 0 || tn(i) == 0 || ck_6(i) == 0) {
+        if (tn(i) == 0 || ck_8(i) == 0 || ck_6(i) == 0) {
             continue;
         }
         printf("%d ", i);
