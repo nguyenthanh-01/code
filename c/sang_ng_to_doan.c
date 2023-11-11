@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define n 10000000
+#define n 100000
 #define max(a, b) (a > b) ? (a) : (b)
 
 typedef long long ll;
