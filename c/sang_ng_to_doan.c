@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define n 1000000
+#define n 10000000
 #define max(a, b) (a > b) ? (a) : (b)
 
 typedef long long ll;
@@ -30,7 +30,7 @@ void sang_nguyen_to(int a[], ll l, ll r) {
 
 void xuat(int a[], ll l, ll r) {
     if (l < 3) printf("2 ");
-    for (ll i = l + (l%2 == 0); i <= r; i += 2) {
+    for (ll i = max(3ll, l + (l%2 == 0)); i <= r; i += 2) {
         if (a[i - l]) {
             printf("%lld ", i);
         }
