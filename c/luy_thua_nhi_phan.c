@@ -22,3 +22,4 @@ ll lt_np(ll a, int b) {
     }
     return res;
 }
+ 
