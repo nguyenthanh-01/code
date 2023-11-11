@@ -13,18 +13,14 @@ int main() {
             res += 2;
         }
     }
-    int flag = 0;
-    if (tmp * tmp == a) {
-        res -= 1;
-        flag = 1;
-    }
+    if (tmp * tmp == a) res -= 1;
     printf("%d \n", res);
     for (int i = 1; i <= tmp; i++) {
         if (a%i == 0) {
             printf("%d ", i);
         }
     }
-    for (int i = tmp - flag; i > 0; i--) {
+    for (int i = tmp - (a%tmp == 0); i > 0; i--) {
         if (a%i == 0) {
             printf("%d ", a / i);
         }
