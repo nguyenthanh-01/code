@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define n 100000
+#define n (int) 1e5
 
 void sang_nguyen_to(int []);
 void xuat(int []);
