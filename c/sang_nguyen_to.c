@@ -36,5 +36,5 @@ void xuat() {
 }
 
 /*
-error: main | n = 1e5 | a[n]
+error: main | 1e5 | a[n]
 */
