@@ -52,7 +52,3 @@ void xuat(int a) {
     printf("\n");
     printf("%d \n", cnt);
 }
-
-/*
-error: main | 1e5 | a[n]
-*/
