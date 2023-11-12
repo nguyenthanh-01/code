@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 #define n (int) 1e5
+int a[n];
 
-void sang_nguyen_to(int []);
-void xuat(int []);
+void sang_nguyen_to();
+void xuat();
 
 int main() {
-    int a[n] = {0};
-    sang_nguyen_to(a);
-    xuat(a);
+    sang_nguyen_to();
+    xuat();
     return 0;
 }
 
-void sang_nguyen_to(int a[]) {
+void sang_nguyen_to() {
     for (int i = 2; i < n; i++) {
         a[i] = 1;
     }
@@ -25,7 +25,7 @@ void sang_nguyen_to(int a[]) {
     }
 }
 
-void xuat(int a[]) {
+void xuat() {
     printf("2 ");
     for (int i = 3; i < n; i += 2) {
         if (a[i]) {
@@ -34,3 +34,7 @@ void xuat(int a[]) {
     }
     printf("\n");
 }
+
+/*
+error: main | n = 1e5 | a[n]
+*/
