@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define n (int) 1e5
+#define n (int) 1e7
 int a[n];
 
 void sang_nguyen_to();
