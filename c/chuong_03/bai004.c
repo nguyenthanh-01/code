@@ -28,3 +28,7 @@ int us_nt (int a) {
     }
     return (a > 1) ? a : tmp;
 }
+
+/*
+error: for (i < a)
+*/
