@@ -11,12 +11,11 @@ int nt (ll);
 int hh (ll);
 
 int main() {
-	ll a;
-	scanf("%lld", &a);
-	if (hh(a)) {
-		yes;
-	}
-	else no;
+    ll a;
+    scanf("%lld", &a);
+    if (hh(a)) {
+        yes;
+    } else no;
     return 0;
 }
 
@@ -43,16 +42,16 @@ int nt (ll a) {
 }
 
 int hh (ll a) {
-	for (int i = 2; i <= 31; i++) {
-		if (nt(i)) {
-			ll tmp1 = lt_np(2, i) - 1;
-			if (nt(tmp1)) {
-				ll tmp2 = lt_np(2, i - 1) * tmp1;
-				if (tmp2 == a) {
-					return 1;
-				}
-			}
-		}
-	}
-	return 0;
+    for (int i = 2; i <= 31; i++) {
+        if (nt(i)) {
+            ll tmp1 = lt_np(2, i) - 1;
+            if (nt(tmp1)) {
+                ll tmp2 = lt_np(2, i - 1) * tmp1;
+                if (tmp2 == a) {
+                    return 1;
+                }
+            }
+        }
+    }
+    return 0;
 }
