@@ -8,7 +8,7 @@ int us_nt (int);
 int main() {
     int a;
     scanf("%d", &a);
-    for (int i = 0; i < a; i++) {
+    while (a--) {
         int tmp;
         scanf("%d", &tmp);
         printf("%d \n", us_nt(tmp));
