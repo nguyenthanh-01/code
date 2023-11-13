@@ -3,6 +3,8 @@
 #define n (int) 1e7
 int snt[n];
 
+typedef long long ll;
+
 void sang_nguyen_to();
 int sum(int);
 void xuat(int);
