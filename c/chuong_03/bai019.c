@@ -15,7 +15,8 @@ int main() {
     scanf("%lld", &a);
     if (hh(a)) {
         yes;
-    } else no;
+    }
+    else no;
     return 0;
 }
 
