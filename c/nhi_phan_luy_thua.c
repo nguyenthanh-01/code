@@ -2,6 +2,8 @@
 
 typedef long long ll;
 
+const int mod = (int) 1e9+7;
+
 ll lt_np(ll, ll);
 
 int main() {
@@ -12,12 +14,15 @@ int main() {
 }
 
 ll lt_np(ll a, ll b) {
+    a %= mod;
     ll res = 1;
     while (b) {
         if (b%2) {
             res *= a;
+            res %= mod;
         }
         a *= a;
+        a %= mod;
         b /= 2;
     }
     return res;
