@@ -6,7 +6,7 @@
 
 typedef long long ll;
 
-const int mod = (int) 1e9+7;
+const ll mod = (ll) 1e18+7;
 
 ll lt_np (ll, ll);
 int nt (ll);
