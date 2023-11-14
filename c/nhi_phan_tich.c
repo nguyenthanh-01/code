@@ -6,8 +6,8 @@ ll tich_np(ll, ll);
 
 int main() {
     ll a; ll b;
-    scanf("%lld %d", &a, &b);
-    printf("%lld \n", lt_np(a, b));
+    scanf("%lld %lld", &a, &b);
+    printf("%lld \n", tich_np(a, b));
     return 0;
 }
 
