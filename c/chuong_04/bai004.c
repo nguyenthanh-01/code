@@ -16,7 +16,8 @@ int tong (int a) {
     while (a) {
         if (a%2) {
             res -= a;
-        } else res += a;
+        }
+        else res += a;
         a--;
     }
     return res;
