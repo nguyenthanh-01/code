@@ -10,9 +10,10 @@ int main() {
 }
 
 int tich (int a) {
-  int res = a * a;
-  while (a--) {
+  int res = 0;
+  while (a) {
     res += (a * a);
+    a--;
   }
   return res;
 }
