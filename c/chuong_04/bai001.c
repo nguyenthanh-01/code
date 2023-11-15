@@ -10,9 +10,10 @@ int main() {
 }
 
 int tong (int a) {
-  int res = a;
-  while (a--) {
+  int res = 0;
+  while (a) {
     res += a;
+    a--
   }
   return res;
 }
