@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-int tich (int);
+int tong (int);
 
 int main() {
   int a;
   scanf("%d", &a);
-  printf("%d \n", tich(a));
+  printf("%d \n", tong(a));
   return 0;
 }
 
-int tich (int a) {
+int tong (int a) {
   int res = 0;
   while (a) {
     res += (a * a * a);
