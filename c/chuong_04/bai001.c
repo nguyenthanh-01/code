@@ -13,7 +13,7 @@ int tong (int a) {
   int res = 0;
   while (a) {
     res += a;
-    a--
+    a--;
   }
   return res;
 }
