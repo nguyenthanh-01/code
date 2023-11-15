@@ -5,17 +5,17 @@ typedef long long ll;
 int tich (int);
 
 int main() {
-  int a;
-  scanf("%d", &a);
-  printf("%d \n", tich(a));
-  return 0;
+    int a;
+    scanf("%d", &a);
+    printf("%d \n", tich(a));
+    return 0;
 }
 
 int tich (int a) {
-  int res = 1;
-  while (a) {
-    res *= a;
-    a--;
-  }
-  return res;
+    int res = 1;
+    while (a) {
+        res *= a;
+        a--;
+    }
+    return res;
 }
