@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+typedef long long ll;
+
 int tong (int);
 
 int main() {
