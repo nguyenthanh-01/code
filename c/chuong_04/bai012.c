@@ -2,25 +2,20 @@
 
 typedef long long ll;
 
-void dq(ll n);
+void hexa(ll);
 
 int main() {
-    ll n;
-    scanf("%lld", &n);
-    dq(n);
+    ll a;
+    scanf("%lld", &a);
+    a ? hexa(a) : printf("0 \n");
     return 0;
 }
 
-void dq(ll n) {
-    if (n < 16) {
-        if (n <= 9) {
-            printf("%lld", n);
-        } else printf("%c", n + 55);
-    } else {
-        dq(n / 16);
-        int r = n % 16;
-        if (r <= 9) {
-            printf("%d", r);
-        } else printf("%c", r + 55);
-    }
+void hexa(ll a) {
+    if (a == 0) return;
+    hexa(a / 16);
+    int tmp = a % 16;
+    if (tmp < 10) {
+        printf("%d", tmp);
+    } else printf("%c", tmp + 55);
 }
