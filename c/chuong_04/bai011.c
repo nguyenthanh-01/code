@@ -1,16 +1,18 @@
 #include <stdio.h>
 
-void np (int);
+typedef long long ll;
+
+void np (ll);
 
 int main() {
-  int a;
-  scanf("%d", &a);
-  np(a);
-  return 0;
+    ll a;
+    scanf("%lld", &a);
+    a ? np(a) : printf("0 \n");
+    return 0;
 }
 
-void np (int a) {
-  if (a == 0) return;
-  np(a / 2);
-  printf("%d", a % 2);
+void np (ll a) {
+    if (a == 0) return;
+    np(a / 2);
+    printf("%d", a % 2);
 }
