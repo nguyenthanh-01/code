@@ -2,7 +2,7 @@
 
 typedef long long ll;
 
-void hexa(ll);
+void hexa (ll);
 
 int main() {
     ll a;
@@ -11,7 +11,7 @@ int main() {
     return 0;
 }
 
-void hexa(ll a) {
+void hexa (ll a) {
     if (a == 0) return;
     hexa(a / 16);
     int tmp = a % 16;
