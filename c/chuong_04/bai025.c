@@ -18,7 +18,8 @@ int main() {
     int tmp = tim_kiem_nhi_phan(0, n - 1, x);
     if (tmp == -1) {
         printf("0 \n");
-    } else printf("1 \n");
+    }
+    else printf("1 \n");
     return 0;
 }
 
@@ -27,9 +28,11 @@ int tim_kiem_nhi_phan(int l, int r, int x) {
         int m = (r - l) / 2 + l;
         if (x == tk_np[m]) {
             return m;
-        } else if (x < tk_np[m]) {
+        }
+        else if (x < tk_np[m]) {
             l = m + 1;
-        } else r = m - 1;
+        }
+        else r = m - 1;
     }
     return -1;
 }
