@@ -2,18 +2,20 @@
 
 typedef long long ll;
 
-int tong (ll n);
+int tong (ll a);
 
 int main() {
-    ll n;
-    scanf("%lld", &n);
-    printf("%d", tong(n));
+    ll a;
+    scanf("%lld", &a);
+    a ? printf("%d", tong(a)) : printf("1");
     return 0;
 }
 
-int tong (ll n) {
-    if (n < 10) {
-        return 1;
+int tong (ll a) {
+    int cnt = 0;
+    while (a) {
+        cnt++;
+        a /= 10;
     }
-    return 1 + tong (n / 10);
+    return cnt;
 }
