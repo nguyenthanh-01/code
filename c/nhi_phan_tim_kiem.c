@@ -13,7 +13,9 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d", &tk_np[i]);
     }
-    int tmp = tim_kiem_nhi_phan(0, n - 1, 5);
+    int x;
+    scanf("%d", &x);
+    int tmp = tim_kiem_nhi_phan(0, n - 1, x);
     if (tmp == -1) {
         printf("khong tim thay \n");
     }
