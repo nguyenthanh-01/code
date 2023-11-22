@@ -17,5 +17,6 @@ void hexa(ll a) {
     int tmp = a % 16;
     if (tmp < 10) {
         printf("%d", tmp);
-    } else printf("%c", tmp + 55);
+    }
+    else printf("%c", tmp + 55);
 }
