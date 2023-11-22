@@ -2,16 +2,16 @@
 
 typedef long long ll;
 
-int tong (ll a);
+int num (ll a);
 
 int main() {
     ll a;
     scanf("%lld", &a);
-    printf("%d", tong(a));
+    printf("%d", num(a));
     return 0;
 }
 
-int tong (ll a) {
+int num (ll a) {
     while (a > 9) {
         a /= 10;
     }
