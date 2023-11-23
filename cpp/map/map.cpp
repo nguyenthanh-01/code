@@ -5,7 +5,7 @@ using namespace std;
 #define se second
 
 typedef long long ll;
-typedef map<string, int> mi;
+typedef map<string, int> mp;
 
 int main() {
     return 0;
