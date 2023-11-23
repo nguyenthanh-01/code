@@ -6,20 +6,18 @@ using namespace std;
 
 typedef long long ll;
 typedef struct {int a, b;} ii;
-typedef struct {int a, b, c;} iii;
 typedef vector<int> vi;
 typedef vector<ii> vii;
-typedef vector<iii> viii;
 
-inline bool cmp_ii (ii &i, ii &j) {
-		if (i.a < j.a) return 1;
-		if (i.a == j.a) return (i.b < j.b) ? 1 : 0;
-		return 0;
-	}
+inline bool cmp (auto &i, auto &j) {
+    if (i.a < j.a) return 1;
+    if (i.a == j.a) return (i.b < j.b) ? 1 : 0;
+    return 0;
+}
 
 int main() {
     vii a = {{3, 0}, {6, 5}, {0, 3}, {1, 3}, {7, 1}, {2, 1}, {7, 7}, {0, 2}, {3, 8}, {7, 4}};
-    sort(all(a), cmp_ii);
+    sort(all(a), cmp);
     for (auto &i: a) {
         cout << "[" << i.a << " " << i.b << "]" << " ";
     }
