@@ -2,7 +2,7 @@
 a["key"]++
 
 // xóa
-a.erase()
+a.erase("key")
 
 // độ dài
 a.size()
