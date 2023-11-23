@@ -11,7 +11,7 @@ int main() {
     vi a = {2, 0, 8, 5, 1, 6, 0, 1, 4, 6};
     sort(all(a));
     for (int &i: a) {
-        cout << i;
+        cout << i << " ";
     }
     return 0;
 }
