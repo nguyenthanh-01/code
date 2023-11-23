@@ -1,8 +1,8 @@
 // thuận
-for (auto it = a.begin(); it != a.end(); it++)
+for (auto i = a.begin(); i != a.end(); i++)
 
 // nghịch
-for (auto it = a.rbegin(); it != a.rend(); it++)
+for (auto i = a.rbegin(); i != a.rend(); i++)
 
 // vị trí
-for (auto &it: a)
+for (auto &i: a)
