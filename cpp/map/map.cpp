@@ -6,6 +6,7 @@ using namespace std;
 
 typedef long long ll;
 typedef map<string, int> mp;
+typedef unordered_map<string, int> u_mp;
 
 int main() {
     return 0;
