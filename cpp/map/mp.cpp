@@ -10,5 +10,5 @@ a.size()
 // kiểm tra
 a.empty()
 
-// đếm
+// tìm kiếm
 a.count()
