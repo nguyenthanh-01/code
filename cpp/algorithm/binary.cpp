@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define lb low_bound
-#define ub upper_bound
+#define lw low_bound
+#define up upper_bound
 
 typedef long long ll;
 typedef vector<int> vi;
