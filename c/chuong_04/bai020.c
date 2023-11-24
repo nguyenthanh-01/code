@@ -1,24 +1,26 @@
 #include <stdio.h>
-#include <math.h>
+
+#define min(a, b) ((a) < (b)) ? (a) : (b)
 
 typedef long long ll;
 
-int thao_tac(ll n);
+int thao_tac (ll);
 
 int main() {
-    ll n;
-    scanf("%lld", &n);
-    printf("%d", thao_tac(n));
+    ll a;
+    scanf("%lld", &a);
+    if (a == 0 || a == 1) {
+        printf("%d \n", a);
+    } 
+    else printf("%d \n", thao_tac(a));
     return 0;
 }
 
-int thao_tac(ll n) {
-    if (n == 1) return 0;
-    else {
-        int res1 = 1e9, res2 = 1e9, res3 = 1e9;
-        if (n%2 == 0) res1 = thao_tac(n / 2) + 1;
-        if (n%3 == 0) res2 = thao_tac(n / 3) + 1;
-        if (n > 1) res3 = thao_tac(n - 1) + 1;
-        return fmin(res1, fmin(res2, res3));
-    }
+int thao_tac (ll a) {
+    if (a == 1) return 0;
+    int res1 = 1e9, res2 = 1e9, res3 = 1e9;
+    if (a%3 == 0) res1 = thao_tac(a / 3) + 1;
+    if (a%2 == 0) res2 = thao_tac(a / 2) + 1;
+    res3 = thao_tac(a - 1) + 1;
+    return min(res1, min(res2, res3));
 }
