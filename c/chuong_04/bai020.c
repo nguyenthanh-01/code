@@ -9,10 +9,7 @@ int thao_tac (ll);
 int main() {
     ll a;
     scanf("%lld", &a);
-    if (a == 0 || a == 1) {
-        printf("%d \n", a);
-    } 
-    else printf("%d \n", thao_tac(a));
+    (a == 1) ? printf("1 \n") : printf("%d \n", thao_tac(a));
     return 0;
 }
 
