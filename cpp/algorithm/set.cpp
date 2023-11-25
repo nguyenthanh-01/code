@@ -13,7 +13,7 @@ int main() {
     vi a = {2, 0, 8, 5, 1, 6, 0, 1, 4, 6};
     sort(all(a));
     su(a);
-    for (auto &i: a) {
+    for (int &i: a) {
         cout << i << " ";
     }
     return 0;
