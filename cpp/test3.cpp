@@ -1,66 +1,78 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int n, m;
+#define ms(a, b) memset(a, b, sizeof(a))
+#define n 3
+#define m 3
 
-// bản đồ
-char a[101][101];
+// ban do
+char ban_do[n][m];
 
-// đánh dấu
-bool visit[101][101];
+// danh dau
+bool flag[n][m];
 
-// di chuyển
+// huong di chuyen
 int dx[4] = {-1, 0, 1, 0};
 int dy[4] = {0, -1, 0, 1};
 
-void dfs(int i, int j) {
-    cout << i << " " << j << endl;
-    
-    // đánh dấu == 1
-    visit[i][j] = true;
-    
-    // duyệt 4
-    for (int k = 0; k < 4; k++) {
-        int i1 = i + dx[k];
-        int j1 = j + dy[k];
-        
-        // kiểm tra 
-        if(i1 >= 1 && i1 <= n && j1 >= 1 && j1 <= m && a[i1][j1] == 'x' && visit[i1][j1] == 0) {
-            
-            // đệ quy
-            dfs(i1, j1);
-        }
-    }
-}
-
-void inp() {
-    cin >> n >> m;
-    // vẽ bản đồ
-    for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= m; j++) {
-            cin >> a[i][j];
-        }
-    }
-    
-    // đánh dấu false
-    memset(visit, false, sizeof(visit));
-    int cnt = 0;
-    
-    // duyệt bản đồ
-    for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= m; j++) {
-          
-            // nếu vị trí == 1 và đánh dấu == 0
-            if (a[i][j] == 'x' && visit[i][j] == 0) {
-                dfs(i, j);
-                cnt++;
-            }
-        }
-    }
-    cout << cnt << endl;
-}
+void nhap();
+bool dfs(int, int);
 
 int main() {
-    inp();
+    nhap();
     return 0;
+}
+
+void nhap() {
+    // ve ban do
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            cin >> ban_do[i][j];
+        }
+    }
+
+    // danh dau false
+    ms(ban_do, false);
+
+    // diem a
+    int x1, y1;
+    cin >> x1 >> y1;
+    ban_do[x1][y1] = 'a';
+
+    // diem b
+    int x2, y2;
+    cin >> x2 >> y2;
+    ban_do[x2][y2] = 'b';
+
+    // dfs
+    if (dfs(x1, y1)) {
+        cout << "[" << x1 << ", " << y1 << "] \n";
+    } else cout << "khong tim thay \n";
+}
+
+bool dfs(int i, int j) {
+    // kiem tra toa do b
+    if (ban_do[i][j] == 'b') {
+        return true;
+    }
+
+    // cam co
+    flag[i][j] = true;
+
+    // di chuyen
+    for (int k = 0; k < 4; k++) {
+        int x = i + dx[k];
+        int y = j + dy[k];
+        if (x < 0 || x >= n || y < 0 || y >= m || ban_do[x][y] == 0 || flag[x][y]) {
+            continue;
+        }
+        cout << "test " << x << " " << y << "\n";
+
+        // de quy
+        if (dfs(x, y)) {
+            cout << "[" << x << ", " << y << "] \n";
+            return true;
+        }
+    }
+    return false;
 }
