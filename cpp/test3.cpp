@@ -32,7 +32,7 @@ void nhap() {
     }
 
     // danh dau false
-    ms(ban_do, false);
+    ms(flag, false);
 
     // diem a
     int x1, y1;
