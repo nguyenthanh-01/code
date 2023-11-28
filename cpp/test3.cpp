@@ -63,7 +63,7 @@ bool dfs(int i, int j) {
     for (int k = 0; k < 4; k++) {
         int x = i + dx[k];
         int y = j + dy[k];
-        if (x < 0 || x >= n || y < 0 || y >= m || ban_do[x][y] == 0 || flag[x][y]) {
+        if (x < 0 || x >= n || y < 0 || y >= m || ban_do[x][y] == '0' || flag[x][y]) {
             continue;
         }
 
