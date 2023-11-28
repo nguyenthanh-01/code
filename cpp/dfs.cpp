@@ -2,8 +2,8 @@
 using namespace std;
 
 #define ms(a, b) memset(a, b, sizeof(a))
-#define n 3
-#define m 3
+#define n 5
+#define m 5
 
 // ban do
 char ban_do[n][m];
