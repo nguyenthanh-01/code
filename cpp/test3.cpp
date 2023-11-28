@@ -66,7 +66,6 @@ bool dfs(int i, int j) {
         if (x < 0 || x >= n || y < 0 || y >= m || ban_do[x][y] == 0 || flag[x][y]) {
             continue;
         }
-        cout << "test " << x << " " << y << "\n";
 
         // de quy
         if (dfs(x, y)) {
