@@ -69,7 +69,7 @@ bool dfs(int i, int j) {
 
         // de quy
         if (dfs(x, y)) {
-            cout << "[" << x << ", " << y << "] \n";
+            cout << "[" << x << ", " << y << "] ";
             return true;
         }
     }
