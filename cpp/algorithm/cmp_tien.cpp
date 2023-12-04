@@ -5,13 +5,13 @@ using namespace std;
 #define rall(a) (a).rbegin(), (a).rend()
 
 typedef long long ll;
-typedef struct {int a, b;} ii;
+typedef struct {int fi, se;} ii;
 typedef vector<int> vi;
 typedef vector<ii> vii;
 
 inline bool cmp (ii &i, ii &j) {
-    if (i.a < j.a) return 1;
-    if (i.a == j.a) return (i.b < j.b) ? 1 : 0;
+    if (i.fi < j.fi) return 1;
+    if (i.fi == j.fi) return (i.se < j.se) ? 1 : 0;
     return 0;
 }
 
