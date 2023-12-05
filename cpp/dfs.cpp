@@ -13,8 +13,8 @@ char ban_do[n][m];
 bool flag[n][m];
 
 // huong di chuyen
-int dx[4] = {-1, 0, 1, 0};
-int dy[4] = {0, -1, 0, 1};
+int dx[4] = {-1, 1, 0, 0};
+int dy[4] = {0, 0, -1, 1};
 
 void nhap();
 bool dfs(int, int);
