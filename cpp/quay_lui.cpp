@@ -5,7 +5,7 @@ using ll = long long;
 
 int n, c[101][101], x[101];
 int visi[101];
-int d = 0, ans = INT_MAX;
+int d = 0, ans = INT_MAX, dem = 0;
 
 void nhap() {
     cin >> n;
@@ -18,6 +18,7 @@ void nhap() {
 }
 
 void Try(int i) {
+    dem++;
     for (int j = 1; j <= n; j++) {
         if (visi[j] == 0) {
             visi[j] = 1;
@@ -40,5 +41,6 @@ int main() {
     visi[1] = 1;
     Try(2);
     cout << ans << endl;
+    cout << dem << endl;
     return 0;
 }
