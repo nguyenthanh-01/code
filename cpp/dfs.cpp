@@ -20,51 +20,51 @@ void nhap();
 bool dfs(int, int);
 
 int main() {
-	nhap();
-	return 0;
+    nhap();
+    return 0;
 }
 
 void nhap() {
-	// ve ban do
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < m; j++) {
-			cin >> ban_do[i][j];
-		}
-	}
+    // ve ban do
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            cin >> ban_do[i][j];
+        }
+    }
 
-	// danh dau false
-	ms(flag, false);
+    // danh dau false
+    ms(flag, false);
 
-	// dfs
-	if (dfs(1, 0)) {
-		cout << "[1, 0] \n";
-	} else cout << "khong tim thay \n";
+    // dfs
+    if (dfs(1, 0)) {
+        cout << "[1, 0] \n";
+    } else cout << "khong tim thay \n";
 }
 
 bool dfs(int i, int j) {
-	// kiem tra toa do b
-	if (ban_do[i][j] == 'b') {
-		return true;
-	}
+    // kiem tra toa do b
+    if (ban_do[i][j] == 'b') {
+        return true;
+    }
 
-	// cam co
-	flag[i][j] = true;
+    // cam co
+    flag[i][j] = true;
 
-	// di chuyen
-	for (int k = 0; k < 4; k++) {
-		int x = i + dx[k];
-		int y = j + dy[k];
-		if (x < 0 || x >= n || y < 0 || y >= m || ban_do[x][y] == '0' || flag[x][y]) {
-			continue;
-		}
+    // di chuyen
+    for (int k = 0; k < 4; k++) {
+        int x = i + dx[k];
+        int y = j + dy[k];
+        if (x < 0 || x >= n || y < 0 || y >= m || ban_do[x][y] == '0' || flag[x][y]) {
+            continue;
+        }
 
-		// de quy
-		if (dfs(x, y)) {
-			cout << "[" << x << ", " << y << "] ";
-			return true;
-		}
-	}
-	return false;
+        // de quy
+        if (dfs(x, y)) {
+            cout << "[" << x << ", " << y << "] ";
+            return true;
+        }
+    }
+    return false;
 }
 
 /*
