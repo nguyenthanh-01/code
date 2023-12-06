@@ -2,59 +2,75 @@
 #include <cstring>
 using namespace std;
 
-#define ms(a, b) memset(a, b, sizeof(a))
-#define n 5
-#define m 7
+#define hang 5
+#define cot 7
+#define toa_do_di_chuyen 4
 
 // ban do
-char ban_do[n][m];
+char ban_do[hang][cot];
 
 // danh dau
-bool flag[n][m];
+bool flag[hang][cot];
 
-// huong di chuyen
-int dx[4] = {-1, 1, 0, 0};
-int dy[4] = {0, 0, -1, 1};
+// toa do di chuyen x
+int dx[toa_do_di_chuyen] = {-1, 1, 0, 0};
+
+// toa do di chuyen y
+int dy[toa_do_di_chuyen] = {0, 0, -1, 1};
 
 void nhap();
+void danh_dau();
+void dfs_(int, int);
 bool dfs(int, int);
+bool out_ban_do(int, int);
+bool buc_tuong(int, int);
+bool danh_dau_true(int, int);
 
 int main() {
     nhap();
+    danh_dau();
+    dfs_(1, 0);
     return 0;
 }
 
 void nhap() {
-    // ve ban do
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
+    // nhap ban do
+    for (int i = 0; i < hang; i++) {
+        for (int j = 0; j < cot; j++) {
             cin >> ban_do[i][j];
         }
     }
-
-    // danh dau false
-    ms(flag, false);
-
-    // dfs
-    if (dfs(1, 0)) {
-        cout << "[1, 0] \n";
-    } else cout << "khong tim thay \n";
 }
 
-bool dfs(int i, int j) {
+void danh_dau() {
+    // danh dau false
+    memset(flag, false, sizeof(flag));
+}
+
+void dfs_(int x, int y) {
+    // dfs
+    if (dfs(x, y)) {
+        cout << "[" << x << ", " << y << "] \n";
+    }
+    else cout << "khong tim thay duong di den dich \n";
+}
+
+bool dfs(int x_, int y_) {
     // kiem tra toa do b
-    if (ban_do[i][j] == 'b') {
+    if (ban_do[x_][y_] == 'b') {
         return true;
     }
 
     // cam co
-    flag[i][j] = true;
+    flag[x_][y_] = true;
 
     // di chuyen
-    for (int k = 0; k < 4; k++) {
-        int x = i + dx[k];
-        int y = j + dy[k];
-        if (x < 0 || x >= n || y < 0 || y >= m || ban_do[x][y] == '0' || flag[x][y]) {
+    for (int i = 0; i < toa_do_di_chuyen; i++) {
+        int x = x_ + dx[i];
+        int y = y_ + dy[i];
+        
+        // kiem tra toa do (x, y)
+        if (out_ban_do(x, y) || buc_tuong(x, y) || danh_dau_true(x, y)) {
             continue;
         }
 
@@ -67,10 +83,29 @@ bool dfs(int i, int j) {
     return false;
 }
 
+bool out_ban_do(int x, int y) {
+    if (x < 0 || x >= hang || y < 0 || y >= cot) {
+        return true;
+    }
+    return false;
+}
+
+bool buc_tuong(int x, int y) {
+    return (ban_do[x][y] == '0') ? true : false;
+}
+
+bool danh_dau_true(int x, int y) {
+    return (flag[x][y] == true) ? true : false;
+}
+
 /*
 0 0 0 0 0 b 0
 a 1 1 1 0 1 0
 0 1 0 1 1 1 0
 0 1 1 1 0 0 0
 0 0 0 0 0 0 0
+*/
+
+/*
+[0, 5] [1, 5] [2, 5] [2, 4] [2, 3] [3, 3] [3, 2] [3, 1] [2, 1] [1, 1] [1, 0]
 */
