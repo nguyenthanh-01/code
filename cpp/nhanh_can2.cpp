@@ -8,42 +8,42 @@ int visi[101];
 int d = 0, ans = INT_MAX, dem = 0, cmin = INT_MAX;
 
 void nhap() {
-	cin >> n;
-	for (int i = 1; i <= n; i++) {
-		for (int j = 1; j <= n; j++) {
-			cin >> c[i][j];
-			if (c[i][j] != 0) {
-				cmin = min(cmin, c[i][j]);
-			}
-		}
-	}
-	memset(visi, 0, sizeof(visi));
+    cin >> n;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n; j++) {
+            cin >> c[i][j];
+            if (c[i][j] != 0) {
+                cmin = min(cmin, c[i][j]);
+            }
+        }
+    }
+    memset(visi, 0, sizeof(visi));
 }
 
 void Try(int i) {
-	dem++;
-	for (int j = 1; j <= n; j++) {
-		if (visi[j] == 0) {
-			visi[j] = 1;
-			x[i] = j;
-			d += c[x[i - 1]][x[i]];
-			if (i == n) {
-				ans = min(ans, d + c[x[n]][1]);
-			} else if (d + (n - i + 1) * cmin < ans) {
-				Try(i + 1);
-			}
-			visi[j] = 0;
-			d -= c[x[i - 1]][x[i]];
-		}
-	}
+    dem++;
+    for (int j = 1; j <= n; j++) {
+        if (visi[j] == 0) {
+            visi[j] = 1;
+            x[i] = j;
+            d += c[x[i - 1]][x[i]];
+            if (i == n) {
+                ans = min(ans, d + c[x[n]][1]);
+            } else if (d + (n - i + 1) * cmin < ans) {
+                Try(i + 1);
+            }
+            visi[j] = 0;
+            d -= c[x[i - 1]][x[i]];
+        }
+    }
 }
 
 int main() {
-	nhap();
-	x[1] = 1;
-	visi[1] = 1;
-	Try(2);
-	cout << ans << endl;
-	cout << dem << endl;
-	return 0;
+    nhap();
+    x[1] = 1;
+    visi[1] = 1;
+    Try(2);
+    cout << ans << endl;
+    cout << dem << endl;
+    return 0;
 }
