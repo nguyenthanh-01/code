@@ -20,7 +20,7 @@ int dy[toa_do_di_chuyen] = {0, 0, -1, 1};
 
 void nhap();
 void danh_dau();
-void dfs_(int, int);
+void dfs_stat(int, int);
 bool dfs(int, int);
 bool out_ban_do(int, int);
 bool buc_tuong(int, int);
@@ -29,7 +29,7 @@ bool danh_dau_true(int, int);
 int main() {
     nhap();
     danh_dau();
-    dfs_(1, 0);
+    dfs_stat(1, 0);
     return 0;
 }
 
@@ -47,7 +47,7 @@ void danh_dau() {
     memset(flag, false, sizeof(flag));
 }
 
-void dfs_(int x, int y) {
+void dfs_stat(int x, int y) {
     // dfs
     if (dfs(x, y)) {
         cout << "[" << x << ", " << y << "] \n";
@@ -55,19 +55,19 @@ void dfs_(int x, int y) {
     else cout << "khong tim thay duong di den dich \n";
 }
 
-bool dfs(int x_, int y_) {
+bool dfs(int x_old, int y_old) {
     // kiem tra toa do b
-    if (ban_do[x_][y_] == 'b') {
+    if (ban_do[x_old][y_old] == 'b') {
         return true;
     }
 
     // cam co
-    flag[x_][y_] = true;
+    flag[x_old][y_old] = true;
 
     // di chuyen
     for (int i = 0; i < toa_do_di_chuyen; i++) {
-        int x = x_ + dx[i];
-        int y = y_ + dy[i];
+        int x = x_old + dx[i];
+        int y = y_old + dy[i];
         
         // kiem tra toa do (x, y)
         if (out_ban_do(x, y) || buc_tuong(x, y) || danh_dau_true(x, y)) {
