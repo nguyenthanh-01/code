@@ -14,7 +14,7 @@ int main() {
 }
 
 void dq(int a, int x) {
-    if(x >= ans) return;
+    if(ans < x) return;
     if(a == 1) {
         ans = x;
         return;
