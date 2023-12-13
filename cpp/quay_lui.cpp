@@ -20,7 +20,7 @@ void dq(int a, int x) {
     // if(ans < x) return;
     if(a == 1) {
         // ans = x;
-        if(ans > x) swap(ans, x);
+        if(ans > x) ans = x;
         return;
     }
     if(a%3 == 0) dq(a / 3, x + 1);
