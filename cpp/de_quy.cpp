@@ -6,7 +6,11 @@ void dq(int);
 int main() {
   int a;
   cin >> a;
-  dq(a);
+  int tmp = 1 << a;
+  for(int i = 1; i < tmp; i++) {
+    dq(i);
+    cout << "\n";
+  }
   return 0;
 }
 
