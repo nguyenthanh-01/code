@@ -16,7 +16,7 @@ int main() {
 }
 
 void dq(int a, int x) {
-	cnt++;
+    cnt++;
     if(ans < x) return;
     if(a == 1) {
         ans = x;
