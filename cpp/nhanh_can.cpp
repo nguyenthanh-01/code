@@ -29,7 +29,7 @@ void dq(int a, int x) {
 }
 
 /*
-38
-5
-86
+input: 38
+output: 5
+cnt: 86
 */
