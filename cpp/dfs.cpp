@@ -24,7 +24,7 @@ void dfs_stat(int, int);
 bool dfs(int, int);
 bool out_ban_do(int, int);
 bool buc_tuong(int, int);
-bool danh_dau_true(int, int);
+bool flag_true(int, int);
 
 int main() {
     nhap();
@@ -70,7 +70,7 @@ bool dfs(int x_old, int y_old) {
         int y = y_old + dy[i];
         
         // kiem tra toa do (x, y)
-        if (out_ban_do(x, y) || buc_tuong(x, y) || danh_dau_true(x, y)) {
+        if (out_ban_do(x, y) || buc_tuong(x, y) || flag_true(x, y)) {
             continue;
         }
 
@@ -94,7 +94,7 @@ bool buc_tuong(int x, int y) {
     return (ban_do[x][y] == '0') ? true : false;
 }
 
-bool danh_dau_true(int x, int y) {
+bool flag_true(int x, int y) {
     return (flag[x][y] == true) ? true : false;
 }
 
