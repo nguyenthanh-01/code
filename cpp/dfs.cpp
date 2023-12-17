@@ -2,6 +2,7 @@
 #include <cstring>
 using namespace std;
 
+#define ms(a, n) memset(a, n, sizeof(a))
 #define hang 5
 #define cot 7
 #define toa_do_di_chuyen 4
