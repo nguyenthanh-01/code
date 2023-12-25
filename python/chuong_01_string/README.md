@@ -1,1 +1,2 @@
-.
+number : số
+text : chữ
