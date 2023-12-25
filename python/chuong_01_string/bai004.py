@@ -1,4 +1,4 @@
-# vị trí của phần tử trong str
+# vị trí của phần tử trong str (01)
 '''
 gọi số lượng phần tử của str là n
 vị trí bắt đầu = 0
