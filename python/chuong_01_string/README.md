@@ -1,2 +1,2 @@
-number : số
+number : số \n
 text : chữ
