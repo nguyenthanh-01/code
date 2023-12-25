@@ -1,2 +1,4 @@
-number : số \n
+```
+number : số
 text : chữ
+```
