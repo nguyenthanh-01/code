@@ -1,2 +1,2 @@
-# khai báo biến
+# khai báo biến kiểu int
 number = 5
