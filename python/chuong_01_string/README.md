@@ -1,6 +1,6 @@
 ```
 number : số
 text : chữ
-message : tin nhắn
+shift : thay đổi
 alphabet : bảng chữ cái
 ```
