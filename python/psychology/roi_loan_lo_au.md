@@ -8,8 +8,9 @@ Lo âu: là một phản ứng căng thẳng
 hoặc một mối đe dọa có thể xảy ra.
 ```
 ```
-Mức độ lo âu: tương đương mức độ đe dọa
+Mức độ lo âu: tương đương mức độ đe dọa.
 ```
 ```
-Rối loạn lo âu: là mức độ lo âu max
+Rối loạn lo âu: là chuyện bé xé ra to
+hoặc căng thẳng leo thang.
 ```
