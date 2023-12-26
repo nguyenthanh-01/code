@@ -6,4 +6,4 @@ for char in text:
     index = alphabet.find(char.lower())
     new_index = index + shift
     new_char = alphabet[new_index]
-    print(new_char)
+    print(f"char: {char} new char: {new_char}")
