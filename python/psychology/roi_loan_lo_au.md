@@ -11,6 +11,5 @@ hoặc một mối đe dọa có thể xảy ra.
 Mức độ lo âu: tương đương mức độ đe dọa
 ```
 ```
-Rối loạn lo âu: mức độ lo âu max
-cho dù mức độ đe dọa min
+Rối loạn lo âu: là mức độ lo âu max
 ```
