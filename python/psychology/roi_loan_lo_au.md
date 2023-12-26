@@ -14,3 +14,5 @@ Mức độ lo âu: tương đương mức độ đe dọa.
 Rối loạn lo âu: là chuyện bé xé ra to
 hoặc căng thẳng leo thang.
 ```
+```
+Rối loạn hoảng sợ: 
