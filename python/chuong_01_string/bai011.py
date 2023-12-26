@@ -5,5 +5,5 @@ alphabet = "abcdefghijklmnopqrstuvwxyz"
 for char in text:
     index = alphabet.find(char.lower())
     new_index = index + shift
-    shifted = alphabet[new_index]
-    print(shifted)
+    new_char = alphabet[new_index]
+    print(new_char)
