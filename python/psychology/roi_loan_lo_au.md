@@ -15,4 +15,6 @@ Rối loạn lo âu: là chuyện bé xé ra to
 hoặc căng thẳng leo thang.
 ```
 ```
-Rối loạn hoảng sợ: 
+Rối loạn hoảng sợ: là sợ hãi tột độ
+đối với một mối đe dọa duy nhất.
+```
