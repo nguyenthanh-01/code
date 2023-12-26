@@ -4,5 +4,6 @@ shift = 3
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 for char in text:
     index = alphabet.find(char.lower())
-    shifted = alphabet[index + shift]
+    new_index = index + shift
+    shifted = alphabet[new_index]
     print(shifted)
