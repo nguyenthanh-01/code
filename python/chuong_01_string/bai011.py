@@ -4,6 +4,6 @@ shift = 3
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 for char in text:
     index = alphabet.find(char.lower())
-    new_index = (index + shift) % 26
+    new_index = (index + shift) % len(alphabet)
     new_char = alphabet[new_index]
     print(f"char: {char} new char: {new_char}")
