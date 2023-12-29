@@ -1,6 +1,8 @@
 # hàm
-text = "Hello World"
-shift = 3
+def main():
+    text = "Hello World"
+    shift = 3
+    caesar(text, shift)
 
 def caesar(message, offset):
     alphabet = "abcdefghijklmnopqrstuvwxyz"
@@ -12,4 +14,4 @@ def caesar(message, offset):
     print('plain text:', message)
     print(f"encrypted text: {encrypted_text}")
 
-caesar(message, offset)
+main()
