@@ -9,4 +9,5 @@ message : tin nhắn
 index : vị trí
 new : mới
 encrypted : đã mã hóa
+offset : đặt lại
 ```
