@@ -1,7 +1,7 @@
 # hàm
 def main():
     text = "Hello World"
-    custom_key = 3
+    custom_key = "python"
     vigenere(text, custom_key)
 
 def vigenere(message, key):
