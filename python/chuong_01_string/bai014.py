@@ -7,6 +7,7 @@ def main():
 def vigenere(message, key):
     alphabet = "abcdefghijklmnopqrstuvwxyz"
     encrypted_text = ""
+    key_index = 0
     for char in message.lower():
         index = alphabet.find(char)
         new_index = (index + key) % len(alphabet)
