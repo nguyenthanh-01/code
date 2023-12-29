@@ -1,8 +1,8 @@
 # hàm
 def main():
     text = "Hello World"
-    shift = 3
-    vigenere(text, shift)
+    custom_key = 3
+    vigenere(text, custom_key)
 
 def vigenere(message, key):
     alphabet = "abcdefghijklmnopqrstuvwxyz"
