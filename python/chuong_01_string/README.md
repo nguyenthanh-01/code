@@ -10,5 +10,6 @@ index : vị trí
 new : mới
 encrypted : đã mã hóa
 offset : đặt lại
+custom : tùy chỉnh
 key : chìa khóa
 ```
