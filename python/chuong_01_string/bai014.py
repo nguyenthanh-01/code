@@ -12,4 +12,4 @@ def caesar(message, offset):
     print('plain text:', message)
     print(f"encrypted text: {encrypted_text}")
 
-caesar()
+caesar(message, offset)
