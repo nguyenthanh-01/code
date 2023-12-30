@@ -13,4 +13,5 @@ encrypted : đã mã hóa
 offset : đặt lại
 custom : tùy chỉnh
 key : chìa khóa
+direction : phương hướng
 ```
