@@ -8,6 +8,7 @@ alphabet : bảng chữ cái
 message : tin nhắn
 index : vị trí
 new : mới
+encryption : mã hóa
 encrypted : đã mã hóa
 offset : đặt lại
 custom : tùy chỉnh
