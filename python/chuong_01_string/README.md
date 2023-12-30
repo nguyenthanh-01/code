@@ -14,4 +14,5 @@ offset : đặt lại
 custom : tùy chỉnh
 key : chìa khóa
 direction : điều hướng
+final : cuối cùng
 ```
