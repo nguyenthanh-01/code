@@ -2,12 +2,12 @@
 def main():
     text = "Hello World"
     custom_key = "python"
-    encryption = vigenere(text, custom_key, 1)
+    encryption = vigenere(text, custom_key)
     print(encryption)
     decryption = vigenere(encryption, custom_key, -1)
     print(decryption)
 
-def vigenere(message, key, direction):
+def vigenere(message, key, direction = 1):
     alphabet = "abcdefghijklmnopqrstuvwxyz"
     encrypted_text = ""
     key_index = 0
