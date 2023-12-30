@@ -22,7 +22,7 @@ def vigenere(message, key):
         index = alphabet.find(char)
         new_index = (index + offset) % len(alphabet)
         encrypted_text += alphabet[new_index]
-    print('plain text:', message)
+    print('plain text: ' + message)
     print(f"encrypted text: {encrypted_text}")
 
 main()
