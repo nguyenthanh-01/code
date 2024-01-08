@@ -23,6 +23,7 @@ def vigenere(message, key, direction = 1):
         # mã hóa
         offset = alphabet.index(key_char)
         index = alphabet.find(char)
+        # deque
         new_index = (index + offset * direction) % len(alphabet)
         final_message += alphabet[new_index]
     return final_message
