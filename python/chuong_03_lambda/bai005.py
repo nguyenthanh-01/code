@@ -1,10 +1,10 @@
-# map(test, [2, 3, 5, 8])
-# input: [2, 3, 5, 8]
-# output: x * 2
+# map(lambda expense: expense['amount'], expenses)
+# input: expenses
+# output: expense['amount']
 def main():
     expenses = []
     test = lambda x: x * 2
-    print(map(test, [2, 3, 5, 8]))
+    print(test(3))
 
 def add_expense(expenses, amount, category):
     expenses.append({'amount': amount, 'category': category})
@@ -12,5 +12,8 @@ def add_expense(expenses, amount, category):
 def print_expenses(expenses):
     for expense in expenses:
         print(f'Amount: {expense["amount"]}, Category: {expense["category"]}')
+
+def total_expenses(expenses):
+    return sum(map(lambda expense: expense['amount'], expenses))
 
 main()
