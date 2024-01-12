@@ -1,4 +1,6 @@
-# filter(
+# filter(lambda expense: expense['category'] == category, expenses)
+# input: expenses
+# output: expense['category'] == category
 def main():
     expenses = []
 
