@@ -1,8 +1,8 @@
-# sum: tính tổng
+# sum tính tổng
 def main():
     expenses = []
     test = lambda x: x * 2
-    print(sum(map(test, [2, 3, 5, 8])))
+    print(test(3))
 
 def add_expense(expenses, amount, category):
     expenses.append({'amount': amount, 'category': category})
@@ -10,5 +10,8 @@ def add_expense(expenses, amount, category):
 def print_expenses(expenses):
     for expense in expenses:
         print(f'Amount: {expense["amount"]}, Category: {expense["category"]}')
+
+def total_expenses(expenses):
+    return sum(map(lambda expense: expense['amount'], expenses))
 
 main()
