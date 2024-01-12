@@ -2,15 +2,18 @@
 def main():
     expenses = []
     while True:
+        # hiển thị
         print('\nExpense Tracker')
         print('1. Add an expense')
         print('2. List all expenses')
         print('3. Show total expenses')
         print('4. Filter expenses by category')
         print('5. Exit')
-        
+
+        # lựa chọn
         choice = input('Enter your choice: ')
 
+        # rẽ nhánh
         if choice == '1':
             amount = float(input('Enter amount: '))
             category = input('Enter category: ')
