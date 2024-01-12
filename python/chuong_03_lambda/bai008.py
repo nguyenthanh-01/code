@@ -46,5 +46,6 @@ def total_expenses(expenses):
 def filter_expenses_by_category(expenses, category):
     return filter(lambda expense: expense['category'] == category, expenses)
 
+# debug
 if __name__ == "__main__":
     main()
