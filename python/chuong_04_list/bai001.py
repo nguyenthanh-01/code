@@ -1,4 +1,5 @@
 # isupper() kiểm tra chữ hoa
+# lower() chuyển đổi chữ thường
 def main():
     pass
 
