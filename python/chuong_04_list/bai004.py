@@ -8,6 +8,7 @@
     # if char.isupper()
     # '_' + char.lower()
     # else char
+    # ['_' + char.lower() for char in pascal_or_camel_cased_string if char.isupper()]
 '''
 def main():
     print(convert_to_snake_case('IAmAPascalCasedString'))
