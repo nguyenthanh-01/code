@@ -12,4 +12,5 @@ def convert_to_snake_case(pascal_or_camel_cased_string):
     snake_cased_string = ''.join(snake_cased_char_list)
     clean_snake_cased_string = snake_cased_string.strip('_')
 
-main()
+if __name__ == '__main__':
+    main()
