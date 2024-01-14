@@ -7,7 +7,7 @@ int main() {
     int a, b;
     cin >> a >> b;
     int x = a / b * b;
-    int y = (a%b == 0) ? a : (a / b + 1) * b;
+    int y = (a + b - 1) / b * b;
     cout << x << "\n" << y;
     return 0;
 }
