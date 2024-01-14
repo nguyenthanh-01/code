@@ -8,6 +8,6 @@ int main() {
     cin >> a >> b;
     int x = a / b * b;
     int y = (a%b == 0) ? a : (a / b + 1) * b;
-    cout << x << " " << y;
+    cout << x << "\n" << y;
     return 0;
 }
