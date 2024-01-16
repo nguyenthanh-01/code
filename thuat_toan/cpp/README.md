@@ -1,3 +1,5 @@
-vector
-deque
-unordered_map
+```
+vector: mảng động
+deque: mảng vòng
+unordered_map: mảng băm
+```
