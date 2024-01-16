@@ -19,8 +19,8 @@ int main() {
 
 int dq(int n, vi &x) {
     if (n == 1 || n == 0) return n; // kết thúc
-    if (x[n] == 0) {
-        x[n] = dq(n - 1, x) + dq(n - 2, x); // code + đệ quy
+    if (x[n] == 0) { // cắt nhánh
+        x[n] = dq(n - 1, x) + dq(n - 2, x); // đệ quy
     }
     return x[n];
 }
