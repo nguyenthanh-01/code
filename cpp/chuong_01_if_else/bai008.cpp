@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define inv cout << "INVALID\n"
+#define inv printf("INVALID\n")
 #define thuong printf("%.4lf \n", 1.0 * a / b)
 
 typedef long long ll;
