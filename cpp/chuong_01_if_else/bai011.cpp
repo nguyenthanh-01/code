@@ -8,7 +8,8 @@ typedef long long ll;
 int main() {
     int a, b, c;
     cin >> a >> b >> c;
-    if (a > 0 && b > 0 && c > 0 && a+b > c && a+c > b && b+c > a) {
+    if (a <= 0 || b <= 0 || c <= 0 || a+b <= c || a+c <= b || b+c <= a) inv;
+    else {
         if (a == b && b == c) {
             cout << "1";
         }
@@ -20,6 +21,5 @@ int main() {
         }
         else cout << "4";
     }
-    else inv;
     return 0;
 }
