@@ -10,6 +10,7 @@ int main() {
     cin >> a >> b;
     int x = a / b * b;
     int y = (a + b - 1) / b * b;
-    cout << x << endl << y << endl;
+    cout << x << endl;
+    cout << y << endl;
     return 0;
 }
