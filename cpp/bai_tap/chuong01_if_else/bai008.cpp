@@ -11,7 +11,9 @@ int main() {
     int tong = a + b;
     int hieu = a - b;
     ll tich = 1ll * a * b;
-    cout << tong << endl << hieu << endl << tich << endl;
+    cout << tong << endl;
+    cout << hieu << endl;
+    cout << tich << endl;
     if(b == 0) {
         cout << "INVALID\n";
     }
