@@ -1,4 +1,4 @@
-# 002bai
+// 002bai
 #include <bits/stdc++.h>
 using namespace std;
 
