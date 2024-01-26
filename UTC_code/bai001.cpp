@@ -13,7 +13,7 @@ void sang_nt(vb &);
 int check(int);
 
 int main() {
-    vb sang(sl, 1); sang[0] = 0;
+    vb sang(sl, 1);
     sang_nt(sang);
     int n; cin >> n;
     while(n--) {
