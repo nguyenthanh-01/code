@@ -1,5 +1,11 @@
-text = 'mrttaqrhknsw ih puggrur'
-custom_key = 'happycoding'
+def main():
+    text = 'mrttaqrhknsw ih puggrur'
+    custom_key = 'happycoding'
+    print(f'\nEncrypted text: {text}')
+    print(f'Key: {custom_key}')
+    decryption = decrypt(text, custom_key)
+    print(f'\nDecrypted text: {decryption}\n')
+
 
 def vigenere(message, key, direction=1):
     key_index = 0
@@ -30,7 +36,5 @@ def encrypt(message, key):
 def decrypt(message, key):
     return vigenere(message, key, -1)
 
-print(f'\nEncrypted text: {text}')
-print(f'Key: {custom_key}')
-decryption = decrypt(text, custom_key)
-print(f'\nDecrypted text: {decryption}\n')
+if __name__ == "__main__":
+    main()
