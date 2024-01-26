@@ -1,5 +1,7 @@
 def main():
     text = 'mrttaqrhknsw ih puggrur'
+    # văn bản mã hóa
+
     custom_key = 'happycoding'
     print(f'\nEncrypted text: {text}')
     print(f'Key: {custom_key}')
