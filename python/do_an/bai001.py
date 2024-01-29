@@ -1,5 +1,5 @@
 def main():
-    print(arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"], True))
+    print(arithmetic_arranger(['3 + 855', '988 + 40'], True))
 
 def arithmetic_arranger(problems, val=False):
     arranged_problems = ''
@@ -9,9 +9,10 @@ def arithmetic_arranger(problems, val=False):
 
     # list of all operations in str format
     operations = list(map(lambda x: x.split()[1], problems))
-    if set(operations) != {'+', '-'} and len(set(operations)) != 2:
-        arranged_problems = "Error: Operator must be '+' or '-'."
-        return arranged_problems
+    for i in set(operations):
+        if i in {'*', '/'}:
+            arranged_problems = "Error: Operator must be '+' or '-'."
+            return arranged_problems
 
     numbers = []  # list of all operands in str format
     for i in problems:
