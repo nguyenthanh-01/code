@@ -40,7 +40,7 @@ def arithmetic_arranger(problems, re_nhanh = False):
         dong_giua += ky_tu[i//2] + chu_so[i+1].rjust(space - 1)
         dong_duoi += '-' * space
         dong_dap_an += dap_an[i//2].rjust(space)
-        if i < so_luong_chu_so - 1:
+        if i < so_luong_chu_so - 2:
             dong_tren += ' ' * 4
             dong_giua += ' ' * 4
             dong_duoi += ' ' * 4
