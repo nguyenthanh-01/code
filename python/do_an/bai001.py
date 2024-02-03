@@ -16,7 +16,7 @@ def arithmetic_arranger(problems, re_nhanh = False):
     chu_so = []
     for i in problems:
         chu_so += cmp(i.split())
-    
+
     for i in chu_so:
         if not i.isdigit():
             return "Error: Numbers must only contain digits."
@@ -24,34 +24,34 @@ def arithmetic_arranger(problems, re_nhanh = False):
         so_luong_chu_so = len(i)
         if so_luong_chu_so > 4:
             return "Error: Numbers cannot be more than four digits."
-    
-    top_row = ''
-    dashes = ''
-    values = list(map(lambda x: eval(x), problems))
-    solutions = ''
-    for i in range(0, len(chu_so), 2):
-        space_width = max(len(chu_so[i]), len(chu_so[i+1])) + 2
-        top_row += chu_so[i].rjust(space_width)
-        dashes += '-' * space_width
-        solutions += str(values[i // 2]).rjust(space_width)
-        if i != len(chu_so) - 2:
-            top_row += ' ' * 4
-            dashes += ' ' * 4
-            solutions += ' ' * 4
 
-    bottom_row = ''
-    for i in range(1, len(chu_so), 2):
-        space_width = max(len(chu_so[i - 1]), len(chu_so[i])) + 1
-        bottom_row += ky_tu[i // 2]
-        bottom_row += chu_so[i].rjust(space_width)
-        if i != len(chu_so) - 1:
-            bottom_row += ' ' * 4
+    cmp = lambda x: str(eval(x))
+    dap_an = list(map(cmp, problems))
 
-    if re_nhanh:
-        arranged_problems = '\n'.join((top_row, bottom_row, dashes, solutions))
+    dong_tren = ""
+    dong_giua = ""
+    dong_duoi = ""
+    dong_dap_an = ""
+
+    so_luong_chu_so = len(chu_so)
+    for i in range(0, so_luong_chu_so, 2):
+        space = max(len(chu_so[i]), len(chu_so[i+1])) + 2
+        dong_tren += chu_so[i].rjust(space)
+        dong_giua += ky_tu[i//2] + chu_so[i+1].rjust(space - 1)
+        dong_duoi += '-' * space
+        dong_dap_an += dap_an[i//2].rjust(space)
+        if i < so_luong_chu_so - 1:
+            dong_tren += ' ' * 4
+            dong_giua += ' ' * 4
+            dong_duoi += ' ' * 4
+            dong_dap_an += ' ' * 4
+
+    if re_nhanh == False:
+        ket_qua = '\n'.join([dong_tren, dong_giua, dong_duoi])
     else:
-        arranged_problems = '\n'.join((top_row, bottom_row, dashes))
-    return arranged_problems
+        ket_qua = '\n'.join([dong_tren, dong_giua, dong_duoi, dong_dap_an])
+
+    return ket_qua
 
 if __name__ == "__main__":
     main()
