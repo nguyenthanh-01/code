@@ -1,0 +1,25 @@
+# sức mạnh
+rep: 0 - 10
+set: 3'
+
+# sức bền
+rep: 10 - 20
+set: 1'
+
+# bộc phá
+rep: 100 - 1000
+set: 24h
+
+# lịch tập
+a = chân, đẩy
+b = bụng, kéo
+c = chạy
+
+a b c a b c nghỉ
+
+# chân
+bật đứng: từ tư thế đang ngồi bật dậy
+đứng tấn: chân tạo thành 1 góc 90°
+
+# đẩy
+hít đất: 
