@@ -23,4 +23,6 @@ bật đứng: từ tư thế đang ngồi bật dậy
 
 # đẩy
 hít đất: ng // đất, tay góc 90° duỗi thẳng
-xà kép: giữ xà kép, 
+xà kép: giữ xà kép, vai đẩy xuống dưới
+
+# bụng
