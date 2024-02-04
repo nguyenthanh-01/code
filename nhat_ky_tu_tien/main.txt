@@ -22,4 +22,5 @@ bật đứng: từ tư thế đang ngồi bật dậy
 đứng tấn: chân tạo thành 1 góc 90°
 
 # đẩy
-hít đất: 
+hít đất: ng // đất, tay góc 90° duỗi thẳng
+xà kép: giữ xà kép, 
