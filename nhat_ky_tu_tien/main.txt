@@ -1,12 +1,12 @@
-# sức mạnh
+# sức mạnh B
 rep: 0 - 10
 set: 3'
 
-# sức bền
+# sức bền A
 rep: 10 - 20
 set: 1'
 
-# bộc phá
+# bộc phá S
 rep: 100 - 1000
 set: 24h
 
