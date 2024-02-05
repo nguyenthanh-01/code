@@ -10,7 +10,7 @@ set: 1'
 rep: 20 - 100
 set: 1'
 
-# bộc phá S
+# bộc phá S1 - s10
 rep: 100 - 1000
 set: 0s
 
