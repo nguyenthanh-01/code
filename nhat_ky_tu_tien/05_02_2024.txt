@@ -4,3 +4,7 @@ bật đứng = 10 rep
 hít đất = 10 rep
 xà kép = 30s
 set: 1'
+
+# set
+chân: 4 pass 1 false
+đẩy: 5 pass
