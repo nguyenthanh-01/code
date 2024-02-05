@@ -1,4 +1,4 @@
-# nhiệm vụ A-
+# nhiệm vụ B
 bật đứng = 10 rep
 đứng tấn = 30s
 hít đất = 10 rep
