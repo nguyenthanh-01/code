@@ -1,14 +1,18 @@
-# sức mạnh B
+# sức mạnh C
 rep: 0 - 10
 set: 3'
 
-# sức bền A
+# sức bền B
 rep: 10 - 20
+set: 1'
+
+# sức bền A
+rep: 20 - 100
 set: 1'
 
 # bộc phá S
 rep: 100 - 1000
-set: 24h
+set: 0s
 
 # lịch tập
 a = chân, đẩy
