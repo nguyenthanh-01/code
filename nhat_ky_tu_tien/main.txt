@@ -3,7 +3,7 @@ rep: 0 - 10
 set: 3'
 
 # sức bền B
-rep: 10 - 20
+rep: 10 - 19
 set: 1'
 
 # sức bền A1 - A5
