@@ -6,7 +6,7 @@ set: 3'
 rep: 10 - 20
 set: 1'
 
-# sức bền A1 - A8
+# sức bền A1 - A5
 rep: 20 - 100
 set: 1'
 
