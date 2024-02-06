@@ -1,52 +1,47 @@
-def main():
-    print(add_time("11:43 PM", "24:20", "tueSday"))
-
 def add_time(start, duration, day=None):
-    days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+    # days in a week
+    days = ('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday')
 
-    # Convert start time to 24-hour format
-    start_time = start.split()
-    start_hours, start_minutes = map(int, start_time[0].split(':'))
-    if start_time[1] == 'PM' and start_hours != 12:
-        start_hours += 12
-    elif start_time[1] == 'AM' and start_hours == 12:
-        start_hours = 0
+    # initial time and the duration to be added in hours and minutes
+    init_time = list(map(int, start[:-3].split(':')))
+    duration = list(map(int, duration.split(':')))
 
-    # Convert duration to minutes
-    duration_hours, duration_minutes = map(int, duration.split(':'))
-    duration_total = duration_hours * 60 + duration_minutes
+    # adding the minutes to the initial time
+    init_time[1] += duration[1]
+    count = 0  # to store the extra number of hours (60 minutes)
+    while init_time[1] > 60:
+        count += 1
+        init_time[1] -= 60
+    
+    # adding the hours to the initial time
+    init_time[0] += count + duration[0]
+    count = 0  # to store the number of days
+    while init_time[0] >= 12:
+        init_time[0] -= 12
+        if 'PM' in start:
+            # increment the count for days if time crosses the PM mark
+            count += 1
+            # and replace PM with AM
+            start = start.replace('PM', 'AM')
+        elif 'AM' in start:
+            # else replace AM with PM
+            start = start.replace('AM', 'PM')
 
-    # Calculate new time in minutes
-    new_time_total = start_hours * 60 + start_minutes + duration_total
+    init_time[0] = '12' if init_time[0] == 0 else str(init_time[0])
+    init_time[1] = str(init_time[1]).rjust(2, '0')
+    new_time = ':'.join(init_time) + start[-3:]
 
-    # Calculate new days, hours, and minutes
-    new_days, new_time_in_day = divmod(new_time_total, 24 * 60)
-    new_hours, new_minutes = divmod(new_time_in_day, 60)
-
-    # Convert new hours to 12-hour format
-    if new_hours >= 12:
-        period = "PM"
-        new_hours -= 12
-    else:
-        period = "AM"
-    if new_hours == 0:
-        new_hours = 12
-
-    # Format new time
-    new_time = f"{new_hours}:{str(new_minutes).zfill(2)} {period}"
-
-    # Add day of the week if provided
-    if day:
-        day_index = (days.index(day.capitalize()) + new_days) % 7
-        new_time += f", {days[day_index]}"
-
-    # Add number of days later
-    if new_days == 1:
-        new_time += " (next day)"
-    elif new_days > 1:
-        new_time += f" ({new_days} days later)"
+    if day is not None:
+        day = day.lower().capitalize()
+        days = days[days.index(day):] + days[:days.index(day)]
+        n = count
+        while n > 7:
+            n -= 7
+        new_time += ', ' + days[n]
+    
+    if count == 1:
+        new_time += ' (next day)'
+    elif count > 1:
+        new_time += ' (' + str(count) + ' days later)'
 
     return new_time
-
-if __name__ == "__main__":
-    main()
