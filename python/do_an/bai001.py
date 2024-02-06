@@ -1,5 +1,5 @@
 def main():
-    print(arithmetic_arranger(['1 + 1', '2 - 2'], True))
+    print(arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"], True))
 
 def arithmetic_arranger(problems, re_nhanh = False):
     so_luong_problems = len(problems)
