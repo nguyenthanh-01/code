@@ -1,3 +1,6 @@
+def main():
+    print(add_time("11:43 PM", "24:20", "tueSday"))
+
 def add_time(start, duration, day=None):
     # days in a week
     days = ('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday')
@@ -45,3 +48,6 @@ def add_time(start, duration, day=None):
         new_time += ' (' + str(count) + ' days later)'
 
     return new_time
+
+if __name__ == "__main__":
+    main()
