@@ -19,7 +19,7 @@ a = chân, đẩy
 b = bụng, kéo
 c = chạy
 
-a b c a b c nghỉ
+a c b a c b nghỉ
 
 # quy đổi
 1 rep = 3s
