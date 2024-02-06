@@ -2,3 +2,9 @@
 
 # chạy
 chạy: 15'
+
+# set
+chạy: false
+
+# ghi chú
+đùi đau nhức
