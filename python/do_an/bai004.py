@@ -62,6 +62,6 @@ class Square(Rectangle):
     def set_side(self, s):
         self.width = s
         self.height = s
-
+        
 if __name__ == "__main__":
     main()
