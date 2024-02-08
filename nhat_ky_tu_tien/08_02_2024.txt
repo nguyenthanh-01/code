@@ -20,4 +20,6 @@ chân: 5 pass
 đã cải thiện
 
 # đẩy
-thời kỳ suy giảm
+bị suy giảm do
++ cường độ tập
++ cơ thể ko hồi phục kịp
