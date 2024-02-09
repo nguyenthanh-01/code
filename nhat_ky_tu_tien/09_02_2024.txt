@@ -1,0 +1,12 @@
+# nhiệm vụ
+
+# chạy
+chạy: 15'
+
+# set
+chạy: pass
+
+# ghi chú
+
+# chạy
+đã cải thiện
