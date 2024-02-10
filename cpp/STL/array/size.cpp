@@ -7,7 +7,8 @@ using namespace std;
 typedef long long ll;
 
 int main() {
-    array<int, n> ar;
-    printf("%d \n", sz(ar));
+    array<int, n> arr;
+    printf("%d \n", sz(arr));
+    printf("%d \n", sizeof(arr));
     return 0;
 }
