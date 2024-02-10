@@ -14,5 +14,9 @@ int main() {
         printf("%d ", *it);
     }
     printf("\n");
+    for (auto it = arr.rbegin(); it != arr.rend(); it++) {
+        printf("%d ", *it);
+    }
+    printf("\n");
     return 0;
 }
