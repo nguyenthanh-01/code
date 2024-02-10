@@ -6,10 +6,10 @@ using namespace std;
 typedef long long ll;
 
 int main() {
-    array<int, n> ar;
-    for (int &i: ar) {
+    array<int, n> arr;
+    for (int &i: arr) {
         cin >> i;
     }
-    printf("%d %d \n", ar[0], ar.back());
+    printf("%d %d \n", arr[0], arr.back());
     return 0;
 }
