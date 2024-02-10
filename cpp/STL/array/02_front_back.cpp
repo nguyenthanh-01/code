@@ -2,6 +2,7 @@
 using namespace std;
 
 #define n 5
+#define fb(a) (a).front(), (a).back()
 
 typedef long long ll;
 
@@ -10,6 +11,6 @@ int main() {
     for (int &i: arr) {
         cin >> i;
     }
-    printf("%d %d \n", arr[0], arr.back());
+    printf("%d %d \n", fb(arr));
     return 0;
 }
