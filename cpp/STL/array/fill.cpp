@@ -6,7 +6,7 @@ using namespace std;
 typedef long long ll;
 
 int main() {
-    array<int, n> ar = {};
+    array<int, n> ar;
     ar.fill(1);
     for (int &i: ar) {
         printf("%d ", i);
