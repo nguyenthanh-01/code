@@ -8,7 +8,12 @@ typedef long long ll;
 
 int main() {
     array<int, n> arr;
-    printf("%d \n", sz(arr));
-    printf("%d \n", sizeof(arr));
+    for (int i = 0; i < sz(arr); i++) {
+        cin >> arr[i];
+    }
+    for (int i = 0; i < sz(arr); i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n%d \n", sizeof(arr));
     return 0;
 }
