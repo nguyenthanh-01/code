@@ -7,12 +7,12 @@ using namespace std;
 typedef long long ll;
 
 int main() {
-    array<int, n> ar;
-    for (int &i: ar) {
+    array<int, n> arr;
+    for (int &i: arr) {
         cin >> i;
     }
-    sort(all(ar));
-    for (int &i: ar) {
+    sort(all(arr));
+    for (int &i: arr) {
         printf("%d ", i);
     }
     printf("\n");
