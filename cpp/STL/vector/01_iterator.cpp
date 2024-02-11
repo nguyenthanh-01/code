@@ -3,7 +3,6 @@ using namespace std;
 
 #define pp pop_back
 #define pb push_back
-#define sz(a) (int) (a).size()
 
 typedef long long ll;
 
