@@ -3,6 +3,7 @@ using namespace std;
 
 #define n 5
 #define sz(a) (int) (a).size()
+#define szf(a) (int) sizeof(a)
 
 typedef long long ll;
 
@@ -14,8 +15,8 @@ int main() {
     for (int i = 0; i < sz(arr); i++) {
         printf("%d ", arr[i]);
     }
-    printf("\n%d \n", sizeof(arr));
+    printf("\n%d \n", szf(arr));
     return 0;
 }
 
-# int, bool
+// int, bool
