@@ -17,3 +17,5 @@ int main() {
     printf("\n%d \n", sizeof(arr));
     return 0;
 }
+
+# int, bool
