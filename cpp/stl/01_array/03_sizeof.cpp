@@ -2,7 +2,7 @@
 using namespace std;
 
 #define n 5
-#define sizeof(a) (int) sizeof((a))
+#define sizeof(a) (int) sizeof(a)
 
 int main() {
     array<int, n> arr1;
