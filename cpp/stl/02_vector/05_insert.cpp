@@ -6,10 +6,9 @@ using namespace std;
 
 int main() {
     int n; cin >> n;
-    vector<int> vi;
-    while(n--) {
-        int x; cin >> x;
-        vi.pb(x);
+    vector<int> vi(n);
+    for (int &i: vi) {
+        cin >> i;
     }
     vi.insert(vi.begin() + 3, 0);
     for (int &i: vi) {
