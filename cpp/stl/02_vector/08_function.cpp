@@ -8,7 +8,7 @@ using namespace std;
 void test(vector &vi);
 
 int main() {
-    int n = 1e9;
+    int n; cin >> n;
     vector vi(n);
     test(vi);
     printf("%d \n", vi.back());
