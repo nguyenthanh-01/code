@@ -7,7 +7,8 @@ using namespace std;
 typedef struct {int x; int y;} ii;
 
 int main() {
-    vector<ii> vii(3);
+    int n; cin >> n;
+    vector<ii> vii(n);
     for (auto &i: vii) {
         cin >> i.x >> i.y;
     }
