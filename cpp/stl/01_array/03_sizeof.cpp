@@ -5,9 +5,9 @@ using namespace std;
 #define sizeof(a) (int) sizeof((a))
 
 int main() {
-    array<int, n> arr;
-    printf("%d \n", sizeof(arr));
+    array<int, n> arr1;
+    array<bool, n> arr2;
+    printf("%d \n", sizeof(arr1));
+    printf("%d \n", sizeof(arr2));
     return 0;
 }
-
-// int, bool
