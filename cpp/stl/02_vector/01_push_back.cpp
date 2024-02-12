@@ -5,9 +5,10 @@ using namespace std;
 
 int main() {
     int n; cin >> n;
-    vector<int> vi(n);
-    for (int &i: vi) {
-        cin >> i;
+    vector<int> vi;
+    while(n--) {
+        int x; cin >> x;
+        vi.pb(x);
     }
     for (int &i: vi) {
         printf("%d ", i);
