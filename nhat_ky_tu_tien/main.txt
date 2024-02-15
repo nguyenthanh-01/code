@@ -1,5 +1,5 @@
 # sức mạnh C
-rep: 0 - 10
+rep: 0 - 9
 set: 3'
 
 # sức bền B
@@ -7,12 +7,12 @@ rep: 10 - 19
 set: 1'
 
 # sức bền A1 - A5
-rep: 20 - 40 - 60 - 80 - 100
+rep: 20 - 40 - 60 - 80 - 99
 set: 1'
 
 # bộc phá S - SS - SSS
 rep: 100 - 150 - 200
-set: 0s
+set: 10s
 
 # lịch tập
 a = chân, đẩy
@@ -23,13 +23,3 @@ a c b a c b nghỉ
 
 # quy đổi
 1 rep = 3s
-
-# chân
-bật đứng: từ tư thế đang ngồi bật dậy
-đứng tấn: chân tạo thành 1 góc 90°
-
-# đẩy
-hít đất: ng // đất, tay góc 90° duỗi thẳng
-xà kép: giữ xà kép, vai đẩy xuống dưới
-
-# bụng
