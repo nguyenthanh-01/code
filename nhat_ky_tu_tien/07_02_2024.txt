@@ -20,4 +20,4 @@ kéo: 5 pass
 ~
 
 # kéo
-đã cải thiện
+~
