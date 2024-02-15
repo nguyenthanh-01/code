@@ -17,9 +17,7 @@ chân: 5 pass
 # ghi chú
 
 # chân
-đã cải thiện
+~
 
 # đẩy
-bị suy giảm do
-+ cường độ tập
-+ cơ thể ko hồi phục kịp
+thời kỳ suy giảm
