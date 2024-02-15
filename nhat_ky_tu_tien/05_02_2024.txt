@@ -17,7 +17,7 @@ chân: 4 pass 1 false
 # ghi chú
 
 # chân
-bị suy giảm
+đau
 
 # đẩy
-đã cải thiện
+~
