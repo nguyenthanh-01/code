@@ -17,7 +17,7 @@ chân: 4 pass 1 false
 # ghi chú
 
 # chân
-đau
+~
 
 # đẩy
 ~
