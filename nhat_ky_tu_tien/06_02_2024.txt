@@ -9,4 +9,4 @@ chạy: false
 # ghi chú
 
 # chạy
-đùi đau nhức
+đau
