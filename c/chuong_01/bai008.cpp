@@ -9,7 +9,7 @@ int main() {
     int tong = a + b;
     int hieu = a - b;
     ll tich = 1ll * a * b;
-    printf("%d \n %d \n %d \n", tong, hieu, tich);
+    printf("%d \n %d \n %lld \n", tong, hieu, tich);
     if (b == 0) {
         cout << "INVALID\n";
     }
