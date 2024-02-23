@@ -31,12 +31,12 @@ void xuat(vector &vi) {
 
 void sx_chon(int n, vector &vi) {
     for (int i = 0; i < n - 1; i++) {
-        int tmp = i;
+        int key = i;
         for (int j = i + 1; j < n; j++) {
-            if (vi[tmp] < vi[j]) {
-                tmp = j;
+            if (vi[key] < vi[j]) {
+                key = j;
             }
         }
-        swap(vi[i], vi[tmp]);
+        swap(vi[i], vi[key]);
     }
 }
