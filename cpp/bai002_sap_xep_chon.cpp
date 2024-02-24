@@ -4,8 +4,8 @@ using namespace std;
 #define n 5
 #define array array<int, n>
 
-inline void xuat(array &arr) {for (int &i: arr) {cout << i << " ";}cout << "\n";}
 void sx_chon(array &);
+void xuat(array &);
 
 int main() {
     array arr = {1, 2, 3, 4, 5};
@@ -24,4 +24,11 @@ void sx_chon(array &arr) {
         }
         swap(arr[i], arr[key]);
     }
+}
+
+void xuat(array &arr) {
+    for (int &i: arr) {
+        cout << i << " ";
+    }
+    cout << "\n";
 }
