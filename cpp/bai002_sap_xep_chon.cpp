@@ -1,42 +1,34 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define vector vector<int>
+#define n 5
+#define array array<int, n>
 
-void nhap(vector &);
-void xuat(vector &);
-void sx_chon(int, vector &);
+void sx_chon(array &);
+void xuat(array &);
 
 int main() {
-    int n; cin >> n;
-    vector vi(n);
-    nhap(vi);
-    sx_chon(n, vi);
-    xuat(vi);
+    array arr = {1, 2, 3, 4, 5};
+    sx_chon(arr);
+    xuat(arr);
     return 0;
 }
 
-void nhap(vector &vi) {
-    for (int &i: vi) {
-        cin >> i;
-    }
-}
-
-void xuat(vector &vi) {
-    for (int &i: vi) {
-        cout << i << " ";
-    }
-    cout << "\n";
-}
-
-void sx_chon(int n, vector &vi) {
+void sx_chon(array &arr) {
     for (int i = 0; i < n - 1; i++) {
         int key = i;
         for (int j = i + 1; j < n; j++) {
-            if (vi[key] < vi[j]) {
+            if (arr[key] < arr[j]) {
                 key = j;
             }
         }
-        swap(vi[i], vi[key]);
+        swap(arr[i], arr[key]);
     }
+}
+
+void xuat(array &arr) {
+    for (int &i: arr) {
+        cout << i << " ";
+    }
+    cout << "\n";
 }
