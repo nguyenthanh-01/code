@@ -5,9 +5,11 @@ using namespace std;
 array<bool, n> arr;
 
 void sang_nt();
+void xuat();
 
 int main() {
     sang_nt();
+    xuat();
     return 0;
 }
 
@@ -21,4 +23,13 @@ void sang_nt() {
             }
         }
     }
+}
+
+void xuat() {
+    for (int i = 0; i < 100; i++) {
+        if (arr[i] == true) {
+            cout << i << " ";
+        }
+    }
+    cout << "\n";
 }
