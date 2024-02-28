@@ -18,16 +18,12 @@ int main() {
         cout << i << " ";
     }
     cout << "\n";
-    int max = arr[0];
     for (int &i: arr) {
-        if (max != i) {
-            max = i;
-            break;
+        if (arr[0] != i) {
+            cout << i << "\n";
+            return 0;
         }
     }
-    if (max == arr[0]) {
-        cout << "No\n";
-    }
-    else cout << max << "\n";
+    cout << "No\n";
     return 0;
 }
