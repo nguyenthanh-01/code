@@ -12,7 +12,7 @@ using namespace std;
 inline bool cmp(int &i) {return i != 0;}
 
 int main() {
-    array<int, n> arr = {0, 0, 3, 4, 5};
+    array<int, n> arr = {0, 2, 0, 4, 5};
     stable_partition(all(arr), cmp);
     for (int &i: arr) {
         cout << i << " ";
