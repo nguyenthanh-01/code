@@ -5,10 +5,10 @@ using namespace std;
 
 int main() {
     array<int, n> arr = {1, 2, 3, 4, 5};
-    int poin = n - 1;
-    for (int i = 0; i < poin; i++) {
-        swap(arr[i], arr[poin]);
-        poin--;
+    int pos = n - 1;
+    for (int i = 0; i < pos; i++) {
+        swap(arr[i], arr[pos]);
+        pos--;
     }
     for (int &i: arr) {
        cout << i << " ";
