@@ -9,11 +9,8 @@ int main() {
     int r = n - 1;
     while (l < r) {
         if (arr[l] < 0) l++;
-        else if (arr[r] < 0) {
-            swap(arr[l], arr[r]);
-            r--;
-        }
-        else r--;
+        else if (arr[r] > 0) r--;
+        else swap(arr[l], arr[r]);
     }
     for (int &i: arr) {
        cout << i << " ";
