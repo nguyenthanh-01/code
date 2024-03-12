@@ -1,0 +1,3 @@
+# đẩy
+push: 11 rep
+dip: 33s
