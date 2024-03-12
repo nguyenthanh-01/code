@@ -1,3 +1,4 @@
 # đẩy
-push: 11 rep
+push: 11 rep 11s
 dip: 33s
+delay: 3'
