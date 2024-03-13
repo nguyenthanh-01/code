@@ -2,3 +2,8 @@
 push: 11 rep 11s
 dip: 33s
 delay: 3'
+
+# chân
+jump: 11 rep 11s
+tấn: 33s
+delay: 1'
