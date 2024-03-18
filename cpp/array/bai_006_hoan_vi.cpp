@@ -1,26 +1,24 @@
 #include <bits/stdc++.h>
 using namespace std;
                                                                          
-#define n 3
-#define array array<int, n>
-#define xuat(a) for(int &i: a) {cout << i;} cout << "\n";
+#define sz(a) (int) (a).size()
 
-void dq(array &, int);
+void dq(string &, int);
 
 int main() {
-    array arr = {1, 2, 3};
-    dq(arr, 0);
+    string str = "123";
+    dq(str, 0);
     return 0;
 }
 
-void dq(array &arr, int pos) {
-    if (pos == n-1) {
-        xuat(arr);
+void dq(string &str, int pos) {
+    if (pos == sz(str)-1) {
+        cout << str << " ";
         return;
     }
-    for (int i = pos; i < n; i++) {
-        swap(arr[i], arr[pos]);
-        dq(arr, pos + 1);
-        swap(arr[i], arr[pos]);
+    for (int i = pos; i < sz(str); i++) {
+        swap(str[i], str[pos]);
+        dq(str, pos + 1);
+        swap(str[i], str[pos]);
     }
 }
