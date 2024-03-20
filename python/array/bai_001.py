@@ -1,4 +1,3 @@
-
 def findPeak(arr, n):
     l = 0
     r = n-1
