@@ -1,4 +1,19 @@
-# đẩy
-push: 12rep 12s
-dip: 36s
-delay: 3'
+# tay
+động: 12rep 12s
+tĩnh: 36s
+nghỉ: 3'
+
+# chân
+động: 12rep 12s
+tĩnh: 36s
+nghỉ: 1'
+
+# bụng
+động: 12rep 12s
+tĩnh: 36s
+nghỉ: 1'
+
+# lưng
+động: 4rep 4s
+tĩnh: 12s
+nghỉ: 3'
