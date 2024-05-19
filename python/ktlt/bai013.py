@@ -4,12 +4,12 @@ def main():
 
     k, n = map(int, input().split())
 
-    ts = C(max(k, n - k), n)
-    ms = C(0, min(k, n - k))
+    ts = gt(max(k, n - k), n)
+    ms = gt(0, min(k, n - k))
 
     print(ts // ms)
 
-def C(k, n):
+def gt(k, n):
     res = 1
 
     for i in range(k + 1, n + 1):
