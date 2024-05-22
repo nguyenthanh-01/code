@@ -1,10 +1,10 @@
 def main():
     a = int(input())
     if a < 5:
-        print("flase")
+        print("Kem")
     elif a < 8:
-        print("pass")
+        print("Kha")
     else:
-        print("a+")
+        print("Gioi")
 
 main()
