@@ -1,5 +1,6 @@
 def main():
     a, b = map(int, input().split())
-    print((a + b - 1) // b * b)
+    ans = (a + b - 1) // b * b
+    print(ans)
 
 main()
