@@ -3,7 +3,7 @@ def main():
 
     sum = 0
     cnt = 0
-    Max = 0
+    max = 0
 
     for i in range(n):
         l, r = map(float, input().split())
@@ -11,10 +11,11 @@ def main():
 
         sum += res
         cnt += 1
-        if Max < res:
-            Max = res
+        if max < res:
+            max = res
 
-    print(f"{sum / cnt:.3f}")
-    print(f"{Max:.3f}")
+    ans = sum / cnt
+    print(f"{ans:.3f}")
+    print(f"{max:.3f}")
 
 main()
