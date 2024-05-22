@@ -1,6 +1,5 @@
 def main():
     n = int(input())
-
     sum = 0
     cnt = 0
     max = 0
@@ -8,9 +7,9 @@ def main():
     for i in range(n):
         l, r = map(float, input().split())
         res = l * r
-
         sum += res
         cnt += 1
+        
         if max < res:
             max = res
 
