@@ -1,6 +1,7 @@
 def main():
     n = int(input())
-    ans = n * (n + 1) // 2
+    sum = n + 1
+    ans = n // 2 * sum + n % 2 * sum // 2
     print(ans)
 
 main()
