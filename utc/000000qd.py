@@ -4,9 +4,9 @@ def main():
     for i in range(1, n + 1):
         chr = ""
 
-        if i % 2 == 0:
-            chr += "L"
-        else: chr += f"{i}"
+        if i % 2 != 0:
+            chr += f"{i}"
+        else: chr += "L"
 
         if i % 4 == 0:
             chr += "T"
