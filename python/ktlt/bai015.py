@@ -1,6 +1,8 @@
 def main():
     n = int(input())
+    
     ans = gt(n)
+    
     print(ans)
 
 def gt(n):
