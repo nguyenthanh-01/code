@@ -1,5 +1,6 @@
 def main():
     n = int(input())
+    
     sqrt = int(n**0.5)
     sum = 0
 
