@@ -3,8 +3,10 @@ def main():
     # C(k, n) = max > n! / min!
 
     k, n = map(int, input().split())
+    
     ts = gt(max(k, n - k), n)
     ms = gt(0, min(k, n - k))
+    
     print(ts // ms)
 
 def gt(k, n):
