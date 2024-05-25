@@ -1,15 +1,15 @@
 def main():
     l, r = map(int, input().split())
 
-    cnt = 0
+    Cnt = 0
 
     for i in range(l, r + 1):
-        if nt_2(i) and nt_3(i) and nt_1(i):
-            cnt += 1
+        if Nguyen_to_2(i) and Nguyen_to_3(i) and Nguyen_to_1(i):
+            Cnt += 1
 
-    print(cnt)
+    print(Cnt)
 
-def nt_1(n):
+def Nguyen_to_1(n):
     if n < 2:
         return False
 
@@ -19,34 +19,34 @@ def nt_1(n):
     if n % 2 == 0:
         return False
 
-    sqrt = int(n**0.5)
+    Sqrt = int(n**0.5)
     
-    for i in range(3, sqrt + 1, 2):
+    for i in range(3, Sqrt + 1, 2):
         if n % i == 0:
             return False
     
     return True
 
-def nt_2(n):
-    arr = [0, 0, 1, 1, 0, 1, 0, 1, 0, 0]
+def Nguyen_to_2(n):
+    Arr = [0, 0, 1, 1, 0, 1, 0, 1, 0, 0]
 
     while n != 0:
-        tmp = arr[n % 10]
+        Tmp = Arr[n % 10]
 
-        if tmp == 0:
+        if Tmp == 0:
             return False
         
         n //= 10
 
     return True
 
-def nt_3(n):
-    sum = 0
+def Nguyen_to_3(n):
+    Sum = 0
 
     while n != 0:
-        sum += n % 10
+        Sum += n % 10
         n //= 10
     
-    return nt_1(sum)
+    return Nguyen_to_1(Sum)
 
 main()
