@@ -1,25 +1,25 @@
 def main():
     n = int(input())
     
-    ans = gt(n)
+    Ans = Giai_thua(n)
     
-    print(ans)
+    print(Ans)
 
-def gt(n):
-    arr = [1]
+def Giai_thua(n):
+    Arr = [1]
 
     for i in range(1, n + 1):
-        tmp = 0
+        Tmp = 0
 
-        for j in range(len(arr)):
-            res = arr[j] * i + tmp
-            arr[j] = res % 10
-            tmp = res // 10
+        for j in range(len(Arr)):
+            Res = Arr[j] * i + Tmp
+            Arr[j] = Res % 10
+            Tmp = Res // 10
 
-        while tmp != 0:
-            arr += [tmp % 10]
-            tmp //= 10
+        while Tmp != 0:
+            Arr += [Tmp % 10]
+            Tmp //= 10
 
-    return "".join(map(str, arr[::-1]))
+    return "".join(map(str, Arr[::-1]))
 
 main()
