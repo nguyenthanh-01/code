@@ -1,16 +1,16 @@
 def main():
     l, r = map(int, input().split())
-    arr = [1] * (r - l + 1)
-    sang_nt(arr, l, r)
-    print(arr)
+    Arr = [1] * (r - l + 1)
+    Sang_nguyen_to(Arr, l, r)
+    print(Arr)
 
-def sang_nt(arr, l, r):
-    sqrt = int(r**0.5)
+def Sang_nguyen_to(Arr, l, r):
+    Sqrt = int(r**0.5)
 
-    for i in range(2, sqrt + 1):
+    for i in range(2, Sqrt + 1):
         Max = max(i * i, (l + i - 1) // i * i)
         
         for j in range(Max, r + 1, i):
-            arr[j - l] = 0
+            Arr[j - l] = 0
 
 main()
