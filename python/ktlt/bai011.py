@@ -1,9 +1,9 @@
 def main():
     n = int(input())
     
-    sum = n + 1
-    ans = n // 2 * sum + n % 2 * sum // 2
+    Sum = n + 1
+    Ans = n // 2 * Sum + n % 2 * Sum // 2
     
-    print(ans)
+    print(Ans)
 
 main()
