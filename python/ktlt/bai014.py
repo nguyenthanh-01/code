@@ -1,16 +1,16 @@
 def main():
     n = int(input())
     
-    sqrt = int(n**0.5)
-    sum = 0
+    Sqrt = int(n**0.5)
+    Sum = 0
 
-    for i in range(1, sqrt):
+    for i in range(1, Sqrt):
         if n % i == 0:
-            sum += (i + n // i)
+            Sum += (i + n // i)
 
-    if sqrt * sqrt == n:
-        sum += sqrt
+    if Sqrt * Sqrt == n:
+        Sum += Sqrt
 
-    print(sum)
+    print(Sum)
 
 main()
