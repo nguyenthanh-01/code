@@ -4,17 +4,17 @@ def main():
 
     k, n = map(int, input().split())
     
-    ts = gt(max(k, n - k), n)
-    ms = gt(0, min(k, n - k))
+    Ts = Giai_thua(max(k, n - k), n)
+    Ms = Giai_thua(0, min(k, n - k))
     
-    print(ts // ms)
+    print(Ts // Ms)
 
-def gt(k, n):
-    res = 1
+def Giai_thua(k, n):
+    Res = 1
 
     for i in range(k + 1, n + 1):
-        res *= i
+        Res *= i
 
-    return res
+    return Res
 
 main()
