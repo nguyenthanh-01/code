@@ -2,21 +2,21 @@ def main():
     n = int(input())
 
     for i in range(1, n + 1):
-        chr = ""
+        Str = ""
 
         if i % 2 != 0:
-            chr += f"{i}"
-        else: chr += "L"
+            Str += f"{i}"
+        else: Str += "L"
 
         if i % 4 == 0:
-            chr += "T"
+            Str += "T"
 
         if i % 8 == 0:
-            chr += "O"
+            Str += "O"
 
         if i % 16 == 0:
-            chr += "L"
+            Str += "L"
 
-        print(chr)
+        print(Str)
 
 main()
