@@ -1,6 +1,6 @@
 def main():
-    pi = acos(-1)
+    Pi = acos(-1)
     
-    print(pi)
+    print(Pi)
 
 main()
