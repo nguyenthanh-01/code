@@ -1,9 +1,9 @@
 def main():
-    a, b = map(int, input().split())
+    l, r = map(int, input().split())
 
     cnt = 0
 
-    for i in range(a, b + 1):
+    for i in range(l, r + 1):
         if nt_2(i) and nt_3(i) and nt_1(i):
             cnt += 1
 
