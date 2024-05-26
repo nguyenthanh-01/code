@@ -2,16 +2,16 @@ def main():
     n = int(input())
 
     Val = [0]
-    tong(n, Val)
+    Tong(n, Val)
 
     print(Val)
 
-def tong(n, Val):
+def Tong(n, Val):
     if n == 0:
         return
     
     Val[0] += n
 
-    tong(n - 1, Val)
+    Tong(n - 1, Val)
 
 main()
