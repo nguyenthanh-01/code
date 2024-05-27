@@ -4,7 +4,7 @@ def main():
     Val = [0]
     Fibonacci(n - 1, Val)
 
-    print(Val)
+    print(Val[-1])
 
 def Fibonacci(n, Val):
     if n == 1 or n == 0:
