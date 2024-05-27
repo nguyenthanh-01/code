@@ -4,7 +4,7 @@ def main():
     Val = [0]
     Tong(n, Val)
 
-    print(Val)
+    print(Val[-1])
 
 def Tong(n, Val):
     if n == 0:
