@@ -2,7 +2,7 @@ def main():
     n = int(input())
 
     Arr = [1] * n
-    Arr[0] = 0
+    Arr[0] = n - 1
     Fibonacci(n - 1, Arr)
 
     print(Arr[-1])
