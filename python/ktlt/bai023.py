@@ -1,8 +1,8 @@
 def main():
     a, b = map(int, input().split())
 
-    a_old = a
-    check_b = b % 2
+    Old_a = a
+    Check_b = b % 2
 
     if b < 2:
         print(a**b)
@@ -12,8 +12,8 @@ def main():
         a *= a
         b //= 2
 
-    if check_b != 0:
-        a *= a_old
+    if Check_b != 0:
+        a *= Old_a
 
     print(a)
 
