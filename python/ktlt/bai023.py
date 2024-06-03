@@ -1,20 +1,19 @@
 def main():
     a, b = map(int, input().split())
 
-    Old_a = a
-    Check_b = b % 2
-
     if b < 2:
         print(a**b)
         return
 
+    Tmp = 1
+
     while b != 1:
+        if b % 2 != 0:
+            Tmp *= a
+
         a *= a
         b //= 2
 
-    if Check_b != 0:
-        a *= Old_a
-
-    print(a)
+    print(a * Tmp)
 
 main()
