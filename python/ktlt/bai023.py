@@ -5,15 +5,17 @@ def main():
         print(a**b)
         return
 
+    Mod = 10**9 + 7
     Tmp = 1
 
     while b != 1:
         if b % 2 != 0:
-            Tmp *= a
+            Tmp = (Tmp * a) % Mod
 
-        a *= a
+        a = (a * a) % Mod
         b //= 2
 
-    print(a * Tmp)
+    Ans = (a * Tmp) % Mod
+    print(Ans)
 
 main()
