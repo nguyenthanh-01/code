@@ -2,18 +2,18 @@ def main():
     a, b = map(int, input().split())
 
     if b < 2:
-        print(a**b)
+        print(a * b)
         return
 
-    Tmp = 1
+    Tmp = 0
 
     while b != 1:
         if b % 2 != 0:
-            Tmp *= a
+            Tmp += a
 
-        a *= a
+        a *= 2
         b //= 2
 
-    print(a * Tmp)
+    print(a + Tmp)
 
 main()
