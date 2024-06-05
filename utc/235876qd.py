@@ -7,7 +7,7 @@ def main():
         j = Pos2
 
         Sum = 0
-        while i < n and j < n:
+        while j < n:
             Sum += Arr[i][j]
             i += 1
             j += 1
@@ -19,7 +19,7 @@ def main():
         j = 0
 
         Sum = 0
-        while i < n and j < n:
+        while i < n:
             Sum += Arr[i][j]
             i += 1
             j += 1
