@@ -1,3 +1,5 @@
+// typedef đặt tên
+// (ll) ép kiểu
 #include<stdio.h>
 
 typedef long long ll;
