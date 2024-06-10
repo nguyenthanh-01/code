@@ -5,7 +5,7 @@
 typedef long long ll;
 
 int main() {
-    int x = 0;
+    int x;
     scanf("%d", &x);
     ll ans = (ll) x * x;
     printf("%lld \n", ans);
