@@ -1,3 +1,4 @@
+// input output x
 #include<stdio.h>
 
 int main() {
