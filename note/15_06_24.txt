@@ -1,0 +1,1 @@
++ khởi tạo môi trường code c/c++ trong colab bằng cuda trong GPU nividia
