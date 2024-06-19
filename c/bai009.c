@@ -9,8 +9,5 @@ int main() {
     else if(a < 10) {
         printf("2");
     }
-    else {
-        printf("3");
-    }
     return 0;
 }
