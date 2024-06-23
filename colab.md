@@ -14,6 +14,6 @@
 
 * %%writefile input.txt
 
-* !g++ -std=c++17 -Wall test.cpp -o test -lm
+* !g++ -std=c++17 -Wall test.cpp -o test
   
 * !./test < input.txt
