@@ -24,5 +24,5 @@ int test_2(float a) {
 
 int test_3(float a) {
     int b = a;
-    return (a - b < 1e-6) ? b: b + 1;
+    return (a - b) < (1e-6) ? b: b + 1;
 }
