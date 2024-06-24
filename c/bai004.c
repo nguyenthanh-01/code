@@ -1,19 +1,20 @@
 #include <stdio.h>
 
 int main() {
-    int a;
-    scanf("%d", &a);
-    if(a < 5) {
-        printf("1 \n");
+    char c;
+    scanf("%c", &c);
+    if(c <= 'Z') {
+        c += 32;
     }
-    else if(a < 10) {
-        printf("2 \n");
+    else if(c <= 'z') {
+        c -= 32;
     }
-    if(a == 5) {
-        printf("3 \n");
+    if(c == 'Z') {
+        c = 'z';
     }
-    else if(a == 10) {
-        printf("4 \n");
+    else if(c == 'z') {
+        c = 'Z';
     }
+    printf("%c \n", c);
     return 0;
 }
