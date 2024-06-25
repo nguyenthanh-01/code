@@ -16,7 +16,7 @@ static inline ll gcd(ll a, ll b) {ll r; while(b != 0) {r = a % b; a = b; b = r;}
 static inline ll lcm(ll a, ll b) {return a / gcd(a, b) * b;}
 static inline ll isqrt(ll k) {ll r = sqrt(k) + 1; while(r * r > k) r--; return r;}
 static inline ll icbrt(ll k) {ll r = cbrt(k) + 1; while(r * r * r > k) r--; return r;}
-static inline ll fpow(ll n, ll k, int p = MOD) {ll r = 1; for(; k != 0; k /= 2) {if(k % 2 != 0) r = r * n % p; n = n * n % p;} return r;}
+static inline ll fpow(ll n, ll k, int p) {ll r = 1; for(; k != 0; k /= 2) {if(k % 2 != 0) r = r * n % p; n = n * n % p;} return r;}
 
 int main() {
     
