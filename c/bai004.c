@@ -17,6 +17,7 @@ int main() {
     else if(c == 'z') {
         c = 'Z';
     }
+    
     printf("%c \n", c);
     return 0;
 }
