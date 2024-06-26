@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include <math.h>
 
-static inline int isqrt(int r) {return (int) sqrt(r) + 1;}
+#define range(i, a, b) for(int i = (a); i <= (b); i += 2)
+
+typedef long long ll;
+
+static inline ll isqrt(ll k) {ll r = sqrt(k) + 1; while(r * r > k) r--; return r;}
 
 int test_1(int);
 void test_2(int);
@@ -37,8 +41,7 @@ int test_1(int a) {
         return 0;
     }
     
-    int n = isqrt(a);
-    for(int i = 3; i < n; i += 2) {
+    range(i, 3, isqrt(a)) {
         if(a % i == 0) {
             return 0;
         }
@@ -59,7 +62,7 @@ void test_2(int a) {
     }
 
     int i = 3;
-    while(i < isqrt(a)) {
+    while(i <= isqrt(a)) {
         while(a % i == 0) {
             printf("%d ", i);
             a /= i;
