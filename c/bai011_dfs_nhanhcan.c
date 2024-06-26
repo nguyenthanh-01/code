@@ -12,9 +12,10 @@ int main() {
     int a[] = {inf, 1};
     int cnt = 0;
     test_1(n, cnt, a);
-    test_2(n, cnt - 1, a);
+    a[0]++;
+    test_2(n, cnt, a);
 
-    printf("%d \n", n);
+    printf("(%d 0)\n", n);
     return 0;
 }
 
@@ -45,12 +46,12 @@ void test_2(int n, int cnt, int a[]) {
     }
 
     if(a[1] == 0) {
-        printf("%d ", n);
+        printf("(%d %d)", n, cnt);
         return;
     }
 
     if(n == 1) {
-        printf("1 ");
+        printf("(%d 6)", n);
         a[1] = 0;
         return;
     }
