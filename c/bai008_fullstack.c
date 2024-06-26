@@ -14,7 +14,11 @@ int main() {
 }
 
 void test_1(int n, int a[]) {
-    if(n <= 1) {
+    if(n == 0) {
+        return;
+    }
+
+    if(n == 1) {
         a[0] += n;
         return;
     }
