@@ -9,6 +9,7 @@
 typedef long long ll;
 
 const int mod = (int) 1e9 + 7;
+const int inf = (int) 1e9
 const double pi = acos(-1);
 const double eps = 1e-9;
 
