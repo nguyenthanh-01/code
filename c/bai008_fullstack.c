@@ -19,7 +19,7 @@ void test_1(int n, int a[]) {
     }
 
     if(n == 1) {
-        a[0] += n;
+        a[0]++;
         return;
     }
 
