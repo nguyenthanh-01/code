@@ -22,7 +22,6 @@ int main() {
     
     test_2(n, cnt, a, b);
 
-    printf("\n");
     free(b);
     return 0;
 }
@@ -57,7 +56,7 @@ void test_2(int n, int cnt, int a[], int b[]) {
         for(int i = 0; i < a[0]; i++) {
             printf("%d ", b[i]);
         }
-        printf("1");
+        printf("%d \n", n);
 
         a[1] = 1;
         return;
