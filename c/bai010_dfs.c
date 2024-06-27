@@ -9,7 +9,7 @@ int main() {
     int n;
     scanf("%d", &n);
 
-    int a[] = {inf};
+    int a[] = {inf, 0};
     int cnt = 0;
     test_1(n, cnt, a);
     test_2(n, cnt, a);
