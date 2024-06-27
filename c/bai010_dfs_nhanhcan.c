@@ -10,7 +10,7 @@ int main() {
     int n;
     scanf("%d", &n);
 
-    int a[] = {inf, 0};
+    int a[] = {inf};
     int cnt = 0;
     test_1(n, cnt, a);
 
@@ -48,7 +48,7 @@ void test_1(int n, int cnt, int a[]) {
 }
 
 void test_2(int n, int cnt, int a[], int b[]) {
-    if(a[1] == 1 || a[0] < cnt) {
+    if(a[0] < cnt) {
         return;
     }
 
@@ -58,7 +58,7 @@ void test_2(int n, int cnt, int a[], int b[]) {
         }
         printf("%d \n", n);
 
-        a[1] = 1;
+        a[0] = -1;
         return;
     }
 
