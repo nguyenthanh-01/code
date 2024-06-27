@@ -48,7 +48,7 @@ void test_1(int n, int cnt, int a[]) {
 }
 
 void test_2(int n, int cnt, int a[], int b[]) {
-    if(a[0] < cnt) {
+    if(a[1] == 1 || a[0] < cnt) {
         return;
     }
 
@@ -68,21 +68,9 @@ void test_2(int n, int cnt, int a[], int b[]) {
         test_2(n / 2, cnt + 1, a, b);
     }
 
-    if(a[1] == 1) {
-        return;
-    }
-
     if(n % 3 == 0) {
         test_2(n / 3, cnt + 1, a, b);
     }
 
-    if(a[1] == 1) {
-        return;
-    }
-
     test_2(n - 1, cnt + 1, a, b);
-
-    if(a[1] == 1) {
-        return;
-    }
 }
