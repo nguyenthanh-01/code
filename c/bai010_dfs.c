@@ -40,7 +40,6 @@ void test_1(int n, int cnt, int a[]) {
 }
 
 void test_2(int n, int cnt, int a[]) {
-    ck++;
     if(a[0] < cnt) {
         return;
     }
