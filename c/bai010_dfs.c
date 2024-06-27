@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 const int inf = (int) 1e9;
 
 void test_1(int, int, int []);
-void test_2(int, int, int []);
+void test_2(int, int, int [], int []);
 
 int main() {
     int n;
@@ -12,9 +13,17 @@ int main() {
     int a[] = {inf, 0};
     int cnt = 0;
     test_1(n, cnt, a);
-    test_2(n, cnt, a);
+
+    int *b = (int *) malloc (a[0] * sizeof(int));
+
+    for(int i = 0; i < a[0]; i++) {
+        b[i] = 0;
+    }
+    
+    test_2(n, cnt, a, b);
 
     printf("\n");
+    free(b);
     return 0;
 }
 
@@ -39,39 +48,42 @@ void test_1(int n, int cnt, int a[]) {
     test_1(n - 1, cnt + 1, a);
 }
 
-void test_2(int n, int cnt, int a[]) {
+void test_2(int n, int cnt, int a[], int b[]) {
+    b[cnt] = n;
+
     if(a[0] < cnt) {
         return;
     }
 
     if(n == 1) {
-        printf("%d ", n);
+        for(int i = 0; i < a[0]; i++) {
+            printf("%d ", b[i]);
+        }
+        printf("1");
+
         a[1] = 1;
         return;
     }
 
     if(n % 2 == 0) {
-        test_2(n / 2, cnt + 1, a);
+        test_2(n / 2, cnt + 1, a, b);
     }
 
     if(a[1] == 1) {
-        printf("%d ", n);
         return;
     }
 
     if(n % 3 == 0) {
-        test_2(n / 3, cnt + 1, a);
+        test_2(n / 3, cnt + 1, a, b);
     }
 
     if(a[1] == 1) {
-        printf("%d ", n);
         return;
     }
 
-    test_2(n - 1, cnt + 1, a);
+    test_2(n - 1, cnt + 1, a, b);
 
     if(a[1] == 1) {
-        printf("%d ", n);
         return;
     }
 }
