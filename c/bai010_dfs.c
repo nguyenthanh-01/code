@@ -3,16 +3,18 @@
 const int inf = (int) 1e9;
 
 void test_1(int, int, int []);
+void test_2(int, int, int []);
 
 int main() {
     int n;
     scanf("%d", &n);
 
-    int a[] = {inf, 0};
+    int a[] = {inf};
     int cnt = 0;
     test_1(n, cnt, a);
+    test_2(n, cnt, a);
 
-    printf("%d \n", ck);
+    printf("\n");
     return 0;
 }
 
@@ -23,7 +25,6 @@ void test_1(int n, int cnt, int a[]) {
 
     if(n == 1) {
         a[0] = cnt;
-        a[1] = 1;
         return;
     }
 
@@ -31,21 +32,47 @@ void test_1(int n, int cnt, int a[]) {
         test_1(n / 2, cnt + 1, a);
     }
 
-    if(a[1] == 1) {
-        return;
-    }
-
     if(n % 3 == 0) {
         test_1(n / 3, cnt + 1, a);
     }
 
-    if(a[1] == 1) {
+    test_1(n - 1, cnt + 1, a);
+}
+
+void test_2(int n, int cnt, int a[]) {
+    ck++;
+    if(a[0] < cnt) {
         return;
     }
 
-    test_1(n - 1, cnt + 1, a);
+    if(n == 1) {
+        printf("%d ", n);
+        a[1] = 1;
+        return;
+    }
+
+    if(n % 2 == 0) {
+        test_2(n / 2, cnt + 1, a);
+    }
 
     if(a[1] == 1) {
+        printf("%d ", n);
+        return;
+    }
+
+    if(n % 3 == 0) {
+        test_2(n / 3, cnt + 1, a);
+    }
+
+    if(a[1] == 1) {
+        printf("%d ", n);
+        return;
+    }
+
+    test_2(n - 1, cnt + 1, a);
+
+    if(a[1] == 1) {
+        printf("%d ", n);
         return;
     }
 }
