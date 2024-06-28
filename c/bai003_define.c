@@ -5,6 +5,7 @@
 #define min(a, b) (a) < (b) ? (a): (b)
 #define range(i, a, b) for(int i = (a); i < (b); i++)
 #define range_(i, a, b) for(int i = (a) - 1; i >= (b); i--)
+#define size(a) (int) (sizeof(a) / sizeof(a[0]))
 
 typedef long long ll;
 
