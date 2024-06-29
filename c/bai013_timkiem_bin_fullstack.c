@@ -8,6 +8,7 @@ int main() {
     int a[] = {1, 2, 2, 2, 5};
     int l = 0;
     int r = size(a) - 1;
+    
     int x;
     scanf("%d", &x);
 
