@@ -12,8 +12,7 @@ int main() {
 
     int n = r - l + 1;
     int *a = (int *) malloc (n * sizeof(int));
-
-
+    
     for(int i = l; i <= r; i++) {
         a[i - l] = 1;
     }
