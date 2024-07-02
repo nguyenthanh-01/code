@@ -13,9 +13,9 @@ int main() {
                 pos = j;
             }
         }
-        int tmp = a[pos];
-        a[pos] = a[i];
-        a[i] = tmp;
+        int tmp = a[i];
+        a[i] = a[pos];
+        a[pos] = tmp;
     }
 
     for(int i = 0; i < n; i++) {
