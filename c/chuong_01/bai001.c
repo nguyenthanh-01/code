@@ -1,8 +1,16 @@
-%%writefile test.c
 #include <stdio.h>
 #include <stdbool.h>
+#include <math.h>
+
+#define max(a, b) (a) > (b) ? (a) : (b)
+#define min(a, b) (a) < (b) ? (a) : (b)
 
 typedef long long ll;
+
+const double pi = acos(-1);
+
+static inline ll gcd(ll a, ll b) {ll r; while(b) {r = a % b; a = b; b = r;} return a;}
+static inline ll lcm(ll a, ll b) {return a / gcd(a, b) * b;}
 
 void so_nguyen();
 void so_thuc();
@@ -42,5 +50,8 @@ void ky_tu() {
 }
 
 void dung_sai() {
-    bool a; // 1 byte + true + false
+    bool a = true; // 1 byte + true + false
+    if(a) {
+        printf("true");
+    }
 }
