@@ -1,15 +1,19 @@
+%%writefile test.c
 #include <stdio.h>
+#include <stdbool.h>
 
 typedef long long ll;
 
 void so_nguyen();
 void so_thuc();
 void ky_tu();
+void dung_sai();
 
 int main() {
     so_nguyen();
     so_thuc();
     ky_tu();
+    dung_sai();
     return 0;
 }
 
@@ -35,4 +39,8 @@ void ky_tu() {
 
     scanf("%c ", &a);
     printf("%hd %c \n", a, a);
+}
+
+void dung_sai() {
+    bool a; // 1 byte + true + false
 }
