@@ -1,4 +1,4 @@
-* khái niệm: quay lui là vòng lặp ngược
+* khái niệm: quay lui là đệ quy
 
 * cấu trúc:
 + giá trị gốc, giá trị tham chiếu
