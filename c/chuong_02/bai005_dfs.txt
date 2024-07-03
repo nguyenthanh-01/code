@@ -1,7 +1,7 @@
 * khái niệm: dfs là nhánh cận có giới hạn = 0
 
 * cấu trúc:
-+ giá trị gốc, giá trị đếm, giá trị tham chiếu
++ giá trị gốc, giá trị đếm, giá trị giới hạn, giá trị data
 + điều kiện giới hạn
 + điều kiện kết thúc + kết quả
 + phép tính
