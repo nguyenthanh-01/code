@@ -4,9 +4,3 @@
 + giá trị gốc, giá trị tham chiếu
 + điều kiện kết thúc + phép tính
 + đệ quy
-
-* diễn biến:
-+ giá trị gốc thay đổi
-+ đệ quy
-+ tính toán + lưu vào giá trị tham chiếu
-+ kết thúc
