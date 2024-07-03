@@ -1,7 +1,7 @@
 * khái niệm: nhánh cận là full stack + giới hạn
 
 * cấu trúc:
-+ giá trị gốc, giá trị đếm, giá trị tham chiếu
++ giá trị gốc, giá trị đếm, giá trị giới hạn
 + điều kiện giới hạn
 + điều kiện kết thúc + phép tính
 + đệ quy
