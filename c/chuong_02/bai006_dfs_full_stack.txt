@@ -1,4 +1,4 @@
-* khái niệm: dfs là nhánh cận có giới hạn = 0
+* khái niệm: dfs full stack là dfs ko có điều kiện kết thúc
 
 * cấu trúc:
 + giá trị gốc, giá trị đếm, giá trị giới hạn, giá trị data
