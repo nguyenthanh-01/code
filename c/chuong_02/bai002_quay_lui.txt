@@ -5,9 +5,3 @@
 + điều kiện kết thúc
 + đệ quy
 + phép tính
-
-* diễn biến:
-+ giá trị gốc thay đổi
-+ đệ quy
-+ thực hiện phép tính
-+ lưu vào giá trị tham chiếu
