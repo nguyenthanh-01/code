@@ -1,7 +1,7 @@
 * khái niệm: đệ quy là vòng lặp
 
 * cấu trúc:
-+ giá trị gốc, giá trị tham chiếu
++ giá trị gốc, giá trị data
 + điều kiện kết thúc
 + phép tính
 + đệ quy
