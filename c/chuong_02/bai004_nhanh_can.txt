@@ -2,6 +2,6 @@
 
 * cấu trúc:
 + giá trị gốc, giá trị đếm, giá trị tham chiếu
-+ điều kiện giới hạn (giá trị đếm)
++ điều kiện giới hạn
 + điều kiện kết thúc + phép tính
 + đệ quy
