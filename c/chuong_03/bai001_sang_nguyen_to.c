@@ -16,8 +16,6 @@ int main() {
 
     sang_ngto(arr);
 
-    printf("1");
-
     free(arr);
     return 0;
 }
