@@ -5,6 +5,7 @@
 
 #define max(a, b) (a) > (b) ? (a) : (b)
 #define min(a, b) (a) < (b) ? (a) : (b)
+#define size(a) (int) (sizeof(a) / sizeof(a[0]))
 
 typedef long long ll;
 
