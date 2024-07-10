@@ -20,7 +20,6 @@ int main() {
     else {
         printf("vi tri: %d \n", vi_tri);
     }
-
     return 0;
 }
 
@@ -31,11 +30,9 @@ int search(int arr[], int l, int r, int x) {
         if(arr[m] == x) {
             return m;
         }
-
         else if(arr[m] > x) {
             r = m - 1;
         }
-
         else {
             l = m + 1;
         }
