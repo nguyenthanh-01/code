@@ -1,24 +1,18 @@
 #include <stdio.h>
 
+#define size(a) (int) (sizeof(a) / sizeof(a[0]))
+
 int search(int [], int, int, int);
 
 int main() {
-    int n;
-    scanf("%d ", &n);
+    int arr[] = {1, 2, 3, 4, 5};
 
-    int arr[n];
-
-    for(int i = 0; i < n; i++) {
-        scanf("%d ", &arr[i]);
-    }
-
-    int l = 0;
-    int r = n - 1;
+    int n = size(arr);
     
     int x;
     scanf("%d ", &x);
 
-    int vi_tri = search(arr, l, r, x);
+    int vi_tri = search(arr, 0, n - 1, x);
 
     if(vi_tri == -1) {
         printf("khong tim thay \n");
