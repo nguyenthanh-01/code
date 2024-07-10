@@ -1,8 +1,0 @@
-* khái niệm: dfs full stack là dfs ko có điều kiện kết thúc
-
-* cấu trúc:
-+ giá trị gốc, giá trị đếm, giá trị giới hạn, giá trị data
-+ điều kiện giới hạn
-+ điều kiện kết thúc
-+ phép tính
-+ đệ quy
