@@ -2,18 +2,14 @@
 
 #define size(a) (int) (sizeof(a) / sizeof(a[0]))
 
-void sort(int []);
+void sort(int [], int);
 
 int main() {
     int arr[] = {1, 2, 3, 4, 5};
 
     int n = size(arr);
-    
-    for(int i = 0; i < n; i++) {
-        scanf("%d ", &arr[i]);
-    }
 
-    sort(arr);
+    sort(arr, n);
 
     for(int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
@@ -22,9 +18,7 @@ int main() {
     return 0;
 }
 
-void sort(int arr[]) {
-    int n = size(arr);
-    
+void sort(int arr[], int n) {   
     for(int i = 0; i < n - 1; i++) {
         int pos = i;
         
