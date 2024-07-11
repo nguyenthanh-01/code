@@ -1,4 +1,3 @@
-* ngay 01:
-chay 15'
-tay 1-5
-chuong 01
+* ngay 01: pass
+chay 5'
+tay 1-3
