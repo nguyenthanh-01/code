@@ -5,7 +5,7 @@
 int find(char [], char []);
 
 int main() {
-    char str[100] = "100";
+    char str[100] = "1011010110110";
 
     char sub[100];
     fgets(sub, 100, stdin);
