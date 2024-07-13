@@ -34,6 +34,6 @@ void nhanh_can(int n, int cnt, int can[]) {
     }
 
     if(n % 3 == 0) {
-        de_quy(n / 3, cnt + 1, can);
+        nhanh_can(n / 3, cnt + 1, can);
     }
 }
