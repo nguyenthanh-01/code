@@ -3,7 +3,7 @@
 
 #define size(a) (int) (sizeof(a) / sizeof(a[0]))
 
-static inline bool cmp(int *a, int *b) {return *a > *b ? true : false;}
+static inline bool cmp(int a, int b) {return a > b ? true : false;}
 
 void sort(int [], int);
 
