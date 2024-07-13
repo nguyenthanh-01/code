@@ -11,6 +11,7 @@
 typedef long long ll;
 
 const double pi = acos(-1);
+const int inf = 1e9;
 
 static inline ll gcd(ll a, ll b) {ll r; while(b) {r = a % b; a = b; b = r;} return a;}
 static inline ll lcm(ll a, ll b) {return a / gcd(a, b) * b;}
