@@ -25,7 +25,7 @@ void sort(int arr[], int n) {
         int pos = i;
         
         for(int j = i + 1; j < n; j++) {
-            if(cmp(&arr[pos], &arr[j])) {
+            if(cmp(arr[pos], arr[j])) {
                 pos = j;
             }
         }
