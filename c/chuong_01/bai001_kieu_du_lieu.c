@@ -16,7 +16,7 @@ const double pi = acos(-1);
 static inline ll gcd(ll a, ll b) {ll r; while(b) {r = a % b; a = b; b = r;} return a;}
 static inline ll lcm(ll a, ll b) {return a / gcd(a, b) * b;}
 static inline ll icbrt(ll k) {ll r = cbrt(k) + 1; while(r * r * r > k) r--; return r;}
-static inline bool cmp(int *a, int *b) {return *a > *b ? true : false;}
+static inline bool cmp(int a, int b) {return a > b ? true : false;}
 
 void so_nguyen();
 void so_thuc();
