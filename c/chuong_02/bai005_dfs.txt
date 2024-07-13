@@ -3,7 +3,7 @@
 
 const int inf = (int) 1e9;
 
-void de_quy(int, int, int []);
+void nhanh_can(int, int, int []);
 void dfs(int, int, int [], int []);
 
 int main() {
@@ -13,7 +13,7 @@ int main() {
     int cnt = 0;
     int can[] = {inf};
 
-    de_quy(n, cnt, can);
+    nhanh_can(n, cnt, can);
 
     int m = can[0];
 
@@ -29,7 +29,7 @@ int main() {
     return 0;
 }
 
-void de_quy(int n, int cnt, int can[]) {
+void nhanh_can(int n, int cnt, int can[]) {
     if(can[0] < cnt) {
         return;
     }
@@ -39,14 +39,14 @@ void de_quy(int n, int cnt, int can[]) {
         return;
     }
 
-    de_quy(n - 1, cnt + 1, can);
+    nhanh_can(n - 1, cnt + 1, can);
 
     if(n % 2 == 0) {
-        de_quy(n / 2, cnt + 1, can);
+        nhanh_can(n / 2, cnt + 1, can);
     }
 
     if(n % 3 == 0) {
-        de_quy(n / 3, cnt + 1, can);
+        nhanh_can(n / 3, cnt + 1, can);
     }
 }
 
