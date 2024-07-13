@@ -9,6 +9,7 @@
 #define min(a, b) (a) < (b) ? (a) : (b)
 
 typedef long long ll;
+typedef struct {int a; int b;} ii;
 
 const int inf = (int) 1e9;
 const double pi = acos(-1);
