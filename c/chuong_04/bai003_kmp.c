@@ -3,31 +3,29 @@
 #include <stdbool.h>
 #include <string.h>
 
-int find(char [], char []);
+void find(char [], char []);
 void pre_suf(char [], int []);
 
 int main() {
-    char str[100] = "1011010110110101101011011010110110101101011011010110101";
+    char str[100] = "1011010110110101101011011010110110101101011011010110101"
 
     char sub[100];
     fgets(sub, 100, stdin);
 
-    int cnt = find(str, sub);
+    find(str, sub);
 
-    printf("%d \n", cnt);
     return 0;
 }
 
-int find(char str[], char sub[]) {
+void find(char str[], char sub[]) {
     int n = strlen(str);
     int m = strlen(sub);
+    
+    sub[--m] = '\0';
 
     int *arr = (int*) calloc(m, sizeof(int));
 
     pre_suf(sub, arr);
-
-    int cnt = 0;
-    sub[--m] = '\0';
 
     for(int i = 0; i < n - m + 1; i++) {
         bool flag = true;
@@ -40,11 +38,12 @@ int find(char str[], char sub[]) {
             }
         }
 
-        if(flag) cnt++;
+        if(flag) {
+            printf("%d ", i + 1);
+        }
     }
 
     free(arr);
-    return cnt;
 }
 
 void pre_suf(char sub[], int arr[]) {
