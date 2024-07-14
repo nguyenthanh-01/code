@@ -2,25 +2,25 @@
 #include <stdbool.h>
 #include <string.h>
 
-int find(char [], char []);
+void find(char [], char []);
 
 int main() {
-    char str[100] = "1011010110110";
+    char str[100];
+    fgets(str, 100, stdin);
 
     char sub[100];
     fgets(sub, 100, stdin);
 
-    int cnt = find(str, sub);
+    find(str, sub);
 
-    printf("%d \n", cnt);
     return 0;
 }
 
-int find(char str[], char sub[]) {
+void find(char str[], char sub[]) {
     int n = strlen(str);
     int m = strlen(sub);
 
-    int cnt = 0;
+    str[--n] = '\0';
     sub[--m] = '\0';
 
     for(int i = 0; i < n - m + 1; i++) {
@@ -33,7 +33,8 @@ int find(char str[], char sub[]) {
             }
         }
 
-        if(flag) cnt++;
+        if(flag) {
+            printf("%d ", i + 1);
+        }
     }
-    return cnt;
 }
