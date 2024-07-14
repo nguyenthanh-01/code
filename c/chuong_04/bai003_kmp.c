@@ -7,7 +7,8 @@ void find(char [], char []);
 void pre_suf(char [], int []);
 
 int main() {
-    char str[100] = "1011010110110101101011011010110110101101011011010110101"
+    char str[100];
+    fgets(str, 100, stdin);
 
     char sub[100];
     fgets(sub, 100, stdin);
