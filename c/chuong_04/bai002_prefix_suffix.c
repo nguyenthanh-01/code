@@ -10,6 +10,8 @@ int main() {
 
     int m = strlen(sub);
 
+    sub[--m] = '\0';
+
     int *arr = (int*) calloc(m, sizeof(int));
 
     pre_suf(sub, arr);
