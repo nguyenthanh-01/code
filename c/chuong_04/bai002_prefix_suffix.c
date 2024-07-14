@@ -5,7 +5,8 @@
 void pre_suf(char [], int []);
 
 int main() {
-    char sub[100] = "10110101101101";
+    char sub[100];
+    fgets(sub, 100, stdin);
 
     int m = strlen(sub);
 
