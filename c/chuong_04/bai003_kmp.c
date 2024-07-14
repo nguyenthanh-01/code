@@ -21,7 +21,8 @@ int main() {
 void find(char str[], char sub[]) {
     int n = strlen(str);
     int m = strlen(sub);
-    
+
+    str[--n] = '\0';
     sub[--m] = '\0';
 
     int *arr = (int*) calloc(m, sizeof(int));
