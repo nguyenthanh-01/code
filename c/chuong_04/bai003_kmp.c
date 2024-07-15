@@ -29,19 +29,25 @@ void find(char str[], char sub[]) {
 
     pre_suf(sub, arr);
 
-    for(int i = 0; i < n - m + 1; i++) {
-        bool flag = true;
+    int i = 0;
+    int j = 0;
 
-        for(int j = 0; j < m; j++) {
-            if(str[i + j] != sub[j]) {
-                i += arr[j];
-                flag = false;
-                break;
+    while(i < n) {
+        if(str[i] == sub[j]) {
+            i++;
+            j++;
+            if(j == m) {
+                j = arr[j - 1];
+                printf("%d ", i - m + 1);
             }
         }
-
-        if(flag) {
-            printf("%d ", i + 1);
+        else {
+            if(j != 0) {
+                j = arr[j - 1];
+            }
+            else {
+                i++;
+            }
         }
     }
 
