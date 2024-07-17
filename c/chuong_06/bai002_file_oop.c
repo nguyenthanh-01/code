@@ -28,6 +28,10 @@ int main() {
 void input(sv arr[], int cnt[]) {
     FILE *f = fopen("input.txt", "r");
 
+    if(f == NULL) {
+        return;
+    }
+
     while(fscanf(f, "%[^\n] %s %f ", all(arr, cnt[0])) != EOF) {
         cnt[0]++;
     }
