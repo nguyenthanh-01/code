@@ -17,7 +17,7 @@ int main() {
         display_0();
 
         int key;
-        scanf("%d", &key);
+        scanf(" %d ", &key);
         
         if(key == 6) {
             break;
