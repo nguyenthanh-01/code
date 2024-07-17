@@ -35,5 +35,5 @@ void display_1() {
     printf("                                        [5] hien thi danh sach            \n");
     printf("                                        [6] luu va thoat                  \n");
     printf("                        --------------------------------------------------\n");
-	  printf("                                          Nhap: ");
+    printf("                                          Nhap: ");
 }
