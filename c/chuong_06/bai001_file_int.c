@@ -23,6 +23,10 @@ int main() {
 void input(int arr[], int cnt[]) {
     FILE *f = fopen("input.txt", "r");
 
+    if(f == NULL) {
+        return;
+    }
+
     while(fscanf(f, "%d ", &arr[cnt[0]]) != EOF) {
         cnt[0]++;
     }
