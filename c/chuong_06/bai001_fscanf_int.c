@@ -6,7 +6,7 @@
 void input(int [], int []);
 
 int main() {
-    int *arr = (int*) calloc(n, sizeof(int));
+    int *arr = (int*) malloc(n * sizeof(int));
 
     int cnt[] = {0};
 
