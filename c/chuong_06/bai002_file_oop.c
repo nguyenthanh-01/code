@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 #define n (int) 1e5
-#define all(a, i) a[i].ten, a[i].lop, &a[i].diem
+#define all(a, i) a[i].ten, a[i].lop, &a[i].gpa
 
-typedef struct {char ten[100]; char lop[50]; float diem;} sv;
+typedef struct {char ten[100]; char lop[50]; float gpa;} sv;
 
 void input(sv [], int []);
 
@@ -16,9 +16,10 @@ int main() {
     input(arr, cnt);
 
     for(int i = 0; i < cnt[0]; i++) {
+        printf("Sinh vien thu %d \n", i + 1);
         printf("Ten: %s \n", arr[i].ten);
         printf("Lop: %s \n", arr[i].lop);
-        printf("Diem: %.1f \n", arr[i].diem);
+        printf("GPA: %.1f \n", arr[i].gpa);
         printf("\n");
     }
 
