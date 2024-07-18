@@ -4,7 +4,7 @@
 #define n (int) 1e5
 #define all(a, i) a[i].ten, a[i].lop, &a[i].gpa
 
-typedef struct {char ten[100]; char lop[50]; float gpa;} sv;
+typedef struct {char ten[50]; char lop[30]; float gpa;} sv;
 
 void input(sv [], int []);
 
