@@ -138,9 +138,7 @@ void save(sv arr[], int cnt[]) {
     FILE *f2 = fopen("input.txt", "w");
 
     for(int i = 0; i < cnt[0]; i++) {
-        fprintf(f2, "%s\n", arr[i].ten);
-        fprintf(f2, "%s\n", arr[i].lop);
-        fprintf(f2, "%.1f\n", arr[i].gpa);
+        fprintf(f2, "%s\n%s\n%.1f\n", all_out(arr, i));
     }
 
     fclose(f2);
