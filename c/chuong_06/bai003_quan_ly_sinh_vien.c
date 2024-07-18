@@ -6,7 +6,7 @@
 #define all_in(a, i) a[i].ten, a[i].lop, &a[i].gpa
 #define all_out(a, i) a[i].ten, a[i].lop, a[i].gpa
 
-typedef struct {char ten[100]; char lop[50]; float gpa;} sv;
+typedef struct {char ten[50]; char lop[30]; float gpa;} sv;
 
 void display_0();
 
@@ -43,14 +43,14 @@ void display_0() {
     system("cls");
     printf("\n\n\n");
     printf("               Chuong trinh quan ly sinh vien               \n");
-    printf("------------------------------------------------------------\n");
+    printf(" -----------------------------------------------------------\n");
     printf("                  [1] them sinh vien                        \n");
     printf("                  [2] xoa sinh vien                         \n");
     printf("                  [3] tim kiem sinh vien                    \n");
     printf("                  [4] sap xep sinh vien                     \n");
     printf("                  [5] hien thi danh sach                    \n");
     printf("                  [6] luu va thoat                          \n");
-    printf("------------------------------------------------------------\n");
+    printf(" -----------------------------------------------------------\n");
     printf("                    Nhap: ");
 }
 
@@ -76,15 +76,15 @@ void output(sv arr[], int cnt[]) {
     system("cls");
     printf("\n\n\n");
     printf("               Chuong trinh quan ly sinh vien               \n");
-    printf("------------------------------------------------------------\n");
-    printf("| %-5s | %-30s | %-10s | %-5s |\n", "STT", "Ten", "Lop", "GPA");
-    printf("------------------------------------------------------------\n");
+    printf(" -----------------------------------------------------------\n");
+    printf("| %-5s | %-30s | %-10s | %-3s |\n", "STT", "Ten", "Lop", "GPA");
+    printf(" -----------------------------------------------------------\n");
 
     for(int i = 0; i < cnt[0]; i++) {
-        printf("| %-5d | %-30s | %-10s | %-5.1f |\n", i + 1, all_out(arr, i));
+        printf("| %-5d | %-30s | %-10s | %-3.1f |\n", i + 1, all_out(arr, i));
     }
 
-    printf("------------------------------------------------------------\n");
+    printf(" -----------------------------------------------------------\n");
 
     system("pause");
 }
