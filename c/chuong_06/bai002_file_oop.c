@@ -32,7 +32,7 @@ void input(sv arr[], int cnt[]) {
         return;
     }
 
-    while(fscanf(f, " %[^\n] %s %f ", all(arr, cnt[0])) != EOF) {
+    while(fscanf(f, " %[^\n] %s %f", all(arr, cnt[0])) != EOF) {
         cnt[0]++;
     }
 
