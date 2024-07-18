@@ -8,7 +8,9 @@
 
 typedef struct {char ten[50]; char lop[30]; float gpa;} sv;
 
+void display_main();
 void display_0();
+void display_5();
 
 void input(sv [], int []);
 void output(sv [], int []);
@@ -39,11 +41,16 @@ int main() {
     return 0;
 }
 
-void display_0() {
+void display_main() {
     system("cls");
     printf("\n\n\n");
     printf("               Chuong trinh quan ly sinh vien               \n");
     printf(" -----------------------------------------------------------\n");
+}
+
+void display_0() {
+    display_main();
+    
     printf("                  [1] them sinh vien                        \n");
     printf("                  [2] xoa sinh vien                         \n");
     printf("                  [3] tim kiem sinh vien                    \n");
@@ -54,8 +61,17 @@ void display_0() {
     printf("                    Nhap: ");
 }
 
+void display_5() {
+    display_main();
+
+    printf("\n\n");
+    printf("           khong co sinh vien nao trong danh sach!          \n");
+    printf("\n\n");
+    system("pause");
+}
+
 void input(sv arr[], int cnt[]) {
-    FILE *f = fopen("input.txt", "r");
+    FILE *f = fopen("output.txt", "r");
 
     if(f == NULL) {
         return;
@@ -70,13 +86,12 @@ void input(sv arr[], int cnt[]) {
 
 void output(sv arr[], int cnt[]) {
     if(cnt[0] == 0) {
+        display_5();
         return;
     }
 
-    system("cls");
-    printf("\n\n\n");
-    printf("               Chuong trinh quan ly sinh vien               \n");
-    printf(" -----------------------------------------------------------\n");
+    display_main();
+
     printf("| %-5s | %-30s | %-10s | %-3s |\n", "STT", "Ten", "Lop", "GPA");
     printf(" -----------------------------------------------------------\n");
 
@@ -85,6 +100,5 @@ void output(sv arr[], int cnt[]) {
     }
 
     printf(" -----------------------------------------------------------\n");
-
     system("pause");
 }
