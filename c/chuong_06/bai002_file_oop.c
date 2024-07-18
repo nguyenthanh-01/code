@@ -19,6 +19,7 @@ int main() {
         printf("Ten: %s \n", arr[i].ten);
         printf("Lop: %s \n", arr[i].lop);
         printf("Diem: %.1f \n", arr[i].diem);
+        printf("\n");
     }
 
     free(arr);
