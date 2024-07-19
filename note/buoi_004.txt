@@ -1,0 +1,4 @@
+* buoi 4
+chay 15'
+chan 1-5
+bung 1-5
