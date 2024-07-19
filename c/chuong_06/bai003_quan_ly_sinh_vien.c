@@ -4,16 +4,16 @@
 #include <string.h>
 
 #define n (int) 1e5
-#define all_in(a, i) a[i].ten, a[i].lop, &a[i].gpa
-#define all_out(a, i) a[i].ten, a[i].lop, a[i].gpa
+#define all_in(a, i) a[i].ho, a[i].ten, a[i].lop, &a[i].gpa
+#define all_out(a, i) a[i].ho, a[i].ten, a[i].lop, a[i].gpa
 
-typedef struct {char ten[50]; char lop[30]; float gpa;} sv;
+typedef struct {char ho[30]; char ten[10]; char lop[20]; float gpa;} sv;
 
 void display_main();
 void display_0();
 void display_1_0();
 void display_1_1();
-void display_5();
+void display_4();
 
 void input(sv [], int []);
 void output(sv [], int []);
@@ -39,11 +39,11 @@ int main() {
             push(arr, cnt);
         }
 
-        if(key == 5) {
+        if(key == 4) {
             output(arr, cnt);
         }
         
-        if(key == 6) {
+        if(key == 5) {
             save(arr, cnt);
             break;
         }
@@ -56,28 +56,27 @@ int main() {
 void display_main() {
     system("cls");
     printf("\n\n\n");
-    printf("               Chuong trinh quan ly sinh vien               \n");
-    printf(" -----------------------------------------------------------\n");
+    printf("                 Chuong trinh quan ly sinh vien                      \n");
+    printf(" --------------------------------------------------------------------\n");
 }
 
 void display_0() {
     display_main();
     
-    printf("                  [1] them sinh vien                        \n");
-    printf("                  [2] xoa sinh vien                         \n");
-    printf("                  [3] tim kiem sinh vien                    \n");
-    printf("                  [4] sap xep sinh vien                     \n");
-    printf("                  [5] hien thi danh sach                    \n");
-    printf("                  [6] luu va thoat                          \n");
-    printf(" -----------------------------------------------------------\n");
-    printf("                    Nhap: ");
+    printf("                    [1] them sinh vien                               \n");
+    printf("                    [2] xoa sinh vien                                \n");
+    printf("                    [3] sap xep va tim kiem                          \n");
+    printf("                    [4] hien thi danh sach                           \n");
+    printf("                    [5] luu va thoat                                 \n");
+    printf(" --------------------------------------------------------------------\n");
+    printf("                      Nhap: ");
 }
 
 void display_1_0() {
     display_main();
 
     printf("\n\n");
-    printf("                 danh sach da dat gioi han!                 \n");
+    printf("                   danh sach da dat gioi han!                        \n");
     printf("\n\n");
     system("pause");
 }
@@ -86,16 +85,16 @@ void display_1_1() {
     display_main();
     
     printf("\n\n");
-    printf("                    nhap thanh cong!                        \n");
+    printf("                       nhap thanh cong!                              \n");
     printf("\n\n");
     system("pause");
 }
 
-void display_5() {
+void display_4() {
     display_main();
 
     printf("\n\n");
-    printf("           khong co sinh vien nao trong danh sach!          \n");
+    printf("              khong co sinh vien nao trong danh sach!                \n");
     printf("\n\n");
     system("pause");
 }
@@ -107,7 +106,7 @@ void input(sv arr[], int cnt[]) {
         return;
     }
 
-    while(fscanf(f1, " %[^\n] %s %f", all_in(arr, cnt[0])) != EOF) {
+    while(fscanf(f1, " %[^\n] %s %s %f", all_in(arr, cnt[0])) != EOF) {
         cnt[0]++;
     }
 
@@ -116,20 +115,20 @@ void input(sv arr[], int cnt[]) {
 
 void output(sv arr[], int cnt[]) {
     if(cnt[0] == 0) {
-        display_5();
+        display_4();
         return;
     }
 
     display_main();
 
-    printf("| %-5s | %-30s | %-10s | %-3s |\n", "STT", "Ten", "Lop", "GPA");
-    printf(" -----------------------------------------------------------\n");
+    printf("| %-5s | %-23s | %-10s | %-13s | %-3s |\n", "STT", "Ho ten dem", "Ten", "Lop", "GPA");
+    printf(" --------------------------------------------------------------------\n");
 
     for(int i = 0; i < cnt[0]; i++) {
-        printf("| %-5d | %-30s | %-10s | %-3.1f |\n", i + 1, all_out(arr, i));
+        printf("| %-5d | %-23s | %-10s | %-13s | %-3.1f |\n", i + 1, all_out(arr, i));
     }
 
-    printf(" -----------------------------------------------------------\n");
+    printf(" --------------------------------------------------------------------\n");
     printf("\n");
     system("pause");
 }
@@ -138,7 +137,7 @@ void save(sv arr[], int cnt[]) {
     FILE *f2 = fopen("input.txt", "w");
 
     for(int i = 0; i < cnt[0]; i++) {
-        fprintf(f2, "%s\n%s\n%.1f\n", all_out(arr, i));
+        fprintf(f2, "%s\n%s\n%s\n%.1f\n", all_out(arr, i));
     }
 
     fclose(f2);
@@ -154,19 +153,24 @@ void push(sv arr[], int cnt[]) {
     int j = 0;
     
     display_main();
-    
     printf("\n");
-    printf("            Nhap ten: ");
-    fgets(arr[i].ten, 50, stdin);
+    
+    printf("             Nhap ho ten dem: ");
+    fgets(arr[i].ho, 30, stdin);
+    j = strlen(arr[i].ho);
+    arr[i].ho[j - 1] = '\0';
+    
+    printf("             Nhap ten: ");
+    fgets(arr[i].ten, 10, stdin);
     j = strlen(arr[i].ten);
     arr[i].ten[j - 1] = '\0';
     
-    printf("            Nhap lop: ");
-    fgets(arr[i].lop, 30, stdin);
+    printf("             Nhap lop: ");
+    fgets(arr[i].lop, 20, stdin);
     j = strlen(arr[i].lop);
     arr[i].lop[j - 1] = '\0';
     
-    printf("            Nhap GPA: ");
+    printf("             Nhap GPA: ");
     scanf("%f", &arr[i].gpa);
     
     cnt[0]++;
