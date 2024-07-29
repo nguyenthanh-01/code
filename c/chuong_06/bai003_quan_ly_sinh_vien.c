@@ -42,17 +42,25 @@ int main() {
             push(arr, cnt);
         }
 
-        if(key == 2) {
+        else if(key == 2) {
             pop(arr, cnt);
         }
 
-        if(key == 4) {
+        else if(key == 3) {
+            continue;
+        }
+
+        else if(key == 4) {
             output(arr, cnt);
         }
         
-        if(key == 5) {
+        else if(key == 5) {
             save(arr, cnt);
             break;
+        }
+
+        else {
+            display_2_0();
         }
     }
 
