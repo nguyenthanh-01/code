@@ -13,12 +13,15 @@ void display_main();
 void display_0();
 void display_1_0();
 void display_1_1();
+void display_2_0();
+void display_2_1();
 void display_4();
 
 void input(sv [], int []);
 void output(sv [], int []);
 void save(sv [], int []);
 void push(sv [], int []);
+void pop(sv [], int []);
 
 int main() {
     sv *arr = (sv*) malloc(n * sizeof(sv));
@@ -37,6 +40,10 @@ int main() {
         
         if(key == 1) {
             push(arr, cnt);
+        }
+
+        if(key == 2) {
+            pop(arr, cnt);
         }
 
         if(key == 4) {
@@ -86,6 +93,24 @@ void display_1_1() {
     
     printf("\n\n");
     printf("                       nhap thanh cong!                              \n");
+    printf("\n\n");
+    system("pause");
+}
+
+void display_2_0() {
+    display_main();
+
+    printf("\n\n");
+    printf("                          nhap sai!                                  \n");
+    printf("\n\n");
+    system("pause");
+}
+
+void display_2_1() {
+    display_main();
+    
+    printf("\n\n");
+    printf("                       xoa thanh cong!                               \n");
     printf("\n\n");
     system("pause");
 }
@@ -176,4 +201,36 @@ void push(sv arr[], int cnt[]) {
     cnt[0]++;
     
     display_1_1();
+}
+
+void pop(sv arr[], int cnt[]) {
+    if(cnt[0] == 0) {
+        display_4();
+        return;
+    }
+
+    int vi_tri;
+
+    display_main();
+    printf("\n");
+
+    printf("             Nhap STT sinh vien: ");
+    scanf("%d", &vi_tri);
+
+    vi_tri--;
+
+    if(vi_tri < 0 || vi_tri >= cnt[0]) {
+        display_2_0();
+        return;
+    }
+
+    int m = cnt[0] - 1;
+    
+    for(int i = vi_tri; i < m; i++) {
+        arr[i] = arr[i + 1];
+    }
+
+    cnt[0]--;
+
+    display_2_1();
 }
