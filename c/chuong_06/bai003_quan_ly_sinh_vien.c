@@ -9,6 +9,8 @@
 
 typedef struct {char ho[30]; char ten[10]; char lop[20]; float gpa;} sv;
 
+static inline bool cmp_1(sv i, sv j) {return i.ten[0] > j.ten[0] ? true : false;}
+
 void display_main();
 void display_0();
 void display_1_0();
@@ -22,6 +24,8 @@ void output(sv [], int []);
 void save(sv [], int []);
 void push(sv [], int []);
 void pop(sv [], int []);
+void sort_and_search(sv [], int []);
+void sort(sv [], int []);
 
 int main() {
     sv *arr = (sv*) malloc(n * sizeof(sv));
@@ -47,7 +51,7 @@ int main() {
         }
 
         else if(key == 3) {
-            continue;
+            sort_and_search(arr, cnt);
         }
 
         else if(key == 4) {
@@ -121,6 +125,14 @@ void display_2_1() {
     printf("                       xoa thanh cong!                               \n");
     printf("\n\n");
     system("pause");
+}
+
+void display_3() {
+    display_main();
+    
+    printf("           [1] tim kiem theo chu cai dau tien cua ten                \n");
+    printf(" --------------------------------------------------------------------\n");
+    printf("                      Nhap: ");
 }
 
 void display_4() {
@@ -241,4 +253,36 @@ void pop(sv arr[], int cnt[]) {
     cnt[0]--;
 
     display_2_1();
+}
+
+void sort_and_search(sv arr[], int cnt[]) {
+    while(true) {
+        display_3();
+        
+        int key;
+        scanf("%d", &key);
+        
+        getchar();
+        
+        if(key == 1) {
+            sort(arr, cnt);
+            break;
+        }
+    }
+}
+
+void sort(sv arr[], int cnt[]) {
+    for(int i = 0; i < cnt[0] - 1; i++) {
+        int pos = i;
+        
+        for(int j = i + 1; j < cnt[0]; j++) {
+            if(cmp_1(arr[pos], arr[j])) {
+                pos = j;
+            }
+        }
+        
+        sv val = arr[i];
+        arr[i] = arr[pos];
+        arr[pos] = val;
+    }
 }
