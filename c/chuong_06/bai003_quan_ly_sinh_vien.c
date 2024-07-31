@@ -9,6 +9,7 @@
 
 typedef struct {char ho[30]; char ten[10]; char lop[20]; float gpa;} sv;
 
+static inline void swap(sv arr[], int i, int pos) {sv val = arr[i]; arr[i] = arr[pos]; arr[pos] = val;}
 static inline bool cmp_1(sv i, sv j) {return i.ten[0] > j.ten[0] ? true : false;}
 
 void display_main();
@@ -257,6 +258,11 @@ void pop(sv arr[], int cnt[]) {
 }
 
 void sort_and_search(sv arr[], int cnt[]) {
+    if(cnt[0] == 0) {
+        display_4();
+        return;
+    }
+    
     while(true) {
         display_3();
         
@@ -282,8 +288,6 @@ void sort(sv arr[], int cnt[]) {
             }
         }
         
-        sv val = arr[i];
-        arr[i] = arr[pos];
-        arr[pos] = val;
+        swap(arr, i, pos);
     }
 }
