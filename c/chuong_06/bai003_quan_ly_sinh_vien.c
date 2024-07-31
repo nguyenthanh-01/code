@@ -17,6 +17,7 @@ void display_1_0();
 void display_1_1();
 void display_2_0();
 void display_2_1();
+void display_3();
 void display_4();
 
 void input(sv [], int []);
