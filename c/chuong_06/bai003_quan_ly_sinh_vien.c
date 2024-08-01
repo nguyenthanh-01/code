@@ -160,7 +160,7 @@ void input(sv arr[], int cnt[]) {
     fclose(f1);
 }
 
-void output(sv arr[], int cnt[]) {
+void output(sv arr[], int cnt[], int l, int r) {
     if(cnt[0] == 0) {
         display_4();
         return;
@@ -171,7 +171,7 @@ void output(sv arr[], int cnt[]) {
     printf("| %-5s | %-23s | %-10s | %-13s | %-3s |\n", "STT", "Ho ten dem", "Ten", "Lop", "GPA");
     printf(" --------------------------------------------------------------------\n");
 
-    for(int i = 0; i < cnt[0]; i++) {
+    for(int i = l; i < r; i++) {
         printf("| %-5d | %-23s | %-10s | %-13s | %-3.1f |\n", i + 1, all_out(arr, i));
     }
 
@@ -290,4 +290,67 @@ void sort(sv arr[], int cnt[]) {
         
         swap(arr, i, pos);
     }
+}
+
+void search(int arr[], int cnt[], int l, int r) {
+    while(l <= r) {
+        int m = l + (r - l) / 2;
+
+        if(arr[m] == x) {
+            int trai = lower(arr, l, m - 1, x);
+            int phai = upper(arr, m + 1, r, x);
+            output(arr, cnt, trai, phai);
+            return;
+        }
+        else if(arr[m] > x) {
+            r = m - 1;
+        }
+        else {
+            l = m + 1;
+        }
+    }
+
+    display_4();
+}
+
+int lower(int arr[], int l, int r, int x) {
+    int pos = -1;
+
+    while(l <= r) {
+        int m = l + (r - l) / 2;
+
+        if(arr[m] == x) {
+            pos = m;
+            r = m - 1;
+        }
+        else if(arr[m] > x) {
+            r = m - 1;
+        }
+        else {
+            l = m + 1;
+        }
+    }
+
+    return pos;
+}
+
+int upper(int arr[], int l, int r, int x) {
+    int pos = -1;
+
+    while(l <= r) {
+        int m = l + (r - l) / 2;
+
+        if(arr[m] == x) {
+            pos = m;
+            l = m + 1;
+        }
+        else if(arr[m] > x) {
+            r = m - 1;
+        }
+        else {
+            l = m + 1;
+        }
+    }
+
+    return pos + 1;
 }
