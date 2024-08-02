@@ -137,6 +137,7 @@ void display_3() {
     display_main();
 
     printf("           [1] tim kiem theo chu cai dau tien cua ten                \n");
+    printf("           [5] quay lai                                              \n");
     printf(" --------------------------------------------------------------------\n");
     printf("                      Nhap: ");
 }
@@ -277,7 +278,25 @@ void sort_and_search(sv arr[], int cnt[]) {
 
         if(key == 1) {
             sort_1(arr, cnt);
-            search(arr, 0, cnt[0] - 1);
+            
+            while(true) {
+                search(arr, 0, cnt[0] - 1);
+                
+                char x;
+
+                display_main();
+                printf("\n");
+                
+                printf("             Tiep tuc (y/n): ");
+                scanf(" %c", &x);
+                
+                if(x == 'n') {
+                    break;
+                }
+            }
+        }
+        
+        if(key == 5) {
             break;
         }
     }
@@ -306,7 +325,7 @@ void search(sv arr[], int l, int r) {
     printf("\n");
 
     printf("             Nhap ky tu can tim: ");
-    scanf("%c", &x);
+    scanf(" %c", &x);
 
     while(l <= r) {
         int m = l + (r - l) / 2;
