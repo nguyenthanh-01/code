@@ -293,7 +293,9 @@ void sort_1(sv arr[], int cnt[]) {
             }
         }
 
-        swap(arr, i, pos);
+        if(pos != i) {
+            swap(arr, i, pos);
+        }
     }
 }
 
