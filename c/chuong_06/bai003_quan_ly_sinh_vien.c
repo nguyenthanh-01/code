@@ -22,12 +22,16 @@ void display_3();
 void display_4();
 
 void input(sv [], int []);
-void output(sv [], int []);
+void output(sv [], int, int);
 void save(sv [], int []);
 void push(sv [], int []);
 void pop(sv [], int []);
+
 void sort_and_search(sv [], int []);
-void sort(sv [], int []);
+void sort_1(sv [], int []);
+void search(sv [], int, int);
+int lower(sv [], int, int, char);
+int upper(sv [], int, int, char);
 
 int main() {
     sv *arr = (sv*) malloc(n * sizeof(sv));
@@ -57,7 +61,7 @@ int main() {
         }
 
         else if(key == 4) {
-            output(arr, cnt);
+            output(arr, 0, cnt[0]);
         }
         
         else if(key == 5) {
@@ -160,8 +164,8 @@ void input(sv arr[], int cnt[]) {
     fclose(f1);
 }
 
-void output(sv arr[], int cnt[], int l, int r) {
-    if(cnt[0] == 0) {
+void output(sv arr[], int l, int r) {
+    if(r == 0) {
         display_4();
         return;
     }
@@ -272,13 +276,14 @@ void sort_and_search(sv arr[], int cnt[]) {
         getchar();
         
         if(key == 1) {
-            sort(arr, cnt);
+            sort_1(arr, cnt);
+            search(arr, 0, cnt[0] - 1);
             break;
         }
     }
 }
 
-void sort(sv arr[], int cnt[]) {
+void sort_1(sv arr[], int cnt[]) {
     for(int i = 0; i < cnt[0] - 1; i++) {
         int pos = i;
         
@@ -292,17 +297,25 @@ void sort(sv arr[], int cnt[]) {
     }
 }
 
-void search(int arr[], int cnt[], int l, int r) {
+void search(sv arr[], int l, int r) {
+    char x;
+
+    display_main();
+    printf("\n");
+
+    printf("             Nhap ky tu can tim: ");
+    scanf("%c", &x);
+    
     while(l <= r) {
         int m = l + (r - l) / 2;
 
-        if(arr[m] == x) {
+        if(arr[m].ten[0] == x) {
             int trai = lower(arr, l, m - 1, x);
             int phai = upper(arr, m + 1, r, x);
-            output(arr, cnt, trai, phai);
+            output(arr, trai, phai);
             return;
         }
-        else if(arr[m] > x) {
+        else if(arr[m].ten[0] > x) {
             r = m - 1;
         }
         else {
@@ -313,17 +326,17 @@ void search(int arr[], int cnt[], int l, int r) {
     display_4();
 }
 
-int lower(int arr[], int l, int r, int x) {
+int lower(sv arr[], int l, int r, char x) {
     int pos = -1;
 
     while(l <= r) {
         int m = l + (r - l) / 2;
 
-        if(arr[m] == x) {
+        if(arr[m].ten[0] == x) {
             pos = m;
             r = m - 1;
         }
-        else if(arr[m] > x) {
+        else if(arr[m].ten[0] > x) {
             r = m - 1;
         }
         else {
@@ -334,17 +347,17 @@ int lower(int arr[], int l, int r, int x) {
     return pos;
 }
 
-int upper(int arr[], int l, int r, int x) {
+int upper(sv arr[], int l, int r, char x) {
     int pos = -1;
 
     while(l <= r) {
         int m = l + (r - l) / 2;
 
-        if(arr[m] == x) {
+        if(arr[m].ten[0] == x) {
             pos = m;
             l = m + 1;
         }
-        else if(arr[m] > x) {
+        else if(arr[m].ten[0] > x) {
             r = m - 1;
         }
         else {
