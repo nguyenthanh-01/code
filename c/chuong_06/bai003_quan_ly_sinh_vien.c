@@ -45,9 +45,9 @@ int main() {
 
         int key;
         scanf("%d", &key);
-        
+
         getchar();
-        
+
         if(key == 1) {
             push(arr, cnt);
         }
@@ -61,9 +61,9 @@ int main() {
         }
 
         else if(key == 4) {
-            output(arr, 0, cnt[0]);
+            output(arr, 0, cnt[0] - 1);
         }
-        
+
         else if(key == 5) {
             save(arr, cnt);
             break;
@@ -87,7 +87,7 @@ void display_main() {
 
 void display_0() {
     display_main();
-    
+
     printf("                    [1] them sinh vien                               \n");
     printf("                    [2] xoa sinh vien                                \n");
     printf("                    [3] sap xep va tim kiem                          \n");
@@ -108,7 +108,7 @@ void display_1_0() {
 
 void display_1_1() {
     display_main();
-    
+
     printf("\n\n");
     printf("                       nhap thanh cong!                              \n");
     printf("\n\n");
@@ -126,7 +126,7 @@ void display_2_0() {
 
 void display_2_1() {
     display_main();
-    
+
     printf("\n\n");
     printf("                       xoa thanh cong!                               \n");
     printf("\n\n");
@@ -135,7 +135,7 @@ void display_2_1() {
 
 void display_3() {
     display_main();
-    
+
     printf("           [1] tim kiem theo chu cai dau tien cua ten                \n");
     printf(" --------------------------------------------------------------------\n");
     printf("                      Nhap: ");
@@ -165,7 +165,7 @@ void input(sv arr[], int cnt[]) {
 }
 
 void output(sv arr[], int l, int r) {
-    if(r == 0) {
+    if(r + 1 == 0) {
         display_4();
         return;
     }
@@ -175,7 +175,7 @@ void output(sv arr[], int l, int r) {
     printf("| %-5s | %-23s | %-10s | %-13s | %-3s |\n", "STT", "Ho ten dem", "Ten", "Lop", "GPA");
     printf(" --------------------------------------------------------------------\n");
 
-    for(int i = l; i < r; i++) {
+    for(int i = l; i <= r; i++) {
         printf("| %-5d | %-23s | %-10s | %-13s | %-3.1f |\n", i + 1, all_out(arr, i));
     }
 
@@ -199,33 +199,33 @@ void push(sv arr[], int cnt[]) {
         display_1_0();
         return;
     }
-    
+
     int i = cnt[0];
     int j = 0;
-    
+
     display_main();
     printf("\n");
-    
+
     printf("             Nhap ho ten dem: ");
     fgets(arr[i].ho, 30, stdin);
     j = strlen(arr[i].ho);
     arr[i].ho[j - 1] = '\0';
-    
+
     printf("             Nhap ten: ");
     fgets(arr[i].ten, 10, stdin);
     j = strlen(arr[i].ten);
     arr[i].ten[j - 1] = '\0';
-    
+
     printf("             Nhap lop: ");
     fgets(arr[i].lop, 20, stdin);
     j = strlen(arr[i].lop);
     arr[i].lop[j - 1] = '\0';
-    
+
     printf("             Nhap GPA: ");
     scanf("%f", &arr[i].gpa);
-    
+
     cnt[0]++;
-    
+
     display_1_1();
 }
 
@@ -251,7 +251,7 @@ void pop(sv arr[], int cnt[]) {
     }
 
     int m = cnt[0] - 1;
-    
+
     for(int i = vi_tri; i < m; i++) {
         arr[i] = arr[i + 1];
     }
@@ -266,15 +266,15 @@ void sort_and_search(sv arr[], int cnt[]) {
         display_4();
         return;
     }
-    
+
     while(true) {
         display_3();
-        
+
         int key;
         scanf("%d", &key);
-        
+
         getchar();
-        
+
         if(key == 1) {
             sort_1(arr, cnt);
             search(arr, 0, cnt[0] - 1);
@@ -286,13 +286,13 @@ void sort_and_search(sv arr[], int cnt[]) {
 void sort_1(sv arr[], int cnt[]) {
     for(int i = 0; i < cnt[0] - 1; i++) {
         int pos = i;
-        
+
         for(int j = i + 1; j < cnt[0]; j++) {
             if(cmp_1(arr[pos], arr[j])) {
                 pos = j;
             }
         }
-        
+
         swap(arr, i, pos);
     }
 }
@@ -305,13 +305,26 @@ void search(sv arr[], int l, int r) {
 
     printf("             Nhap ky tu can tim: ");
     scanf("%c", &x);
-    
+
     while(l <= r) {
         int m = l + (r - l) / 2;
 
         if(arr[m].ten[0] == x) {
-            int trai = lower(arr, l, m - 1, x);
-            int phai = upper(arr, m + 1, r, x);
+            int trai = m;
+            int phai = m;
+
+            if(l <= m - 1) {
+                if(arr[m - 1].ten[0] == x) {
+                    trai = lower(arr, l, m - 1, x);
+                }
+            }
+
+            if(m + 1 <= r) {
+                if(arr[m + 1].ten[0] == x) {
+                    phai = upper(arr, m + 1, r, x);
+                }
+            }
+
             output(arr, trai, phai);
             return;
         }
@@ -365,5 +378,5 @@ int upper(sv arr[], int l, int r, char x) {
         }
     }
 
-    return pos + 1;
+    return pos;
 }
