@@ -1,4 +1,4 @@
-#include <REGX52.h>
+#include <regx52.h>
 #include <stdbool.h>
 
 sbit LED_PIN = P0^0;
