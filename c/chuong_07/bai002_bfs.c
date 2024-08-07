@@ -69,22 +69,19 @@ int bfs(node arr[][M], queue sub[], int a[], int n, int m) {
     int dy[] = {0, 0, -1, 1};
     
     while(l != r) {
-        int x = sub[l].x;
-        int y = sub[l].y;
-
         for(int i = 0; i < 4; i++) {
-            int xx = x + dx[i];
-            int yy = y + dy[i];
+            int x = sub[l].x + dx[i];
+            int y = sub[l].y + dy[i];
             
-            if(test(arr, xx, yy, n, m)) {
+            if(test(arr, x, y, n, m)) {
                 continue;
             }
             
-            push(arr, sub, xx, yy, l, r);
+            push(arr, sub, x, y, l, r);
             
             r++;
             
-            if(xx == a[0] && yy == a[1]) {
+            if(x == a[0] && y == a[1]) {
                 return r;
             }
         }
