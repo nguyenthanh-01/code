@@ -11,6 +11,13 @@ void main() {
             Delay_ms(500);
             P0 <<= 1;
         }
+
+        P0 = 0x80;
+
+        for(int i = 0; i < 8; i++) {
+            Delay_ms(500);
+            P0 >>= 1;
+        }
     }
 }
 
