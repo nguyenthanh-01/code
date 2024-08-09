@@ -18,6 +18,15 @@ void main() {
             Delay_ms(500);
             P0 >>= 1;
         }
+
+        pos = 0x80;
+        P0 = pos;
+
+        for(int i = 0; i < 8; i++) {
+            Delay_ms(500);
+            pos >>= 1;
+            P0 = pos;
+        }
     }
 }
 
