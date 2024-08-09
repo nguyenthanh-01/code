@@ -4,6 +4,8 @@
 void Delay_ms(int);
 
 void main() {
+    P0 = 0;
+    
     while(true) {
         P0 = ~P0;
         Delay_ms(500);
