@@ -19,7 +19,7 @@ void main() {
             P0 >>= 1;
         }
 
-        pos = 0x80;
+        char pos = 0x80;
         P0 = pos;
 
         for(int i = 0; i < 8; i++) {
