@@ -1,4 +1,0 @@
-a: "cảm giác của bạn thế nào"
-b: "có chút buồn"
-a: "có sợ không"
-b: "trông có vẻ đau đớn"
