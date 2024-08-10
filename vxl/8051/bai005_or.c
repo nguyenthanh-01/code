@@ -5,7 +5,7 @@ void Delay_ms(int);
 
 void main() {
     P0 = 0;
-    P0 |= (1 << 2);
+    P0 |= 1;
 }
 
 void Delay_ms(int n) {
