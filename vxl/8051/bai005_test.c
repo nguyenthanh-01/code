@@ -1,5 +1,4 @@
 #include "lib\main.h"
-// ..\lib\delay.c
 
 void main() {
     while(true) {
