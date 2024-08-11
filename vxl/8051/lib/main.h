@@ -3,7 +3,7 @@
 
 #include <regx52.h>
 #include <stdbool.h>
-#include "..\lib\delay.h"
+#include "delay.h"
 
 #define Hz 12000000ul
 
