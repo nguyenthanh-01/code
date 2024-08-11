@@ -1,4 +1,4 @@
-#include "lib\main.h"
+#include "lib/main.h"
 
 void main() {
     while(true) {
