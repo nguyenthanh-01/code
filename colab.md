@@ -25,15 +25,3 @@
 * %%writefile input.txt
 
 * !python test.py < input.txt
-
-# rs
-
-* !apt install rustc
-
-* %%writefile test.rs
-
-* %%writefile input.txt
-
-* !rustc test.rs
-
-* !./test < input.txt
