@@ -1,4 +1,4 @@
-#include <regx52.h>
+#include "delay.h"
 
 void Delay_ms(int n) {
     for(int i = 0; i < n; i++) {
