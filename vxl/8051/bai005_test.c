@@ -1,5 +1,4 @@
-#include <regx52.h>
-#include <stdbool.h>
+#include "..\lib\main.h"
 #include "..\lib\delay.h"
 // ..\lib\delay.c
 
