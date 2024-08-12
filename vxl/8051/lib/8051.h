@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef 8051_H
+#define 8051_H
 
 #include <regx52.h>
 #include <stdbool.h>
