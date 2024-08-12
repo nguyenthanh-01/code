@@ -1,4 +1,4 @@
-#include "lib/main.h"
+#include "lib/at89s52.h"
 
 void main() {
     while(true) {
