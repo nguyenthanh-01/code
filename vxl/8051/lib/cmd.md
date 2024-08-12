@@ -1,1 +1,1 @@
-gcc -std=c17 -Wall -o test test.c lib/delay.c
+gcc -std=c17 -Wall lib/delay.c -o test test.c
