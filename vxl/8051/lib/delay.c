@@ -1,5 +1,5 @@
 #include "delay.h"
-#include "main.h"
+#include "8051.h"
 
 #if(Hz == 12000000)
     void Delay_ms(int n) {
