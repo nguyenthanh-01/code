@@ -1,20 +1,21 @@
 #include <regx52.h>
-#include <stdbool.h>
 
 void Delay_ms(int);
 
 void main() {
-    while(true) {
+    while(1) {
+        int i;
+        
         P0 = 0x01;
 
-        for(int i = 0; i < 8; i++) {
+        for(i = 0; i < 8; i++) {
             Delay_ms(500);
             P0 <<= 1;
         }
 
         P0 = 0x80;
 
-        for(int i = 0; i < 8; i++) {
+        for(i = 0; i < 8; i++) {
             Delay_ms(500);
             P0 >>= 1;
         }
@@ -22,7 +23,7 @@ void main() {
         char pos = 0x80;
         P0 = pos;
 
-        for(int i = 0; i < 8; i++) {
+        for(i = 0; i < 8; i++) {
             Delay_ms(500);
             pos >>= 1;
             P0 = pos;
@@ -30,7 +31,7 @@ void main() {
 
         P0 = 0x01;
 
-        for(int i = 0; i < 8; i++) {
+        for(i = 0; i < 8; i++) {
             Delay_ms(500);
             P0 <<= 1;
             P0 |= 1;
@@ -39,7 +40,8 @@ void main() {
 }
 
 void Delay_ms(int n) {
-    for(int i = 0; i < n; i++) {
-        for(int j = 0; j < 123; j++);
+    int i, j;
+    for(i = 0; i < n; i++) {
+        for(j = 0; j < 123; j++);
     }
 }
