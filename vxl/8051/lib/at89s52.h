@@ -1,5 +1,5 @@
-#ifndef 8051_H
-#define 8051_H
+#ifndef AT89S52_H
+#define AT89S52_H
 
 #include <regx52.h>
 #include <stdbool.h>
