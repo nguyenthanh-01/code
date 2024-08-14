@@ -5,6 +5,7 @@ void Delay_ms(int);
 void main() {
     while(1) {
         int i;
+		char pos;
         
         P0 = 0x01;
 
@@ -20,7 +21,7 @@ void main() {
             P0 >>= 1;
         }
 
-        char pos = 0x80;
+        pos = 0x80;
         P0 = pos;
 
         for(i = 0; i < 8; i++) {
