@@ -5,7 +5,7 @@ void Delay_ms(int);
 void main() {
     while(1) {
         int i;
-		char pos;
+        char pos;
         
         P0 = 0x01;
 
