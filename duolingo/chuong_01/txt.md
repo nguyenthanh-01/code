@@ -1,2 +1,2 @@
-coffee / cophi / cà phê
-water / wa tờ / nước
+* coffee / cophi / cà phê
+* water / wa tờ / nước
