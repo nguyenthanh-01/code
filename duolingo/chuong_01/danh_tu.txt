@@ -6,6 +6,7 @@
 * yes / giết / đồng ý
 * no / nâu / ko đồng ý
 * please / bờ lít / làm ơn
+* thanks / thanh / cảm ơn
 * good / gút / tốt
 * morning / mo ning / buổi sáng
 * suger / su gờ / đường
