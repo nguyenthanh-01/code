@@ -4,6 +4,7 @@
 * hello / hê lô / xin chào
 * milk / miu / sữa
 * yes / giết / đồng ý
+* no / nâu / ko đồng ý
 * please / bờ lít / làm ơn
 * good / gút / tốt
 * morning / mo ning / buổi sáng
