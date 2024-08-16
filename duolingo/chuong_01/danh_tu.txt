@@ -17,3 +17,4 @@
 * student / sờ tu đừn / học sinh
 * math / mát / toán học
 * taxi / tắc xi / tắc xi
+* bus / bớt / xe buýt
