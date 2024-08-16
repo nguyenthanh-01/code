@@ -3,9 +3,6 @@
 void Nhat();
 
 void main() {
-    int i;
-    int n;
-
     P0 = P1 = P2 = P3 = 0;
 
     while(1) {
@@ -14,6 +11,9 @@ void main() {
 }
 
 void Nhat() {
+    int i;
+    int n;
+    
     for(i = 0; i < 4; i++) {
         P0 |= (1 << i);
         Delay_ms(100);
