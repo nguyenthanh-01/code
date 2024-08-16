@@ -4,9 +4,9 @@ void main() {
     int i;
     int n;
 
-    while(1) {
-        P0 = P1 = P2 = P3 = 0;
+    P0 = P1 = P2 = P3 = 0;
 
+    while(1) {
         for(i = 0; i < 4; i++) {
             P0 |= (1 << i);
             Delay_ms(100);
