@@ -14,3 +14,4 @@
 * right / roai / đúng
 * teacher / tít chờ / giáo viên
 * student / sờ tu đừn / học sinh
+* math / mát / toán học
