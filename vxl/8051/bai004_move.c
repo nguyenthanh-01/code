@@ -3,10 +3,10 @@
 void Delay_ms(int);
 
 void main() {
+    int i;
+    char pos;
+    
     while(1) {
-        int i;
-        char pos;
-        
         P0 = 0x01;
 
         for(i = 0; i < 8; i++) {
