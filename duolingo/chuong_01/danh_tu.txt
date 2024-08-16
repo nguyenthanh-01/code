@@ -9,6 +9,7 @@
 * thanks / thanh / cảm ơn
 * good / gút / tốt
 * morning / mo ning / buổi sáng
+* afternoon / áp tơ nun / buổi chiều
 * evening / i vi ning / buổi tối
 * suger / su gờ / đường
 * right / roai / đúng
