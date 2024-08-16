@@ -53,10 +53,18 @@ void main() {
                 Delay_ms(100);
             }
 
-            for(i = 0; i < 4; i++) {
-                P3 <<= 1;
-                P0 |= (1 << i);
-                Delay_ms(100);
+            if(n != 0) {
+                for(i = 0; i < 4; i++) {
+                    P3 <<= 1;
+                    P0 |= (1 << i);
+                    Delay_ms(100);
+                }
+            }
+            else {
+                for(i = 0; i < 4; i++) {
+                    P3 <<= 1;
+                    Delay_ms(100);
+                }
             }
         }
     }
