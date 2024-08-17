@@ -22,3 +22,4 @@
 * driver / đờ roai vơ / tài xế
 * book / búc / sách
 * computer / com piu tơ / máy tính (PC)
+* camera / cem me ra / máy ảnh
