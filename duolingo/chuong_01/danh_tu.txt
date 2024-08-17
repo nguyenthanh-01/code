@@ -25,4 +25,5 @@
 * camera / cem me ra / máy ảnh
 * phone / phôn / điện thoại
 * new / niu / mới
-* bag / bang / túi
+* bag / bang / túi xách
+* black / bờ lách / màu đen
