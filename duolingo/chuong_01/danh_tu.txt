@@ -28,3 +28,4 @@
 * bag / bang / túi xách
 * black / bờ lách / màu đen
 * red / roét / màu đỏ
+* coat / câu / áo khoác
