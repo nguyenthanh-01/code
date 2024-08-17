@@ -20,3 +20,4 @@
 * taxi / tắc xi / tắc xi
 * bus / bớt / xe buýt
 * driver / đờ roai vơ / tài xế
+* book / búc / sách
