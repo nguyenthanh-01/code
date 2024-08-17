@@ -25,7 +25,7 @@
 * camera / cem me ra / máy ảnh
 * phone / phôn / điện thoại
 * new / niu / mới
-* bag / bang / túi xách
+* bag / bang / túi (cặp xách)
 * black / bờ lách / màu đen
 * red / roét / màu đỏ
 * coat / câu / áo khoác
