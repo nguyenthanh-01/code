@@ -21,3 +21,4 @@
 * bus / bớt / xe buýt
 * driver / đờ roai vơ / tài xế
 * book / búc / sách
+* computer / com piu tơ / máy tính (PC)
