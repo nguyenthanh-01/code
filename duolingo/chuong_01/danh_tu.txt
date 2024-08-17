@@ -27,3 +27,4 @@
 * new / niu / mới
 * bag / bang / túi xách
 * black / bờ lách / màu đen
+* red / roét / màu đỏ
