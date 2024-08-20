@@ -22,7 +22,7 @@
 * driver / đờ roai vơ / tài xế
 * book / búc / sách
 * computer / com piu tơ / máy tính (PC)
-* camera / cem me ra / máy ảnh
+* camera / cam me ra / máy ảnh
 * phone / phôn / điện thoại
 * new / niu / mới
 * bag / bang / túi (cặp xách)
@@ -32,3 +32,4 @@
 * husband / hớt ben / chồng
 * wife / wai / vợ
 * doctor / đốc tờ / bác sĩ 
+* son / son / con
