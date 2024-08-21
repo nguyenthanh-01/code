@@ -5,6 +5,8 @@ void main() {
 
     while(1) {
         if(On_Off == 0) {
+            Delay_ms(20);
+            
             Led = !Led;
             
             while(On_Off == 0);
