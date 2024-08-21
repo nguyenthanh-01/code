@@ -1,14 +1,14 @@
-* phục hồi chức năng
+* phục hồi chức năng (pass)
 + thân trên:
-  hít đất 3x5
-  xà đơn 1x5
-  xà kép 1x5
+  hít đất 3x4
+  xà đơn 1x4
+  xà kép 1x4
 
-* t.a
+* t.a (pass)
 + doulingo:
   chương 1 bài 1
 
-* caro
+* caro (pass)
 + học việc:
   kỳ phổ 1-10
 
