@@ -1,6 +1,6 @@
 * Phục hồi chức năng
-+ thân trên
-+ thân dưới
++ tay
++ chân
 + phổi
 
 * code
