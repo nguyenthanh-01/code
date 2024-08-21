@@ -1,5 +1,5 @@
 * phục hồi chức năng (pass)
-+ thân trên:
++ tay:
   hít đất 3x4
   xà đơn 1x4
   xà kép 1x4
@@ -9,7 +9,7 @@
   chương 1 bài 1
 
 * caro (pass)
-+ học việc:
++ sơ cấp:
   kỳ phổ 1-10
 
 * code
