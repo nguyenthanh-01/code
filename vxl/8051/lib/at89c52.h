@@ -3,6 +3,7 @@
 
 #include <regx52.h>
 #include "delay.h"
+#include "port.h"
 
 #define Hz 12000000ul
 
