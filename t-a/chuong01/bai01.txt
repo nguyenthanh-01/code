@@ -2,3 +2,4 @@
 * coffee / co phi / cà phê
 * tea / tia / trà
 * hello / hê lô / chào
+* and / en / và
