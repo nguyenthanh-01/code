@@ -10,7 +10,7 @@
 
 * caro
 + học việc:
-  kỳ phổ x10
+  kỳ phổ 1-10
 
 * code
 + vxl:
