@@ -1,0 +1,17 @@
+* phục hồi chức năng
++ thân trên:
+  hít đất 3x5
+  xà đơn 1x5
+  xà kép 1x5
+
+* t.a
++ doulingo:
+  chương 1 bài 1
+
+* caro
++ học việc:
+  kỳ phổ x10
+
+* code
++ vxl:
+  ...
