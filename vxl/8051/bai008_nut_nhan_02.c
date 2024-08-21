@@ -7,9 +7,11 @@ void main() {
         if(On_Off == 0) {
             Delay_ms(20);
             
-            Led = !Led;
+            if(On_Off == 0) {
+                Led = !Led;
             
-            while(On_Off == 0);
+                while(On_Off == 0);
+            }
         }
     }
 }
