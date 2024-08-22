@@ -4,3 +4,4 @@
 * teacher / tít chờ / giáo viên
 * student / sờ tưu đừn / học sinh
 * a / ơ / số ít (một)
+* math / mát / toán
