@@ -14,9 +14,8 @@ void main() {
         On = 1;
         if(On == 0) {
             Led = 1;
+            Delay_Off(1000);
         }
-        
-        Delay_Off(1000);
     }
 }
 
