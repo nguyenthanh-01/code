@@ -14,7 +14,7 @@ void main() {
         On = 1;
         if(On == 0) {
             do {
-                Led = !Led;
+                Led = ~Led;
             } while(Delay_Off(1000));
         }
     }
