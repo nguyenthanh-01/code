@@ -13,7 +13,7 @@ void main() {
     while(1) {
         On = 1;
         if(On == 0) {
-            Led = 1;
+            Led = !Led;
             Delay_Off(1000);
         }
     }
