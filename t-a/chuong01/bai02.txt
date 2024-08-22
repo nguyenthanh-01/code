@@ -3,3 +3,4 @@
 * right / roai / đúng
 * teacher / tít chờ / giáo viên
 * student / sờ tưu đừn / học sinh
+* a / ơ / số ít (một)
