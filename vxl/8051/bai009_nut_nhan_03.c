@@ -5,7 +5,7 @@
 sbit On = P1^0;
 sbit Off = P1^1;
 
-void Delay_Off(int);
+int Delay_Off(int);
 
 void main() {
     Led = 0;
@@ -13,13 +13,14 @@ void main() {
     while(1) {
         On = 1;
         if(On == 0) {
-            Led = !Led;
-            Delay_Off(1000);
+            do {
+                Led = !Led;
+            } while(Delay_Off(1000));
         }
     }
 }
 
-void Delay_Off(int n) {
+int Delay_Off(int n) {
     int i;
     n /= 10;
 
@@ -29,7 +30,9 @@ void Delay_Off(int n) {
         Off = 1;
         if(Off == 0) {
             Led = 0;
-            return;
+            return 0;
         }
     }
+
+    return 1;
 }
