@@ -32,9 +32,11 @@ int Delay_Off(int n) {
         if(On_Off == 0) {
             Delay_ms(20);
             
-            while(On_Off == 0);
+            if(On_Off == 0) {
+                while(On_Off == 0);
             
-            return 0;
+                return 0;
+            }
         }
     }
     
