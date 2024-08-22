@@ -10,7 +10,7 @@
 
 * caro (pass)
 + sơ cấp:
-  kỳ phổ 1-10
+  ...
 
 * code
 + vxl:
