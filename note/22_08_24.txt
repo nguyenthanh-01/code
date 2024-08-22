@@ -2,13 +2,13 @@
 + phổi:
   hít thở oo
 
-* t.a
+* t.a (pass)
 + doulingo:
   chương 1 bài 2
 
-* caro
+* caro (pass)
 + sơ cấp:
-  kỳ phổ 10-20
+  ...
 
 * code
 + vxl:
