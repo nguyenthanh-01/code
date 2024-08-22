@@ -1,20 +1,17 @@
 * 1
-o x o o o
-x o x o o
-o x o o o
-o o x o o
-o o o o o
+o x o o 
+x o x o 
+o x o o 
+o o x o 
 
 * 2
-o x o o o
-x o x o o
-o x x o o
-o o x o o
-o o o o o
+o x o o 
+x o x o 
+o x x o 
+o o x o 
 
 * 3
-o x o o o
-x o x o o
-o x x x o
-o o x o o
-o o o o o
+o x o o 
+x o x o 
+o x x x 
+o o x o 
