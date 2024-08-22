@@ -1,20 +1,15 @@
 #include "../lib/at89c52.h"
 
-#define Led P2
-
-sbit On = P1^0;
-sbit Off = P1^1;
-
 int Delay_Off(int);
 
 void main() {
-    Led = 0;
+    Led_pos = 0;
 
     while(1) {
         On = 1;
         if(On == 0) {
             do {
-                Led = ~Led;
+                Led_pos = ~Led_pos;
             } while(Delay_Off(1000));
         }
     }
@@ -29,7 +24,7 @@ int Delay_Off(int n) {
 
         Off = 1;
         if(Off == 0) {
-            Led = 0;
+            Led_pos = 0;
             return 0;
         }
     }
