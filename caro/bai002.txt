@@ -1,21 +1,21 @@
 * 1
-o o o o o o x o o o
-o o o o o o o o o o
-o o o o o o x o o o
-o o o o o o x x o o
-o o o o o o o o o o
-o o o o x o o o o o
-o o o x o o o o o o
+o o o x o 
+o o o o o 
+o o o x o 
+o o o x x 
+o o o o o 
+o x o o o 
+x o o o o 
 
 
 * 2
-o o o o o o x o o o
-o o o o o x o o o o
-o o o o o o x o o o
-o o o o o o x x o o
-o o o o o o o o o o
-o o o o x o o o o o
-o o o x o o o o o o
+o o o x o 
+o o x o o 
+o o o x o 
+o o o x x 
+o o o o o 
+o x o o o 
+x o o o o 
 
 
 * 3
