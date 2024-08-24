@@ -11,3 +11,4 @@
 * red / rét / màu đỏ
 * coat / câu / áo khoác
 * black / bờ láck / màu đen
+* not / nót / phủ định
