@@ -2,3 +2,4 @@
 * hi / hai / chào
 * and you / èn riu / còn bạn ?
 * from / phờ rom / đến từ
+* city / c ti / thành phố
