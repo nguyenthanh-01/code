@@ -2,3 +2,4 @@
 * menu / men nu / thực đơn
 * for / pho / cho
 * two / chu / 2, cặp đôi
+* one / goăn / 1
