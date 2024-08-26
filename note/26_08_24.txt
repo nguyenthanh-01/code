@@ -4,9 +4,9 @@
   xà đơn 1x5 rep
   xà kép 1x5 rep
 
-* code:
+* code
 + vxl:
   ...
 
-* t.a:
+* t.a (pass)
 + chương 1
