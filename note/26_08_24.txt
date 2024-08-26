@@ -1,0 +1,12 @@
+* phục hồi chức năng
++ tay:
+  hít đất 3x5 rep
+  xà đơn 1x5 rep
+  xà kép 1x5 rep
+
+* code:
++ vxl:
+  ...
+
+* t.a:
++ chương 1
