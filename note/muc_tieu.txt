@@ -10,9 +10,3 @@
 
 * t.a
 + doulingo
-
-* caro
-+ sơ cấp
-
-* toán
-+ sơ cấp
