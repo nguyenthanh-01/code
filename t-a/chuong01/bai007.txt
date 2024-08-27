@@ -5,7 +5,7 @@
 * one / goăn / 1
 * pizza / pi za / pizza
 * restaurant / res tau rừn / nhà hàng
-* nice / lai / tốt
+* nice / lai / tốt, đẹp, ổn
 * would like / gút lai / muốn
 * beer / bia / bia
 * check / chếch / hóa đơn, kiểm tra
