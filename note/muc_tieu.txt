@@ -6,7 +6,9 @@
 * code
 + c
 + vxl
-+ ccna
++ c++
++ dsa
++ oop
 
 * t.a
 + doulingo
