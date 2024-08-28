@@ -4,3 +4,4 @@
 * chinese / troai nít / tiếng trung, người trung
 * father / pha rờ / bố
 * mother / ma rờ / mẹ
+* year / ria / năm, tuổi
