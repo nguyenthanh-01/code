@@ -6,5 +6,6 @@
 + vxl:
   ...
 
-* t.a
+* t.a (pass)
 + chương 2
+  bài 1-5
