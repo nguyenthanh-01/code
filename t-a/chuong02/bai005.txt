@@ -1,5 +1,5 @@
 * family / phem mi ly / gia đình
-* parents / peo rèn / bố mẹ
+* parent / peo rèn / bố mẹ
 * happy / háp pi / vui vẻ, hạnh phúc
 * best / bét / tốt nhất, thân
 * person / bơ sần / người
