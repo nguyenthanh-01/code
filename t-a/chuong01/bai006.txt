@@ -6,7 +6,7 @@
 * nice to meet you / lai tu mít riu / rất vui được gặp bạn
 * are you / a riu / bạn là ?
 * english / ing lít / tiếng anh
-* vietnamese / viet nam ít / tiếng việt
+* vietnamese / viet nam ít / tiếng việt, người việt
 * good / gút / tốt
 * speak / sờ píc / nói
 * some / săm / một chút, một vài
