@@ -1,1 +1,12 @@
+* phục hồi chức năng 
++ chân:
+  squat 3x5 rep
+  plank 3x3x5 s
+  hollow rock 3x3x5 s
 
+* code
++ vxl:
+  ...
+
+* t.a 
++ chương 3
