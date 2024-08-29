@@ -2,7 +2,8 @@
 * japanese / ja pan nít / tiếng nhật
 * spanish / sờ pen nít / tiếng tây ban nha
 * bad / bát / tệ
-* do / đu / đúng ko ?, không
+* do / đu / đúng ko ?
+* do not / đu nót / không
 * country / căng truy / đất nước
 * live / líp / sinh sống
 * in / in / ở
