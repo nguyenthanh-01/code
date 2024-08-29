@@ -6,3 +6,4 @@
 * country / căng truy / đất nước
 * live / líp / sinh sống
 * in / in / ở
+* language / leng wíc / ngôn ngữ
