@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define fx(a) fixed << setprecision(a)
+#define fx(n) fixed << setprecision(n)
 
 int main() {
     ios::sync_with_stdio(false);
