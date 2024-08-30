@@ -1,0 +1,9 @@
+* phục hồi chức năng (pass)
++ tay
+  hít đất 3x5 rep
+  xà đơn 1x5 rep
+  xà kép 1x5 rep
+
+* code
++ cpp
+  ...
