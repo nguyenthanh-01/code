@@ -22,7 +22,7 @@ int main() {
     }
 
     for(auto it : sub) {
-        cout << it.fi << " ";
+        cout << it.fi << " " << it.se << "\n";
     }
 
     return 0;
