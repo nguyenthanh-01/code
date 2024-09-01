@@ -4,3 +4,4 @@
 * student / sờ tưu đừn / học sinh
 * teacher / tít chờ / giáo viên
 * a / ơ / số ít (một)
+* good afternoon / gút áp tơ nun / chào buổi chiều
