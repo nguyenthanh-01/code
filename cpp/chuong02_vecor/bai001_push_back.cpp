@@ -4,6 +4,7 @@ using namespace std;
 using ll = long long;
 
 #define sz(a) (int) (a).size()
+#define all(a) (a).begin(), (a).end()
 #define pb push_back
 #define pp pop_back
 
