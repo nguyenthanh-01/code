@@ -21,7 +21,7 @@ int main() {
         sub[arr[i]]++;
     }
 
-    for(auto it : sub) {
+    for(auto &it : sub) {
         cout << it.fi << " " << it.se << "\n";
     }
 
