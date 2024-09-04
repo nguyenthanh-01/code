@@ -10,7 +10,7 @@
 typedef struct {char ho[30]; char ten[10]; char lop[20]; float gpa;} sv;
 
 static inline void swap(sv arr[], int i, int pos) {sv val = arr[i]; arr[i] = arr[pos]; arr[pos] = val;}
-static inline bool cmp_1(sv i, sv j) {return i.ten[0] > j.ten[0] ? true : false;}
+static inline bool cmp_1(sv i, sv j) {return i.ten[0] > j.ten[0];}
 
 void display_main();
 void display_0();
