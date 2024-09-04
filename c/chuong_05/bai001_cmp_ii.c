@@ -5,7 +5,7 @@
 
 typedef struct {int a; int b;} ii;
 
-static inline bool cmp(ii i, ii j) {return i.a > j.a ? true : false;}
+static inline bool cmp(ii i, ii j) {return i.a > j.a;}
 
 void sort(ii [], int);
 
