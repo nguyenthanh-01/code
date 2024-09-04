@@ -22,8 +22,8 @@ int main() {
         arr.pb(x);
     }
 
-    for(auto it : arr) {
-        cout << it << " ";
+    for(int i : arr) {
+        cout << i << " ";
     }
 
     return 0;
