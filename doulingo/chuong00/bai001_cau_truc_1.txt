@@ -4,9 +4,8 @@
 * (-) this is not my book / đây không phải của tôi sách / đây không phải sách của tôi
 * (?) is this your new book / đây là của bạn mới sách / đây là sách mới của bạn
 
+(like)
+
 * (+) your husband is a doctor / của bạn chồng là một bác sĩ / chồng của bạn là một bác sĩ
 * (-) your husband is not a doctor / của bạn chồng không phải một bác sĩ / chồng của bạn không phải một bác sĩ
 * (?) is your husband a doctor / là của bạn chồng một bác sĩ / chồng của bạn là một bác sĩ
-
-* i like hot tea / tôi thích trà nóng
-* i like your new cat / tôi thích con mèo của bạn
