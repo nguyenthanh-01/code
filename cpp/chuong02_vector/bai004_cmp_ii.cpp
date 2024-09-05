@@ -21,7 +21,7 @@ int main() {
 
     sort(all(arr), cmp);
 
-    for(ii &i : arr) {
+    for(ii i : arr) {
         cout << i.a << " " << i.b << "\n";
     }
 
