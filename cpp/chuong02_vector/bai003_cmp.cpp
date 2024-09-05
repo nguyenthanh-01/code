@@ -20,7 +20,7 @@ int main() {
 
     sort(all(arr), cmp);
 
-    for(int &i : arr) {
+    for(int i : arr) {
         cout << i << " ";
     }
 
