@@ -10,3 +10,4 @@
 * room / rum / phòng
 * we / wi / chúng tôi
 * cat / cát / mèo
+* dog / đoóc / chó
