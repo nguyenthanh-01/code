@@ -6,6 +6,7 @@ using ll = long long;
 #define fi first
 #define se second
 
+typedef pair<int, int> pi;
 typedef map<int, int> mp;
 
 int main() {
@@ -21,8 +22,8 @@ int main() {
         sub[arr[i]]++;
     }
 
-    for(auto &it : sub) {
-        cout << it.fi << " " << it.se << "\n";
+    for(pi i : sub) {
+        cout << i.fi << " " << i.se << "\n";
     }
 
     return 0;
