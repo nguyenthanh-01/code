@@ -22,7 +22,7 @@ int main() {
         arr.pb(x);
     }
 
-    for(int &i : arr) {
+    for(int i : arr) {
         cout << i << " ";
     }
 
