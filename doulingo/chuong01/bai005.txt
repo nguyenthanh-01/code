@@ -9,3 +9,4 @@
 * small / sờ mo / nhỏ
 * room / rum / phòng
 * we / wi / chúng tôi
+* cat / cát / mèo
