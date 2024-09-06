@@ -2,8 +2,6 @@
 * hi / hai / chào
 * and you / èn ríu / còn bạn
 * from / phờ rom / đến từ
-* you are / riu a / bạn là
-* i am / ai em / tôi là
 * city / xi ti / thành phố
 * nice too meet you / lai tu mít riu / rất vui dc gặp bạn
 * are you / a riu / bạn là ?
