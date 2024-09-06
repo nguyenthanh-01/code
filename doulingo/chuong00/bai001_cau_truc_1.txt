@@ -1,4 +1,5 @@
 * a math teacher / một toán giáo viên / một giáo viên toán
+* a nice menu / một ngon thực đơn / một thực đơn ngon
 
 * (+) this is my book / đây là của tôi sách / đây là sách của tôi
 * (-) this is not my book / đây không phải của tôi sách / đây không phải sách của tôi
@@ -11,3 +12,6 @@
 * (+) your husband is a doctor / của bạn chồng là một bác sĩ / chồng của bạn là một bác sĩ
 * (-) your husband is not a doctor / của bạn chồng không phải một bác sĩ / chồng của bạn không phải một bác sĩ
 * (?) is your husband a doctor / là của bạn chồng một bác sĩ / chồng của bạn là một bác sĩ
+
+* 
+* (?) more hot coffee / không nóng cà phê / cà phê không nóng
