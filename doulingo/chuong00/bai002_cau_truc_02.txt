@@ -3,3 +3,5 @@
 * (+) this shirt is nice / này áo đẹp / áo này đẹp
 * (-) this shirt is not nice / này áo không đẹp / áo này không đẹp
 * (?) is this shirt nice / này áo đẹp / áo này đẹp
+
+* (?) how much is this shirt / bao nhiêu này áo / áo này bao nhiêu
