@@ -29,8 +29,6 @@ void sort(int arr[], int n) {
             }
         }
         
-        int val = arr[i];
-        arr[i] = arr[pos];
-        arr[pos] = val;
+        swap(arr, i, pos);
     }
 }
