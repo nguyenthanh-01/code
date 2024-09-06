@@ -2,6 +2,8 @@
 
 #define size(a) (int) (sizeof(a) / sizeof(a[0]))
 
+static inline void swap(int arr[], int i, int pos) {int val = arr[i]; arr[i] = arr[pos]; arr[pos] = val;}
+
 void sort(int [], int);
 
 int main() {
