@@ -13,3 +13,5 @@
 * vietnamese / viet nam ít / tiếng việt
 * good / gút / tốt
 * not / nót / phủ định
+* speak / sờ píc / nói
+* some / săm / một chút, một vài
