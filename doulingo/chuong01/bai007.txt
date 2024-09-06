@@ -1,3 +1,4 @@
 * menu / men nu / thực đơn
 * table / thây bồ / bàn
 * for two / pho chu / cho 2 người
+* for one / pho oăn / cho 1 người
