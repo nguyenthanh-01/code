@@ -30,8 +30,8 @@ void pop(sv [], int []);
 void sort_and_search(sv [], int []);
 void sort(sv [], int []);
 void search(sv [], int, int);
-int lower(sv [], int, int, char);
-int upper(sv [], int, int, char);
+int lower_bould(sv [], int, int, char);
+int upper_bould(sv [], int, int, char);
 
 int main() {
     sv *arr = (sv*) malloc(n * sizeof(sv));
