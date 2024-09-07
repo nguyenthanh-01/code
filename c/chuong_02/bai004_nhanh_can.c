@@ -14,6 +14,7 @@ int main() {
     nhanh_can(n, cnt, can);
 
     printf("%d ", can[0]);
+    
     return 0;
 }
 
