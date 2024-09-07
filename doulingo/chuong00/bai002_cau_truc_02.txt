@@ -1,5 +1,6 @@
 (need)
 (have)
+(really like)
 
 * (+) this shirt is nice / này áo đẹp / áo này đẹp
 * (-) this shirt is not nice / này áo không đẹp / áo này không đẹp
