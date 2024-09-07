@@ -10,7 +10,7 @@
 typedef struct {char ho[30]; char ten[10]; char lop[20]; float gpa;} sv;
 
 static inline void swap(sv arr[], int i, int pos) {sv val = arr[i]; arr[i] = arr[pos]; arr[pos] = val;}
-static inline bool cmp_1(sv i, sv j) {return i.ten[0] > j.ten[0];}
+static inline bool cmp(sv i, sv j) {return i.ten[0] > j.ten[0];}
 
 void display_main();
 void display_0();
@@ -28,7 +28,7 @@ void push(sv [], int []);
 void pop(sv [], int []);
 
 void sort_and_search(sv [], int []);
-void sort_1(sv [], int []);
+void sort(sv [], int []);
 void search(sv [], int, int);
 int lower(sv [], int, int, char);
 int upper(sv [], int, int, char);
@@ -277,7 +277,7 @@ void sort_and_search(sv arr[], int cnt[]) {
         getchar();
 
         if(key == 1) {
-            sort_1(arr, cnt);
+            sort(arr, cnt);
             
             while(true) {
                 search(arr, 0, cnt[0] - 1);
@@ -302,19 +302,17 @@ void sort_and_search(sv arr[], int cnt[]) {
     }
 }
 
-void sort_1(sv arr[], int cnt[]) {
+void sort(sv arr[], int cnt[]) {
     for(int i = 0; i < cnt[0] - 1; i++) {
         int pos = i;
 
         for(int j = i + 1; j < cnt[0]; j++) {
-            if(cmp_1(arr[pos], arr[j])) {
+            if(cmp(arr[pos], arr[j])) {
                 pos = j;
             }
         }
 
-        if(pos != i) {
-            swap(arr, i, pos);
-        }
+        swap(arr, i, pos);
     }
 }
 
@@ -327,40 +325,18 @@ void search(sv arr[], int l, int r) {
     printf("             Nhap ky tu can tim: ");
     scanf(" %c", &x);
 
-    while(l <= r) {
-        int m = l + (r - l) / 2;
+    int lb = lower_bould(arr, l, r, x);
 
-        if(arr[m].ten[0] == x) {
-            int trai = m;
-            int phai = m;
-
-            if(l <= m - 1) {
-                if(arr[m - 1].ten[0] == x) {
-                    trai = lower(arr, l, m - 1, x);
-                }
-            }
-
-            if(m + 1 <= r) {
-                if(arr[m + 1].ten[0] == x) {
-                    phai = upper(arr, m + 1, r, x);
-                }
-            }
-
-            output(arr, trai, phai);
-            return;
-        }
-        else if(arr[m].ten[0] > x) {
-            r = m - 1;
-        }
-        else {
-            l = m + 1;
-        }
+    if(lb < 0) {
+        display_4();
     }
-
-    display_4();
+    else {
+        int up = upper_bould(arr, l, r, x);
+        output(arr, lb, up);
+    }
 }
 
-int lower(sv arr[], int l, int r, char x) {
+int lower_bould(sv arr[], int l, int r, char x) {
     int pos = -1;
 
     while(l <= r) {
@@ -381,7 +357,7 @@ int lower(sv arr[], int l, int r, char x) {
     return pos;
 }
 
-int upper(sv arr[], int l, int r, char x) {
+int upper_bould(sv arr[], int l, int r, char x) {
     int pos = -1;
 
     while(l <= r) {
