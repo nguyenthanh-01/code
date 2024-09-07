@@ -5,6 +5,7 @@
 
 typedef struct {int a; int b;} ii;
 
+static inline void swap(ii arr[], int i, int pos) {ii val = arr[i]; arr[i] = arr[pos]; arr[pos] = val;}
 static inline bool cmp(ii i, ii j) {return i.a > j.a;}
 
 void sort(ii [], int);
@@ -33,8 +34,6 @@ void sort(ii arr[], int n) {
             }
         }
         
-        ii val = arr[i];
-        arr[i] = arr[pos];
-        arr[pos] = val;
+        swap(arr, i, pos);
     }
 }
