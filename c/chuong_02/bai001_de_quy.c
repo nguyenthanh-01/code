@@ -11,6 +11,7 @@ int main() {
     de_quy(n, sum);
 
     printf("%d ", sum[0]);
+    
     return 0;
 }
 
