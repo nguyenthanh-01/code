@@ -3,7 +3,7 @@
 #include <stdbool.h>
 #include <string.h>
 
-void find(char [], char []);
+void kmp(char [], char []);
 void pre_suf(char [], int []);
 
 int main() {
@@ -13,12 +13,12 @@ int main() {
     char sub[100];
     fgets(sub, 100, stdin);
 
-    find(str, sub);
+    kmp(str, sub);
 
     return 0;
 }
 
-void find(char str[], char sub[]) {
+void kmp(char str[], char sub[]) {
     int n = strlen(str);
     int m = strlen(sub);
 
@@ -36,6 +36,7 @@ void find(char str[], char sub[]) {
         if(str[i] == sub[j]) {
             i++;
             j++;
+            
             if(j == m) {
                 j = arr[j - 1];
                 printf("%d ", i - m + 1);
