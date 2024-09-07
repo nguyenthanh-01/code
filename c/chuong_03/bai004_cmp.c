@@ -18,6 +18,7 @@ int main() {
     for(int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }
+    
     return 0;
 }
 
@@ -31,8 +32,6 @@ void sort(int arr[], int n) {
             }
         }
         
-        int val = arr[i];
-        arr[i] = arr[pos];
-        arr[pos] = val;
+        swap(arr, i, pos);
     }
 }
