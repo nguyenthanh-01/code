@@ -6,3 +6,5 @@
 * japan / ja pen / nhật
 * france / phờ rank / pháp
 * country / căng truy / đất nước
+* live / li vờ / sống
+* in / in / ở trong
