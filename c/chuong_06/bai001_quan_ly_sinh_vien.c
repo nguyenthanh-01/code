@@ -331,7 +331,7 @@ void search(sv arr[], int l, int r) {
         display_4();
     }
     else {
-        int up = upper_bould(arr, l, r, x);
+        int up = upper_bould(arr, lb, r, x);
         output(arr, lb, up);
     }
 }
