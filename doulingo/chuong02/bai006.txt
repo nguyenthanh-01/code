@@ -19,3 +19,4 @@
 * phone number / phôn năm bờ / số điện thoại
 * address / ất roét / địa chỉ
 * name / nêm / tên
+* email / i meo / thư điện tử
