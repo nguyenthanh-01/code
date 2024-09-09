@@ -21,3 +21,4 @@
 * name / nêm / tên
 * email / i meo / thư điện tử
 * pet / pét / thú cưng
+* understand / ăn đơ sờ ten / hiểu
