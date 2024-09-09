@@ -7,7 +7,7 @@
 * france / phờ rank / pháp
 * country / căng truy / đất nước
 * live / li vờ / sống
-* in / in / ở trong
+* in / in / bên trong
 * french / phờ rét chờ / tiếng pháp
 * language / leng wíc / ngôn ngữ
 * paris / peo rì / pa ri
