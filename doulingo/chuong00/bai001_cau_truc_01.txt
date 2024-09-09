@@ -13,4 +13,5 @@
 * (?) is your husband a doctor / là của bạn chồng một bác sĩ / chồng của bạn là một bác sĩ
 
 * (+) i would like more hot coffee / tôi muốn thêm nóng cà phê / tôi muốn thêm cà phê nóng
+* (-) i dont like more hot coffee / tôi không thích thêm nóng cà phê / tôi không muốn thêm cà phê nóng
 * (?) more hot coffee / thêm nóng cà phê / thêm cà phê nóng
