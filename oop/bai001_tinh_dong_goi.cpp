@@ -9,6 +9,7 @@ class sinhvien {
         double gpa;
     public:
         sinhvien() {};
+
         sinhvien(string Ten,string Ngaysinh,string Lop,double Gpa) {
             ten = Ten;
             ngaysinh = Ngaysinh;
@@ -21,6 +22,8 @@ class sinhvien {
         void setten(string newten);
 
         string getten();
+
+        ~sinhvien() {};
 };
 
 void sinhvien::nhap() {
