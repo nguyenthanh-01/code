@@ -2,6 +2,6 @@
 
 ví dụ: 1 người có ước mơ có 1 chiếc ô tô, anh ta trúng xổ số anh ta có được chiếc ô tô anh ta mong muốn, rồi anh ta lại ước anh ta có một chiếc ô tô xịn hơn đắt tiền hơn, tạo thành một vòng lặp bất tận.
 
-* kỹ thuật đảo ngược: nếu một ngày bạn mất hết tất cả những gì bạn đang có bạn sẽ làm gì ?
+* kỹ thuật break: nếu một ngày bạn mất hết tất cả những gì bạn đang có bạn sẽ làm gì ?
 
 ví dụ: anh ta tiêu hết tiền trúng xổ số, anh ta bán cả chiếc xe ô tô mới mua, thậm chí anh ta còn nợ 1 số tiền lớn.
