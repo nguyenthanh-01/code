@@ -10,6 +10,8 @@ class sinhvien {
     public:
         void nhap();
         void xuat();
+        void setten(string newten);
+        string getten();
 };
 
 void sinhvien::nhap() {
@@ -21,9 +23,25 @@ void sinhvien::xuat() {
     cout << ten << " " << ngaysinh << " " << lop << " " << gpa << "\n";
 }
 
+void sinhvien::setten(string newten) {
+    ten = newten;
+}
+
+string sinhvien::getten() {
+    return ten;
+}
+
 int main() {
     sinhvien a;
+
     a.nhap();
     a.xuat();
+
+    a.setten("a");
+    a.xuat();
+
+    string b = a.getten();
+    cout << b;
+
     return 0;
 }
