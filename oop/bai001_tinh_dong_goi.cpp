@@ -8,9 +8,18 @@ class sinhvien {
         string ten, ngaysinh, lop;
         double gpa;
     public:
+        sinhvien() {};
+        sinhvien(string Ten,string Ngaysinh,string Lop,double Gpa) {
+            ten = Ten;
+            ngaysinh = Ngaysinh;
+            lop = Lop;
+            gpa = Gpa;
+        }
+
         void nhap();
         void xuat();
         void setten(string newten);
+
         string getten();
 };
 
@@ -40,8 +49,10 @@ int main() {
     a.setten("a");
     a.xuat();
 
-    string b = a.getten();
-    cout << b;
+    cout << a.getten() << "\n";
+
+    sinhvien b("b", "0", "tdh", 0);
+    b.xuat();
 
     return 0;
 }
