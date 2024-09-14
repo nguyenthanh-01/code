@@ -10,3 +10,4 @@
 * black / bờ láck / màu đen
 * red / rét / màu đỏ
 * coat / câu / áo khoác
+* bag / bang / túi
