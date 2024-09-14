@@ -10,3 +10,4 @@
 * dog / đoóc / chó
 * cat / cát / mèo
 * white / wai / trắng
+* they / rây / họ
