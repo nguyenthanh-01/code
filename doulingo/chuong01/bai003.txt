@@ -1,2 +1,3 @@
-book / búc / sách
-computer / com pưu tơ / máy tính (pc)
+* book / búc / sách
+* computer / com pưu tơ / máy tính (pc)
+* my book / mai búc / sách của tôi
