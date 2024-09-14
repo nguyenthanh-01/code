@@ -290,11 +290,7 @@ bool tiep_tuc() {
     
     getchar();
     
-    if(x == 'n') {
-        return true;
-    }
-    
-    return false;
+    return x == 'n';
 }
 
 void sort_and_search(sv arr[], int cnt[]) {
