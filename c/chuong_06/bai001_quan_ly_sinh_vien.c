@@ -26,12 +26,15 @@ void output(sv [], int, int);
 void save(sv [], int []);
 void push(sv [], int []);
 void pop(sv [], int []);
+bool tiep_tuc();
 
 void sort_and_search(sv [], int []);
 void sort(sv [], int []);
 void search(sv [], int, int);
 int lower_bould(sv [], int, int, char);
 int upper_bould(sv [], int, int, char);
+void kmp(sv [], int []);
+void pre_suf(char [], int []);
 
 int main() {
     sv *arr = (sv*) malloc(n * sizeof(sv));
@@ -52,17 +55,7 @@ int main() {
             while(true) {
                 push(arr, cnt);
                 
-                char x;
-
-                display_main();
-                printf("\n");
-                
-                printf("                       Tiep tuc (y/n): ");
-                scanf(" %c", &x);
-                
-                getchar();
-                
-                if(x == 'n') {
+                if(tiep_tuc()) {
                     break;
                 }
             }
@@ -286,6 +279,24 @@ void pop(sv arr[], int cnt[]) {
     display_2_1();
 }
 
+bool tiep_tuc() {
+    char x;
+    
+    display_main();
+    printf("\n");
+    
+    printf("                      Tiep tuc (y/n): ");
+    scanf(" %c", &x);
+    
+    getchar();
+    
+    if(x == 'n') {
+        return true;
+    }
+    
+    return false;
+}
+
 void sort_and_search(sv arr[], int cnt[]) {
     if(cnt[0] == 0) {
         display_4();
@@ -306,22 +317,20 @@ void sort_and_search(sv arr[], int cnt[]) {
             while(true) {
                 search(arr, 0, cnt[0] - 1);
                 
-                char x;
-
-                display_main();
-                printf("\n");
-                
-                printf("                       Tiep tuc (y/n): ");
-                scanf(" %c", &x);
-                
-                if(x == 'n') {
+                if(tiep_tuc()) {
                     break;
                 }
             }
         }
         
         else if(key == 2) {
-            break;
+            while(true) {
+                kmp(arr, cnt);
+                
+                if(tiep_tuc()) {
+                    break;
+                }
+            }
         }
         
         else if(key == 5) {
@@ -410,4 +419,92 @@ int upper_bould(sv arr[], int l, int r, char x) {
     }
 
     return pos;
+}
+
+void kmp(sv arr[], int cnt[]) {
+    char sub[30];
+    
+    display_main();
+    printf("\n");
+
+    printf("           Nhap ten can tim: ");
+    fgets(sub, 30, stdin);
+    int m = strlen(sub);
+    sub[--m] = '\0';
+    
+    int *ab = (int*) calloc(m, sizeof(int));
+    
+    pre_suf(sub, ab);
+    
+    bool flag = true;
+    int tmp = 1;
+    
+    display_main();
+
+    for(int x = 0; x < cnt[0]; x++) {
+        int k = strlen(arr[x].ten);
+        
+        int i = 0;
+        int j = 0;
+        
+        while(i < k) {
+            if(arr[x].ten[i] == sub[j]) {
+                i++;
+                j++;
+            
+                if(j == m) {
+                    if(flag) {
+                        printf("| %-5s | %-30s | %-10s | %-5s |\n", "STT", "Ho va ten", "Lop", "GPA");
+                        printf(" -------------------------------------------------------------\n");
+                    }
+                    
+                    flag = false;
+                    
+                    printf("| %-5d | %-30s | %-10s | %-5.1f |\n", tmp++, arr[x].ten, arr[x].lop, arr[x].gpa);
+                    
+                    break;
+                }
+            }
+            else {
+                if(j != 0) {
+                    j = ab[j - 1];
+                }
+                else {
+                    i++;
+                }
+            }
+        }
+    }
+    
+    if(flag) {
+        display_4();
+    }
+    else {
+        printf(" -------------------------------------------------------------\n");
+        printf("\n");
+        system("pause");
+    }
+
+    free(ab);
+}
+
+void pre_suf(char sub[], int ab[]) {
+    int m = strlen(sub);
+    
+    int i = 0;
+    int j = 1;
+
+    while(j < m) {
+        if(sub[i] == sub[j]) {
+            ab[j++] = ++i;
+        }
+        else {
+            if(i != 0) {
+                i = ab[i - 1];
+            }
+            else {
+                ab[j++] = 0;
+            }
+        }
+    }
 }
