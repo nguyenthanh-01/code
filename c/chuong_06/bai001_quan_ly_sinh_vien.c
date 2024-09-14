@@ -437,14 +437,14 @@ void kmp(sv arr[], int cnt[]) {
     
     display_main();
 
-    for(int x = 0; x < cnt[0]; x++) {
-        int k = strlen(arr[x].ten);
+    for(int k = 0; k < cnt[0]; k++) {
+        int x = strlen(arr[k].ten);
         
         int i = 0;
         int j = 0;
         
-        while(i < k) {
-            if(arr[x].ten[i] == sub[j]) {
+        while(i < x) {
+            if(arr[k].ten[i] == sub[j]) {
                 i++;
                 j++;
             
@@ -456,7 +456,7 @@ void kmp(sv arr[], int cnt[]) {
                     
                     flag = false;
                     
-                    printf("| %-5d | %-30s | %-10s | %-5.1f |\n", tmp++, arr[x].ten, arr[x].lop, arr[x].gpa);
+                    printf("| %-5d | %-30s | %-10s | %-5.1f |\n", tmp++, arr[k].ten, arr[k].lop, arr[k].gpa);
                     
                     break;
                 }
