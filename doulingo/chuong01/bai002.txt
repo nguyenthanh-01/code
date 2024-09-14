@@ -5,3 +5,4 @@
 * teacher / tít chờ / giáo viên
 * a teacher / ơ tít chờ / một giáo viên
 * good afternoon / gút áp tơ nun / chào buổi chiều
+* i am a math teacher / ai em ơ mát tít chờ / tôi là một giáo viên toán
