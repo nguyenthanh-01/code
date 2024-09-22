@@ -27,10 +27,11 @@ int main() {
                 if(arr[j].a < arr[i].a) {
                     if(arr[j].b > arr[i].b) {
                         lis[i] = max(lis[i], lis[j] + 1);
-                        val = max(val, lis[i]);
                     }
                 }
             }
+
+            val = max(val, lis[i]);
         }
 
         cout << val + 1 << "\n";
