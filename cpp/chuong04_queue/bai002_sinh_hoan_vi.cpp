@@ -27,6 +27,8 @@ int main() {
         test(arr[i], arr, 1);
     }
 
+    sort(all(arr));
+
     for(string i : arr) {
         cout << i << "\n";
     }
