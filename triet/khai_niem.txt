@@ -1,3 +1,9 @@
 * triết học là hệ thống tri thức tổng quát, bao quát toàn bộ tổng thể thế giới
 * triết học hình thành khi năng lực nhận thức, năng lực tư duy của con người đã phát triển điến mức cho phép hình dung thế giới, khái quát bức tranh tổng quát bao quát thế giới
 * đối tượng nghiên cứu của triết học là toàn bộ tổng thể thế giới, toàn bộ tổng thể các mối liên hệ, toàn bộ tổng thể các thuộc tính, đặc điểm, quy luật
+* phương pháp nghiên cứu:
+  + phương pháp siêu hình:
+    + thế giới vật chất tồn tại độc lập khách quan bên ngoài nhận thức, hiểu biết của con người, không phụ thuộc vào nhận thức hiểu biết của con người
+    + thế giới bao gồm các sự vật, hiện tượng tồn tại độc lập, tách biệt, cái này bên cạnh cái kia, không có mối liên hệ ràng buộc, mỗi sự vật hiện tượng là chính nó, là một thực thể độc lập, tách biệt với các sự vật hiện tượng khác
+    + các sự vật hiện tượng tạo thành thế giới đồng nhất, bất biến, không vận động, không biến đổi, không chuyển hóa lẫn nhau
+  + phương pháp biện chứng:
