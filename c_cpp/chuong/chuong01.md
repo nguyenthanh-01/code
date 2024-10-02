@@ -1,5 +1,5 @@
 ## Chương 01
-1. [bai001](c_cpp/de_bai/chuong01_bai001.txt)
+1. [bai001](/c_cpp/de_bai/chuong01_bai001.txt)
 - [dap_an_c](/c_cpp/c/chuong01_bai001.c)
 - [dap_an_cpp](/c_cpp/cpp/chuong01_bai001.cpp)
 2. [bai002](/c_cpp/de_bai/chuong01_bai002.txt)
