@@ -1,2 +1,5 @@
 # mối liên hệ là khái niệm dùng để chỉ sự ràng buộc, quy định, phụ thuộc lẫn nhau. làm tiền đề, điều kiện tồn tại cho nhau. tác động qua lại và ảnh hưởng lẫn nhau.
 # mối liên hệ phổ biến là khái niệm dùng để chỉ sự tồn tại bao trùm rộng khắp của mối liên hệ trong mọi phạm vi, lĩnh vực.
+# nội dung:
+  + mọi sự vật hiện tượng đều có mối liên hệ với nhau
+  + mối liên hệ là phương thức, điều kiện quy định sự tồn tại hay không tồn tại
