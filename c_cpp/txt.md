@@ -5,3 +5,6 @@
 2. [bai002](de_bai/chuong01_bai002.txt)
 - [dap_an_c](c/chuong01_bai002.c)
 - [dap_an_cpp](cpp/chuong01_bai002.cpp)
+3. [bai003](de_bai/chuong01_bai003.txt)
+- [dap_an_c](c/chuong01_bai003.c)
+- [dap_an_cpp](cpp/chuong01_bai003.cpp)
