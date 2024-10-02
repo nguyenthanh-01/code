@@ -3,3 +3,4 @@
 # nội dung:
   + mọi sự vật hiện tượng đều có mối liên hệ với nhau
   + mối liên hệ là phương thức, điều kiện quy định sự tồn tại hay không tồn tại
+  + cơ sở của mối liên hệ là tính thống nhất vật chất của thế giới
