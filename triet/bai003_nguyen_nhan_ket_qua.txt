@@ -1,6 +1,7 @@
 # nguyên nhân là phạm trù triết học dùng để chỉ sự tác động qua lại giữa các mặt trong một sự vật hiện tượng, hoặc giữa các sự vật hiện tượng với nhau, gây ra những biến đổi nhất định
 # kết quả là phạm trù triết học dùng để chỉ những biến đổi xuất hiện do sự tác động qua lại giữa các mặt trong một sự vật hiện tượng, hoặc giữa các sự vật hiện tượng với nhau
 # mối liên hệ nhân quả:
-  + quan hệ nhân quả là quan hệ chế ước, chế định lẫn nhau giữa hai mặt nhân và quả
-  + quan hệ nhân quả là quan hệ biến thiên, liên lập, miên viễn giữa hai mặt nhân và quả
+  + quan hệ nhân quả là quan hệ chế ước, chế định lẫn nhau giữa hai mặt nhân và quả (quan hệ tương hỗ)
+  + quan hệ nhân quả là quan hệ biến thiên, liên lập, miên viễn giữa hai mặt nhân và quả (thay đổi, chuyển hóa, tương liên)
   + quan hệ nhân quả là quan hệ phi tuyến, phi đối giữa hai mặt nhân và quả
+(1 nguyên nhân có thể sinh ra nhiều kết quả, 1 kết quả có thể được tạo ra từ nhiều nguyên nhân)
