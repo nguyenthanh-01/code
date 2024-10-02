@@ -1,1 +1,1 @@
-[Chương 01](chuong/chuong01.txt)
+[Chương 01](chuong/chuong01.md)
