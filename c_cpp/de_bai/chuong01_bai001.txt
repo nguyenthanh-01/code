@@ -1,4 +1,4 @@
-# Cho A = x^3 + 3x^2 + x + 1
+# cho A = x^3 + 3x^2 + x + 1
 # input x (-10^5 < x < 10^5)
 # tính A ?
 ví dụ:
