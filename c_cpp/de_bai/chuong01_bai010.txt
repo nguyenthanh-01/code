@@ -1,0 +1,14 @@
+# cho 3 cạnh
+# input a, b, c (-10^6 < a,b,c < 10^6)
+# kiểm tra xem 3 cạnh này có ghép dc thành 1 tam giác hay ko ?
+
+# ví dụ:
+input
+3 4 5
+output
+yes
+
+input
+1 2 3
+output
+no
