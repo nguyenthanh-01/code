@@ -1,6 +1,9 @@
 # cho F = (C * 9 / 5) + 32
 # input C (0 < C < 100)
 # tính F ? (2 phẩy)
-ví dụ:
-input: 24
-output: 75.20
+
+# ví dụ:
+input
+24
+output
+75.20
