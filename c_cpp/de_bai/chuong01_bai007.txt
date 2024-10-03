@@ -8,3 +8,13 @@ input
 4 6
 output
 0 6
+
+input
+5 5
+output
+5 5
+
+input
+6 4
+output
+4 8
