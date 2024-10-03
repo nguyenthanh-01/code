@@ -5,12 +5,8 @@ using ll = long long;
 
 int main() {
     int n; cin >> n;
-    int sum = 0;
 
-    for(int i = 1; i <= n; i++) {
-        sum += i;
-    }
-
+    int sum = n * (n + 1) / 2;
     cout << "S = " << sum << "\n";
 
     return 0;
