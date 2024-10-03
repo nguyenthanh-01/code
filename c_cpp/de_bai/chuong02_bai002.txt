@@ -1,0 +1,9 @@
+# cho S = 1^2 + 2^2 + 3^2 + ... + n^2
+# input n (1 < n < 10^5)
+# tính S ?
+
+# ví dụ:
+input
+3
+output
+14
