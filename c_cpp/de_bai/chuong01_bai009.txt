@@ -1,0 +1,9 @@
+# cho năm
+# input n (1 < n < 5000)
+# kiểm tra n có phải năm nhuận ?
+
+# ví dụ:
+input
+2020
+output
+yes
