@@ -3,4 +3,7 @@
 # kiểm tra N chẵn hay lẻ ?
 ví dụ:
 input: 2
-output: Chan
+output: chan
+
+input: 3
+output: le
