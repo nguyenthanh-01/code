@@ -2,6 +2,9 @@
 # input bán kính R (1 < R < 1000)
 # pi = 3.14
 # tính chu vi, diện tích ? (4 phẩy)
-ví dụ:
-input: 10
-output: 62.8000 314.0000
+
+# ví dụ:
+input
+10
+output
+62.8000 314.0000
