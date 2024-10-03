@@ -1,0 +1,9 @@
+# cho n
+# input n (1 < n < 10^6)
+# tính tổng các số chia hết cho 3 trong khoảng (0, n)
+
+# ví dụ:
+input
+10
+output
+18
