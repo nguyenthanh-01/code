@@ -1,0 +1,10 @@
+# cho a, b
+# input a, b (1 < a,b < 10^6)
+# tìm c biết c <= a, c%b == 0
+# tìm d biết d >= a, d%b == 0
+
+# ví dụ:
+input
+717 689
+output
+689 1378
