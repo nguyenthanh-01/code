@@ -1,6 +1,6 @@
 # cho n
 # input n (1 < n < 10^10)
-# tính tổng ước của n trong khoảng (0, n)
+# tính tổng ước của n trong khoảng (1, n)
 
 # ví dụ:
 input
