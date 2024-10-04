@@ -8,17 +8,16 @@ int main() {
     scanf("%lld", &n);
 
     ll sum = 0;
-    int m = sqrt(n);
-    ll m2 = (ll) m * m;
+    int _n = sqrt(n) + 1;
 
-    for(int i = 1; i <= m; i++) {
+    for(int i = 1; i < _n; i++) {
         if(n%i == 0) {
-            sum += (i + n / i);
+            sum += i;
+            
+            if(i != n / i) {
+                sum += n / i;
+            }
         }
-    }
-
-    if(m2 == n) {
-        sum -= m;
     }
 
     printf("Tong = %lld", sum);
