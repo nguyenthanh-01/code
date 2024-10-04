@@ -9,6 +9,7 @@ int main() {
 
     ll sum = 0;
     int _n = sqrt(n);
+    ll n2 = (ll) _n * _n;
 
     for(int i = 1; i <= _n; i++) {
         if(n%i == 0) {
@@ -16,7 +17,7 @@ int main() {
         }
     }
 
-    if(1ll * _n * _n == n) {
+    if(n2 == n) {
         sum -= _n;
     }
 
