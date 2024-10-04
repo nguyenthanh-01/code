@@ -6,16 +6,16 @@ using ll = long long;
 
 int main() {
     int n; cin >> n;
-    int _n = sqrt(n) + 1;
+    int m = sqrt(n);
 
-    for(int i = 1; i < _n; i++) {
+    for(int i = 1; i < m; i++) {
         if(n%i == 0) {
-            cout << i << " ";
-
-            if(i != n / i) {
-                cout << n / i << " ";
-            }
+            cout << i << " " << n / i << " ";
         }
+    }
+
+    if(n%m == 0) {
+        cout << m << " ";
     }
 
     return 0;
