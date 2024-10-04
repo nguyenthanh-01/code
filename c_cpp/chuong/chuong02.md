@@ -14,3 +14,6 @@
 5. [bai005](/c_cpp/de_bai/chuong02_bai005.txt)
 - [dap_an_c](/c_cpp/c/chuong02_bai005.c)
 - [dap_an_cpp](/c_cpp/cpp/chuong02_bai005.cpp)
+6. [bai006](/c_cpp/de_bai/chuong02_bai006.txt)
+- [dap_an_c](/c_cpp/c/chuong02_bai006.c)
+- [dap_an_cpp](/c_cpp/cpp/chuong02_bai006.cpp)
