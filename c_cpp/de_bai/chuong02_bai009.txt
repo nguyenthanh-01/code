@@ -1,0 +1,9 @@
+# cho n
+# input n (1 < n < 1000)
+# tính tích các ước của n trong khoảng (1, n)
+
+# ví dụ:
+input
+10
+output
+100
