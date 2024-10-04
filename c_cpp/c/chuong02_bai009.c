@@ -12,7 +12,7 @@ int main() {
 
     for(int i = 1; i < m; i++) {
         if(n%i == 0) {
-            res *= ((ll) i * n / i);
+            res *= n;
         }
     }
 
