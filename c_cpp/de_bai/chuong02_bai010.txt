@@ -1,0 +1,16 @@
+# cho 1 dãy số có n phần tử
+# input n (1 < n < 10000)
+# kiểm tra xem trong các số vừa nhập có 2022 không ?
+
+# ví dụ:
+input
+4
+2019 2020 2021 2022
+output
+yes
+
+input
+4
+2019 2020 2021 2024
+output
+no
