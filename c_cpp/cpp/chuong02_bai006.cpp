@@ -7,16 +7,17 @@ using ll = long long;
 int main() {
     ll n; cin >> n;
     ll sum = 0;
-    int _n = sqrt(n);
+    int m = sqrt(n);
+    ll m2 = (ll) m * m;
 
-    for(int i = 1; i <= _n; i++) {
+    for(int i = 1; i <= m; i++) {
         if(n%i == 0) {
             sum += (i + n / i);
         }
     }
 
-    if(1ll * _n * _n == n) {
-        sum -= _n;
+    if(m2 == n) {
+        sum -= m;
     }
 
     cout << "Tong = " << sum << "\n";
