@@ -7,9 +7,9 @@ int main() {
     ll n;
     scanf("%lld", &n);
 
-    int m = sqrt(n) + 1;
+    int _n = sqrt(n) + 1;
 
-    for(int i = 1; i < m; i++) {
+    for(int i = 1; i < _n; i++) {
         printf("%lld ", (ll) i * i);
     }
 
