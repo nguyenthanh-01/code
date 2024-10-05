@@ -1,0 +1,19 @@
+# cho n
+# input n (0 < n < 10^9)
+# kiểm tra n có phải là số nguyên tố ?
+
+# ví dụ:
+input
+2
+output
+yes
+
+input
+9
+output
+no
+
+input
+3
+output
+yes
