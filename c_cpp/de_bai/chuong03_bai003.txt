@@ -7,3 +7,13 @@ input
 169
 output
 yes
+
+input
+168
+output
+no
+
+input
+170
+output
+no
