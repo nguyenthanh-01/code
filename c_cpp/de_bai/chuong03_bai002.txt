@@ -7,3 +7,13 @@ input
 60
 output
 2 2 3 5
+
+input
+61
+output
+61
+
+input
+62
+output
+2 31
