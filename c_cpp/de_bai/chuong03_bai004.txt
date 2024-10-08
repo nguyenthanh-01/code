@@ -7,3 +7,8 @@ input
 10 20
 output
 16
+
+input
+9 20
+output
+9 16
