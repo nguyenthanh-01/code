@@ -2,3 +2,8 @@
 # input a, b (1 < a,b < 10^12)
 # liệt kê số chính phương trong đoạn [a, b]
 
+# ví dụ:
+input
+10 20
+output
+16
