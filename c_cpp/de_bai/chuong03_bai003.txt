@@ -1,0 +1,3 @@
+# cho n
+# input n (1 < n < 10^18)
+# kiểm tra n có phải là số chính phương không ?
