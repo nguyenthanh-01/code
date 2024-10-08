@@ -15,7 +15,7 @@ int main() {
         }
     }
 
-    if(n%m == 0) {
+    if(1ll * m * m == n) {
         sum += m;
     }
 
