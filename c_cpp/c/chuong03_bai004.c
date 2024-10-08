@@ -13,5 +13,6 @@ int main() {
     for(int i = c; i < d; i++) {
         printf("%lld ", 1ll * i * i);
     }
+    
     return 0;
 }
