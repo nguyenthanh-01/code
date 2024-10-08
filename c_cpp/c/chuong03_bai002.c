@@ -35,6 +35,6 @@ void ts_nt(ll n) {
     }
 
     if(n > 2) {
-        printf("%lld ", n);
+        printf("%lld", n);
     }
 }
