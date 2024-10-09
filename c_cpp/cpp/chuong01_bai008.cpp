@@ -1,5 +1,5 @@
 #include <iostream>
-#include <stdio.h>
+#include <cstdio>
 
 using namespace std;
 using ll = long long;
@@ -10,7 +10,7 @@ int main() {
 
     int tong = a + b;
     int hieu = a - b;
-    ll tich = (ll) a * b;
+    ll tich = 1ll * a * b;
 
     cout << "tong = " << tong << "\n";
     cout << "hieu = " << hieu << "\n";
@@ -20,7 +20,7 @@ int main() {
         cout << "invalid \n";
     }
     else {
-        float thuong = (float) a / b;
+        float thuong = 1.0 * a / b;
         printf("thuong = %.4f", thuong);
     }
 
