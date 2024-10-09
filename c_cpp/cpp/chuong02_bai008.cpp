@@ -9,7 +9,7 @@ int main() {
     int _n = sqrt(n) + 1;
 
     for(int i = 1; i < _n; i++) {
-        cout << (ll) i * i << " ";
+        cout << 1ll * i * i << " ";
     }
 
     return 0;
