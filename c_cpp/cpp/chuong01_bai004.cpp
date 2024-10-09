@@ -1,5 +1,5 @@
 #include <iostream>
-#include <stdio.h>
+#include <cstdio>
 
 using namespace std;
 using ll = long long;
@@ -9,8 +9,8 @@ using ll = long long;
 int main() {
     int R; cin >> R;
 
-    float chu_vi = (float) 2 * Pi * R;
-    float dien_tich = (float) Pi * R * R;
+    float chu_vi = 2.0 * Pi * R;
+    float dien_tich = Pi * R * R;
 
     printf("Chu vi = %.4f \n", chu_vi);
     printf("Dien tich = %.4f \n", dien_tich);
