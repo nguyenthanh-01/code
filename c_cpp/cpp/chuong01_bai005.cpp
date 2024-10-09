@@ -1,6 +1,6 @@
 #include <iostream>
+#include <cstdio>
 #include <cmath>
-#include <stdio.h>
 
 using namespace std;
 using ll = long long;
