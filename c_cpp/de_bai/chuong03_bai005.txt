@@ -1,0 +1,9 @@
+# cho a, b
+# input a, b (1 < a,b < 10^12)
+# tìm ước chung lớn nhất và bội chung nhỏ nhất ?
+
+# ví dụ:
+input
+20 50
+output
+10 100
