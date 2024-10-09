@@ -6,7 +6,7 @@ int main() {
     int n;
     scanf("%d", &n);
 
-    ll sum = (ll) n * (n + 1) / 2;
+    ll sum = 1ll * n * (n + 1) / 2;
     printf("S = %lld", sum);
 
     return 0;
