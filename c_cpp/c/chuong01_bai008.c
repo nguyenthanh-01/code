@@ -8,7 +8,7 @@ int main() {
 
     int tong = a + b;
     int hieu = a - b;
-    ll tich = (ll) a * b;
+    ll tich = 1ll * a * b;
 
     printf("tong = %d \n", tong);
     printf("hieu = %d \n", hieu);
@@ -18,7 +18,7 @@ int main() {
         printf("invalid \n");
     }
     else {
-        float thuong = (float) a / b;
+        float thuong = 1.0 * a / b;
         printf("thuong = %.4f \n", thuong);
     }
 
