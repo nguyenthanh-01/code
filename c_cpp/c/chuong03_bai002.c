@@ -31,6 +31,7 @@ void ts_nt(ll n) {
             printf("%d ", i);
             n /= i;
         }
+        
         _n = sqrt(n) + 1;
     }
 
