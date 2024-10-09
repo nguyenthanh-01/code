@@ -9,10 +9,10 @@ int main() {
     ll a, b;
     cin >> a >> b;
 
-    int c = ceil(sqrt(a));
-    int d = sqrt(b) + 1;
+    int l = ceil(sqrt(a));
+    int r = sqrt(b) + 1;
 
-    for(int i = c; i < d; i++) {
+    for(int i = l; i < r; i++) {
         printf("%lld ", 1ll * i * i);
     }
 
