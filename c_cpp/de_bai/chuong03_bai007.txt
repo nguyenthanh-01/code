@@ -1,6 +1,6 @@
 # cho n
 # input n (1 < n < 92)
-# liệt kê các số fibonacci từ 1 đến n
+# liệt kê các số fibonacci từ 1 đến n (1 1)
 
 # ví dụ:
 input
