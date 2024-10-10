@@ -1,6 +1,6 @@
 # cho n
 # input n (1 < n < 15)
-# tính fibonacci thứ n ?
+# tính fibonacci thứ n ? (0 1)
 
 # ví dụ:
 input
