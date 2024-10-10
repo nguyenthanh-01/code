@@ -1,0 +1,9 @@
+# cho n
+# input n (0 < n < 10)
+# tính n giai thừa ?
+
+# ví dụ:
+input
+5
+output
+120
