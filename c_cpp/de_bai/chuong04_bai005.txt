@@ -1,0 +1,9 @@
+# cho n
+# input n (1 < n < 15)
+# tính fibonacci thứ n ?
+
+# ví dụ:
+input
+6
+output
+5
