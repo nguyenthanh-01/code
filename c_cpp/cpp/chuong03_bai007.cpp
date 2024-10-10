@@ -15,11 +15,11 @@ int main() {
 
 void fibo(int n) {
     if(n > 0) {
-        printf("1 ");
+        cout << "1 ";
     }
 
     if(n > 1) {
-        printf("1 ");
+        cout << "1 ";
     }
 
     ll f1 = 1;
