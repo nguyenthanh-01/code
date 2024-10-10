@@ -1,0 +1,9 @@
+# cho s = 1^2 + 2^2 + 3^2 + ... + n^2
+# input n (0 < n < 1000)
+# tính s ?
+
+# ví dụ:
+input
+53
+output
+51039
