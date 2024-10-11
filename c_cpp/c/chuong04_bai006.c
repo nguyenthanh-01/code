@@ -5,8 +5,8 @@
 int giai_thua(int, int);
 
 int main() {
-    int k, n;
-    scanf("%d %d", &k, &n);
+    int n, k;
+    scanf("%d %d", &n, &k);
 
     int to_hop = giai_thua(n, n - k) / giai_thua(k, 1);
 
