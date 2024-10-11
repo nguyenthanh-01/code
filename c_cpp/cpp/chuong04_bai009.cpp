@@ -7,6 +7,7 @@ void hexa(int, string);
 
 int main() {
     int n; cin >> n;
+    
     string arr = "0123456789ABCDEF";
 
     hexa(n, arr);
