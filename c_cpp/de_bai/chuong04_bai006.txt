@@ -1,0 +1,14 @@
+# cho n, k
+# input n, k (1 < k,n < 100)
+# tính tổ hợp chập k của n ?
+
+# ví dụ:
+input
+10 2
+output
+45
+
+input
+100 2
+output
+4950
