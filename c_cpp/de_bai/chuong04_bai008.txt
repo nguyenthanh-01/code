@@ -1,0 +1,9 @@
+# cho n
+# input n (1 < n < 10^18)
+# chuyển n sang hệ nhị phân ?
+
+# ví dụ:
+input
+8
+output
+1000
