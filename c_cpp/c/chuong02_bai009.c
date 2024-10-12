@@ -20,7 +20,7 @@ int main() {
         res *= m;
     }
 
-    printf("Tich = %lld", res);
+    printf("%lld", res);
 
     return 0;
 }
