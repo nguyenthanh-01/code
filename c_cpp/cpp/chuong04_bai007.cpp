@@ -3,22 +3,22 @@
 using namespace std;
 using ll = long long;
 
-const int mod = 1000000007;
+const int MOD = (int) 1e9 + 7;
 
-ll bin_luy_thua(ll, ll);
+ll luy_thua_bin(ll, ll);
 
 int main() {
     ll a, b;
     cin >> a >> b;
 
-    ll ans = bin_luy_thua(a, b);
+    ll ans = luy_thua_bin(a, b);
 
     cout << ans;
 
     return 0;
 }
 
-ll bin_luy_thua(ll a, ll b) {
+ll luy_thua_bin(ll a, ll b) {
     ll res = 1;
 
     while(b != 0) {
