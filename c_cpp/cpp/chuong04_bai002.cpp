@@ -21,6 +21,6 @@ void tong(int n, ll &s) {
         return;
     }
 
-    s += 1ll * n * n;
+    s += (ll) n * n;
     tong(n - 1, s);
 }
