@@ -19,7 +19,7 @@ int main() {
         res *= m;
     }
 
-    cout << "Tich = " << res << "\n";
+    cout << res << "\n";
 
     return 0;
 }
