@@ -6,11 +6,11 @@ int main() {
     int a, b;
     scanf("%d %d", &a, &b);
 
-    int c = a / b * b;
-    int d = (a + b - 1) / b * b;
+    int nho_hon = a / b * b;
+    int lon_hon = (a + b - 1) / b * b;
 
-    printf("c = %d \n", c);
-    printf("d = %d \n", d);
+    printf("%d \n", nho_hon);
+    printf("%d \n", lon_hon);
 
     return 0;
 }
