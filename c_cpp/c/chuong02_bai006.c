@@ -20,7 +20,7 @@ int main() {
         sum += m;
     }
 
-    printf("Tong = %lld", sum);
+    printf("%lld", sum);
 
     return 0;
 }
