@@ -26,10 +26,10 @@ void fibo(int n) {
     ll f2 = 1;
 
     for(int i = 2; i < n; i++) {
-        ll r = f1 + f2;
-        printf("%lld ", r);
+        ll fn = f1 + f2;
+        printf("%lld ", fn);
 
         f1 = f2;
-        f2 = r;
+        f2 = fn;
     }
 }
