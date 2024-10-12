@@ -13,7 +13,7 @@ int main() {
     int r = sqrt(b) + 1;
 
     for(int i = l; i < r; i++) {
-        printf("%lld ", 1ll * i * i);
+        printf("%lld ", (ll) i * i);
     }
 
     return 0;
