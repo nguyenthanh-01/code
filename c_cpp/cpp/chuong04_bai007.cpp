@@ -23,11 +23,11 @@ ll luy_thua_bin(ll a, ll b) {
 
     while(b != 0) {
         if(b%2 == 0) {
-            a = (a * a) % mod;
+            a = (a * a) % MOD;
             b /= 2;
         }
         else {
-            res = (res * a) % mod;
+            res = (res * a) % MOD;
             b -= 1;
         }
     }
