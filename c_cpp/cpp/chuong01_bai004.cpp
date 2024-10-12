@@ -4,16 +4,16 @@
 using namespace std;
 using ll = long long;
 
-#define Pi 3.14
+#define PI 3.14
 
 int main() {
-    int R; cin >> R;
+    int r; cin >> r;
 
-    float chu_vi = 2.0 * Pi * R;
-    float dien_tich = Pi * R * R;
+    float chu_vi = 2.0 * PI * r;
+    float dien_tich = PI * r * r;
 
-    printf("Chu vi = %.4f \n", chu_vi);
-    printf("Dien tich = %.4f \n", dien_tich);
+    printf("%.4f \n", chu_vi);
+    printf("%.4f \n", dien_tich);
 
     return 0;
 }
