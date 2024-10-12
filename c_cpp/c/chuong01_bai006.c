@@ -3,10 +3,10 @@
 #define ll long long
 
 int main() {
-    int N;
-    scanf("%d", &N);
+    int n;
+    scanf("%d", &n);
 
-    if(N%2 == 0) {
+    if(n%2 == 0) {
         printf("chan");
     }
     else {
