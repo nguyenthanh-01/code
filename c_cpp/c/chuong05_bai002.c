@@ -3,7 +3,7 @@
 #define ll long long
 
 int main() {
-    int n = 1000000;
+    int n = (int) 1e6;
     int arr[n];
 
     for(int i = 0; i < n; i++) {
@@ -16,7 +16,6 @@ int main() {
     while(m--) {
         int x;
         scanf("%d", &x);
-
         arr[x]++;
     }
 
