@@ -3,24 +3,24 @@
 #define ll long long
 
 int main() {
-    int m = 1000000;
-    int arr[m];
+    int n = 1000000;
+    int arr[n];
 
-    for(int i = 0; i < m; i++) {
+    for(int i = 0; i < n; i++) {
         arr[i] = 0;
     }
 
-    int n;
-    scanf("%d", &n);
+    int m;
+    scanf("%d", &m);
 
-    while(n--) {
+    while(m--) {
         int x;
         scanf("%d", &x);
 
         arr[x]++;
     }
 
-    for(int i = 0; i < m; i++) {
+    for(int i = 0; i < n; i++) {
         if(arr[i] != 0) {
             printf("%d %d \n", i, arr[i]);
         }
