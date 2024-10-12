@@ -12,7 +12,7 @@ int main() {
         sum += i;
     }
 
-    printf("Tong = %lld", sum);
+    printf("%lld", sum);
 
     return 0;
 }
