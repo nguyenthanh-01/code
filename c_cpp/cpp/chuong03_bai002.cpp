@@ -31,7 +31,6 @@ void ts_nt(ll n) {
             cout << i << " ";
             n /= i;
         }
-        
         _n = sqrt(n) + 1;
     }
 
