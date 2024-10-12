@@ -9,7 +9,7 @@ int main() {
     scanf("%d", &n);
 
     int cnt = 0;
-    int can = 1000000000;
+    int can = (int) 1e9;
 
     nhanh_can(n, cnt, &can);
 
