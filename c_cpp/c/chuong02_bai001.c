@@ -6,8 +6,8 @@ int main() {
     int n;
     scanf("%d", &n);
 
-    ll sum = 1ll * n * (n + 1) / 2;
-    printf("S = %lld", sum);
+    ll sum = (ll) n * (n + 1) / 2;
+    printf("%lld", sum);
 
     return 0;
 }
