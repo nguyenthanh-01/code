@@ -6,7 +6,7 @@ int main() {
     int x;
     scanf("%d", &x);
 
-    ll a = 1ll * x * x * x + 3ll * x * x + x + 1;
+    ll a = (ll) x * x * x + (ll) x * x * 3 + x + 1;
     printf("%lld", a);
 
     return 0;
