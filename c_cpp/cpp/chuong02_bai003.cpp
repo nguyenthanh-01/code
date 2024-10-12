@@ -11,7 +11,7 @@ int main() {
         sum += i;
     }
 
-    cout << "Tong = " << sum << "\n";
+    cout << sum << "\n";
 
     return 0;
 }
