@@ -10,7 +10,7 @@ int main() {
     int _n = sqrt(n) + 1;
 
     for(int i = 1; i < _n; i++) {
-        printf("%lld ", 1ll * i * i);
+        printf("%lld ", (ll) i * i);
     }
 
     return 0;
