@@ -10,18 +10,18 @@ int main() {
 
     int tong = a + b;
     int hieu = a - b;
-    ll tich = 1ll * a * b;
+    ll tich = (ll) a * b;
 
-    cout << "tong = " << tong << "\n";
-    cout << "hieu = " << hieu << "\n";
-    cout << "tich = " << tich << "\n";
+    cout << tong << "\n";
+    cout << hieu << "\n";
+    cout << tich << "\n";
 
     if(b == 0) {
         cout << "invalid \n";
     }
     else {
         float thuong = 1.0 * a / b;
-        printf("thuong = %.4f", thuong);
+        printf("%.4f", thuong);
     }
 
     return 0;
