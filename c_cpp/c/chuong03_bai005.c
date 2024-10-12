@@ -23,7 +23,6 @@ ll ucln(ll a, ll b) {
         a = b;
         b = r;
     }
-
     return a;
 }
 
