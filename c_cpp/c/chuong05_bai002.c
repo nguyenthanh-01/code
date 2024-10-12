@@ -2,10 +2,9 @@
 
 #define ll long long
 
-const int MAX = (int) 1e6;
-
 int main() {
-    int arr[MAX];
+    int n = (int) 1e6;
+    int arr[n];
 
     for(int i = 0; i < n; i++) {
         arr[i] = 0;
