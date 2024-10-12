@@ -19,7 +19,7 @@ int main() {
         sum += m;
     }
 
-    cout << "Tong = " << sum << "\n";
+    cout << sum << "\n";
 
     return 0;
 }
