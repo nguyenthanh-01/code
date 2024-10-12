@@ -1,0 +1,11 @@
+# cho mảng A[n]
+# input n, A[n], k
+# có bao nhiêu cặp số mà tổng của chúng = k ?
+
+# ví dụ:
+input
+5
+1 2 3 1 2
+3
+output
+4
