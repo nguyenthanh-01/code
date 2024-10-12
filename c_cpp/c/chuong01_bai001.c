@@ -6,8 +6,8 @@ int main() {
     int x;
     scanf("%d", &x);
 
-    ll A = 1ll * x * x * x + 3ll * x * x + x + 1;
-    printf("A = %lld", A);
+    ll a = 1ll * x * x * x + 3ll * x * x + x + 1;
+    printf("%lld", a);
 
     return 0;
 }
