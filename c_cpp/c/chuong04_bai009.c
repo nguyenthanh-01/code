@@ -2,7 +2,7 @@
 
 #define ll long long
 
-void hexa(int, char []);
+void thap_luc_phan(int, char []);
 
 int main() {
     int n;
@@ -10,17 +10,17 @@ int main() {
 
     char arr[] = "0123456789ABCDEF";
 
-    hexa(n, arr);
+    thap_luc_phan(n, arr);
 
     return 0;
 }
 
-void hexa(int n, char arr[]) {
+void thap_luc_phan(int n, char arr[]) {
     if(n == 0) {
         return;
     }
 
     int x = n % 16;
-    hexa(n / 16, arr);
+    thap_luc_phan(n / 16, arr);
     printf("%c", arr[x]);
 }
