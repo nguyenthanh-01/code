@@ -3,11 +3,11 @@
 #define ll long long
 
 int main() {
-    int C;
-    scanf("%d", &C);
+    int c;
+    scanf("%d", &c);
 
-    float F = (1.0 * C * 9 / 5) + 32;
-    printf("F = %.2f", F);
+    float f = (1.0 * c * 9 / 5) + 32;
+    printf("%.2f", f);
 
     return 0;
 }
