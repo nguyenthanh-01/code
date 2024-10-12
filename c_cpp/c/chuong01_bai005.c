@@ -11,7 +11,7 @@ int main() {
     int y = y1 - y2;
 
     float khoang_cach = sqrt(x * x + y * y);
-    printf("Khoang cach = %.2f", khoang_cach);
+    printf("%.2f", khoang_cach);
 
     return 0;
 }
