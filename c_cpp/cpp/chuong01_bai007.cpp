@@ -7,11 +7,11 @@ int main() {
     int a, b;
     cin >> a >> b;
 
-    int c = a / b * b;
-    int d = (a + b - 1) / b * b;
+    int nho_hon = a / b * b;
+    int lon_hon = (a + b - 1) / b * b;
 
-    cout << "c = " << c << "\n";
-    cout << "d = " << d << "\n";
+    cout << nho_hon << "\n";
+    cout << lon_hon << "\n";
 
     return 0;
 }
