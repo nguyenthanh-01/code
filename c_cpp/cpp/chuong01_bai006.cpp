@@ -4,9 +4,9 @@ using namespace std;
 using ll = long long;
 
 int main() {
-    int N; cin >> N;
+    int n; cin >> n;
 
-    if(N%2 == 0) {
+    if(n%2 == 0) {
         cout << "chan";
     }
     else {
