@@ -8,7 +8,7 @@ void nhanh_can(int, int, int &);
 int main() {
     int n; cin >> n;
     int cnt = 0;
-    int can = 1000000000;
+    int can = (int) 1e6;
 
     nhanh_can(n, cnt, can);
 
