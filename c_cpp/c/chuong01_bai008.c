@@ -8,18 +8,18 @@ int main() {
 
     int tong = a + b;
     int hieu = a - b;
-    ll tich = 1ll * a * b;
+    ll tich = (ll) a * b;
 
-    printf("tong = %d \n", tong);
-    printf("hieu = %d \n", hieu);
-    printf("tich = %lld \n", tich);
+    printf("%d \n", tong);
+    printf("%d \n", hieu);
+    printf("%lld \n", tich);
 
     if(b == 0) {
         printf("invalid \n");
     }
     else {
         float thuong = 1.0 * a / b;
-        printf("thuong = %.4f \n", thuong);
+        printf("%.4f \n", thuong);
     }
 
     return 0;
