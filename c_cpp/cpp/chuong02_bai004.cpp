@@ -12,7 +12,7 @@ int main() {
         sum += 1.0 / i;
     }
 
-    printf("Tong = %.3lf", sum);
+    printf("%.3lf", sum);
 
     return 0;
 }
