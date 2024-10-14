@@ -1,0 +1,3 @@
+# cho n
+# input n (n = 90)
+# in ra n số fibonacci
