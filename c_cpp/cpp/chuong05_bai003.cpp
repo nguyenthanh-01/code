@@ -14,9 +14,15 @@ int main() {
         arr[i] = arr[i - 1] + arr[i - 2];
     }
 
+    int x; cin >> x;
+
     for(int i = 0; i < n; i++) {
-        cout << arr[i] << " ";
+        if(arr[i] == x) {
+            cout << "yes";
+            return 0;
+        }
     }
 
+    cout << "no";
     return 0;
 }
