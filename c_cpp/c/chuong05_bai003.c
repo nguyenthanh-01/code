@@ -13,9 +13,16 @@ int main() {
         arr[i] = arr[i - 1] + arr[i - 2];
     }
 
+    int x;
+    scanf("%d", &x);
+
     for(int i = 0; i < n; i++) {
-        printf("%lld ", arr[i]);
+        if(arr[i] == x) {
+            printf("yes");
+            return 0;
+        }
     }
- 
+    
+    printf("no");
     return 0;
 }
