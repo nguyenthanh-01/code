@@ -1,0 +1,10 @@
+# cho mảng arr[n]
+# input n, x, arr[n]
+# thực hiện xóa 0 khỏi vị trí x
+
+# ví dụ:
+input
+7 2
+1 2 0 3 4 5 6
+output
+1 2 3 4 5 6
