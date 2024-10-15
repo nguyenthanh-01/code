@@ -1,0 +1,3 @@
+# cho arr[n]
+# input n, k, arr[n]
+# khởi tạo cửa sổ trượt với độ rộng k phần tử
