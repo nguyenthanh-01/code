@@ -15,8 +15,10 @@ int main() {
     scanf("%d", &m);
 
     for(int i = 0; i < m; i++) {
-        scanf("%d", &arr[i]);
-        arr_map[arr[i]]++;
+        int x;
+        scanf("%d", &x);
+        arr[i] = x;
+        arr_map[x]++;
     }
 
     for(int i = 0; i < m; i++) {
