@@ -1,6 +1,7 @@
 # cho mảng A[n]
 # input n, A[n]
-# in ra tần suất
+# khởi tạo mảng đánh dấu
+  + in ra theo thứ tự xuất hiện
 
 # ví dụ:
 input
