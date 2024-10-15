@@ -1,3 +1,14 @@
 # cho n
-# input n (n = 90)
-# in ra n số fibonacci
+# input n (1 < n < 10^9)
+# kiểm tra n có phải là số fibonacci ?
+
+# ví dụ
+input
+8
+output
+yes
+
+input
+9
+output
+no
