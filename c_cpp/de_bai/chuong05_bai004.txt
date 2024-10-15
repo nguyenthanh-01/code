@@ -1,0 +1,6 @@
+# cho arr[n]
+# input n, arr[n]
+# tính ước chung lớn nhất của arr[n]
+
+# ví dụ:
+input
