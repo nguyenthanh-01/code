@@ -27,5 +27,4 @@
 - [dap_an_c](/c_cpp/c/chuong05_bai009.c)
 - [dap_an_cpp](/c_cpp/cpp/chuong05_bai009.cpp)
 10. [bai010](/c_cpp/de_bai/chuong05_bai010.txt)
-- [dap_an_c](/c_cpp/c/chuong05_bai010.c)
 - [dap_an_cpp](/c_cpp/cpp/chuong05_bai010.cpp)
