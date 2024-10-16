@@ -3,7 +3,7 @@
 # khởi tạo mảng đánh dấu
   + in ra theo số lần xuất hiện tăng dần
   + nếu số lần xuất hiện bằng nhau thì:
-    + in ra theo giá trị tăng dần
+    + in ra theo giá trị giảm dần
 
 # ví dụ:
 input
@@ -11,6 +11,6 @@ input
 2 1 2 1 1 2 5 5 5 4
 output
 4 1
-1 3
-2 3
 5 3
+2 3
+1 3
