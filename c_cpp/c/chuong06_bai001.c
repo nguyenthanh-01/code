@@ -27,7 +27,6 @@ int main() {
 }
 
 void sang_nt() {
-    arr[0] = arr[1] = false;
     arr[2] = true;
 
     for(int i = 3; i < n; i += 2) {
