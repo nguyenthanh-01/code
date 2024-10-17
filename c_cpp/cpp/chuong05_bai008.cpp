@@ -15,19 +15,16 @@ int main() {
     int n, k;
     cin >> n >> k;
 
-    vi arr;
+    vi arr(n);
 
     for(int i = 0; i < n; i++) {
-        int x; cin >> x;
-        arr.pb(x);
+        cin >> arr[i];
     }
 
     int m = n - k + 1;
-    vi arr_window;
+    vi arr_window(m);
 
     for(int i = 0; i < m; i++) {
-        arr_window.pb(0);
-
         for(int j = i; j < i + k; j++) {
             arr_window[i] += arr[j];
         }
