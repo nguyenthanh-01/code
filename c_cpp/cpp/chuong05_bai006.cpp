@@ -15,11 +15,10 @@ int main() {
     int n, x;
     cin >> n >> x;
 
-    vi arr;
+    vi arr(n);
 
-    while(n--) {
-        int y; cin >> y;
-        arr.pb(y);
+    for(int i = 0; i < n; i++) {
+        cin >> arr[i];
     }
 
     arr.erase(arr.begin() + x);
