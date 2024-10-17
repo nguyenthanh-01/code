@@ -13,13 +13,13 @@ typedef map<int, int> mp;
 
 int main() {
     int n; cin >> n;
-    vi arr;
+    vi arr(n);
     mp arr_map;
 
     for(int i = 0; i < n; i++) {
-        int x; cin >> x;
-        arr.pb(x);
-        arr_map[x]++;
+        cin >> arr[i];
+        int j = arr[i];
+        arr_map[j]++;
     }
 
     for(int i = 0; i < n; i++) {
