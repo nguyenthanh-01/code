@@ -20,11 +20,11 @@ int main() {
         cin >> arr[i];
     }
 
-    vi arr_sum;
-    arr_sum.pb(arr[0]);
+    vi arr_sum(n);
+    arr_sum[0] = arr[0];
 
-    for(int i = 1; i < sz(arr); i++) {
-        arr_sum.pb(arr_sum[i - 1] + arr[i]);
+    for(int i = 1; i < n; i++) {
+        arr_sum[i] = arr_sum[i - 1] + arr[i];
     }
 
     for(int i : arr_sum) {
