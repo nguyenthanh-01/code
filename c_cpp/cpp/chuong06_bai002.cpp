@@ -9,6 +9,8 @@ using ll = long long;
 
 typedef vector<int> vi;
 
+inline bool cmp(int &i, int &j) {return i > j;}
+
 void my_tron(vi &, int, int, int);
 void merge_sort(vi &, int, int);
 
@@ -45,7 +47,21 @@ void my_tron(vi &arr, int l, int r, int m) {
         arr2[i - m - 1] = arr[i];
     }
 
-    merge(all(arr1), all(arr2), arr.begin() + l);
+    int i = 0;
+    int j = 0;
+    int k = l;
+
+    while(i < n1 && j < n2) {
+        if(cmp(arr1[i], arr2[j])) {
+            arr[k++] = arr2[j++];
+        }
+        else {
+            arr[k++] = arr1[i++];
+        }
+    }
+
+    while(i < n1) arr[k++] = arr1[i++];
+    while(j < n2) arr[k++] = arr2[j++];
 }
 
 void merge_sort(vi &arr, int l, int r) {
