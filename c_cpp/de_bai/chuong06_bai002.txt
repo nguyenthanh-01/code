@@ -1,16 +1,13 @@
 # cho arr[n]
 # input n, arr[n]
 # triển khai thuật toán merge sort
+  + phân loại số lẻ bên trái, số chẵn bên phải
+  + sắp xếp số lẻ giảm dần
+  + sắp xếp số chẵn tăng dần
 
 # ví dụ:
 input
-6
-1 3 5 2 4 6
+10
+1 2 3 9 7 4 8 6 10 5
 output
-1 2 3 4 5 6
-
-input
-7
-1 3 5 7 2 4 6
-output
-1 2 3 4 5 6 7
+9 7 5 3 1 2 4 6 8 10 
