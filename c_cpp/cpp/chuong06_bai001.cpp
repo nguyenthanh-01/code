@@ -4,7 +4,7 @@
 using namespace std;
 using ll = long long;
 
-#define n (int) 1e9
+#define n (int) 1e7
 
 bool arr[n];
 
