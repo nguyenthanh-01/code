@@ -11,6 +11,9 @@ bool arr[n];
 void sang_nt();
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
     sang_nt();
 
     int x;
