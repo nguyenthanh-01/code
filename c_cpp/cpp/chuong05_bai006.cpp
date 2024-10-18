@@ -17,8 +17,8 @@ int main() {
 
     vi arr(n);
 
-    for(int i = 0; i < n; i++) {
-        cin >> arr[i];
+    for(int &i : arr) {
+        cin >> i;
     }
 
     arr.erase(arr.begin() + x);
