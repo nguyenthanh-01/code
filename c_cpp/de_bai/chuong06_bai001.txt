@@ -1,5 +1,5 @@
 # cho vô cực n
-# input n (vô cực)
+# input n (vô cực) (1 < n < 10^7)
 # triển khai sàng nguyên tố
 
 # ví dụ:
