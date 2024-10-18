@@ -24,7 +24,6 @@ int main() {
         arr_win[i] = arr_win[i - 1] - arr[i - 1] + arr[i + k - 1];
     }
 
-
     for(int i = 0; i < m; i++) {
         printf("%d ", arr_win[i]);
     }
