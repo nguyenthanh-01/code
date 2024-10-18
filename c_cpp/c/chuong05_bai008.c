@@ -13,18 +13,20 @@ int main() {
     }
 
     int m = n - k + 1;
-    int arr_window[m];
+    int arr_win[m];
+    arr_win[0] = 0;
 
-    for(int i = 0; i < m; i++) {
-        arr_window[i] = 0;
-
-        for(int j = i; j < i + k; j++) {
-            arr_window[i] += arr[j];
-        }
+    for(int i = 0; i < k; i++) {
+        arr_win[0] += arr[i];
     }
 
+    for(int i = 1; i < m; i++) {
+        arr_win[i] = arr_win[i - 1] - arr[i - 1] + arr[i + k - 1];
+    }
+
+
     for(int i = 0; i < m; i++) {
-        printf("%d ", arr_window[i]);
+        printf("%d ", arr_win[i]);
     }
 
     return 0;
