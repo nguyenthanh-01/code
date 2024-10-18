@@ -1,7 +1,7 @@
 # cho arr[n]
 # input n, arr[n]
 # triển khai thuật toán merge sort
-  + phân loại số lẻ bên trái, số chẵn bên phải
+  + sàng lọc số lẻ bên trái, số chẵn bên phải
   + sắp xếp số lẻ giảm dần
   + sắp xếp số chẵn tăng dần
 
