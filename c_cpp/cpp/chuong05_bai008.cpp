@@ -22,15 +22,17 @@ int main() {
     }
 
     int m = n - k + 1;
-    vi arr_window(m);
+    vi arr_win(m);
 
-    for(int i = 0; i < m; i++) {
-        for(int j = i; j < i + k; j++) {
-            arr_window[i] += arr[j];
-        }
+    for(int i = 0; i < k; i++) {
+        arr_win[0] += arr[i];
     }
 
-    for(int i : arr_window) {
+    for(int i = 1; i < m; i++) {
+        arr_win[i] = arr_win[i - 1] - arr[i - 1] + arr[i + k - 1];
+    }
+
+    for(int i : arr_win) {
         cout << i << " ";
     }
 
