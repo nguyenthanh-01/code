@@ -16,8 +16,8 @@ int main() {
 
     vi arr(n);
 
-    for(int i = 0; i < n; i++) {
-        cin >> arr[i];
+    for(int &i : arr) {
+        cin >> i;
     }
 
     vi arr_sum(n);
