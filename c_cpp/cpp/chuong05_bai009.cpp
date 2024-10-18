@@ -16,18 +16,15 @@ int main() {
     vi arr(n);
     mp arr_map;
 
-    for(int i = 0; i < n; i++) {
-        cin >> arr[i];
-        int j = arr[i];
-        arr_map[j]++;
+    for(int &i : arr) {
+        cin >> i;
+        arr_map[i]++;
     }
 
-    for(int i = 0; i < n; i++) {
-        int j = arr[i];
-
-        if(arr_map[j] != 0) {
-            cout << j << " " << arr_map[j] << "\n";
-            arr_map[j] = 0;
+    for(int i : arr) {
+        if(arr_map[i] != 0) {
+            cout << i << " " << arr_map[i] << "\n";
+            arr_map[i] = 0;
         }
     }
 
