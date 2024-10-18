@@ -3,7 +3,7 @@
 #include <math.h>
 
 #define ll long long
-#define n (int) 1e6
+#define n (int) 1e7
 
 bool arr[n];
 
