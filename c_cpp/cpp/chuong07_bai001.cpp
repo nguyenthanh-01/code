@@ -13,19 +13,19 @@ int main() {
     int n, m;
     cin >> n >> m;
 
-    n = n * m + 1;
-    vi arr(n);
+    int _n = n * m + 1;
+    vi arr(_n);
 
-    for(int i = 1; i < n; i++) {
+    for(int i = 1; i < _n; i++) {
         cin >> arr[i];
     }
 
-    for(int i = 1; i < n; i++) {
+    for(int i = 1; i < _n; i++) {
         if(check_nt(arr[i])) {
             cout << arr[i] << " ";
         }
 
-        if(i%m == 0) {
+        if(i%n == 0) {
             cout << "\n";
         }
     }
