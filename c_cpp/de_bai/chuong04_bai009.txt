@@ -1,9 +1,0 @@
-# cho n
-# input n (1 < n < 10^18)
-# chuyển n sang hệ thập lục phân
-
-# ví dụ:
-input
-995
-output
-3E3

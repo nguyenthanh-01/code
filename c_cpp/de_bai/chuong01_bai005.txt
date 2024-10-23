@@ -1,9 +1,0 @@
-# cho 2 toạ độ
-# input (x1, y1) (x2, y2) (-10^6 < x,y < 10^6)
-# tính khoảng cách ? (2 phẩy)
-
-# ví dụ:
-input
-1 4 4 8
-output
-5.00

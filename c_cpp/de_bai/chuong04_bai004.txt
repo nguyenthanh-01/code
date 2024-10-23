@@ -1,9 +1,0 @@
-# cho n
-# input n (1 < n < 10)
-# tính n giai thừa ?
-
-# ví dụ:
-input
-5
-output
-120

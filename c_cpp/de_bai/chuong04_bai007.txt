@@ -1,9 +1,0 @@
-# cho a, b. cho mod = 10^9 + 7
-# input a, b (1 < a,b < 10^9)
-# tính a^b ?
-
-# ví dụ:
-input
-2 10
-output
-1024

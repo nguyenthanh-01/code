@@ -1,9 +1,0 @@
-# cho n
-# input n (1 < n < 92)
-# liệt kê các số fibonacci từ 1 đến n (1 1)
-
-# ví dụ:
-input
-6
-output
-1 1 2 3 5 8

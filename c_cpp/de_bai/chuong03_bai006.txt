@@ -1,9 +1,0 @@
-# cho a, b
-# input a , b (1 < a,b < 10^9)
-# có bao nhiêu số thuần nguyên tố trong đoạn [a, b] ?
-
-# ví dụ:
-input
-2345 6789
-output
-15

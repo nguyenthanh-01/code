@@ -1,9 +1,0 @@
-# cho S = a * (b + c) + b * (a + c)
-# input a, b, c (-10^8 < a,b,c < 10^8)
-# tính S ?
-
-# ví dụ:
-input
-1 2 3
-output
-13

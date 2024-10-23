@@ -1,9 +1,0 @@
-# cho S = 1 + 2 + 3 + ... + n
-# input n (1 < n < 10^6)
-# tính S ?
-
-# ví dụ:
-input
-6
-output
-21
