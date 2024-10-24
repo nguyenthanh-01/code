@@ -1,5 +1,5 @@
 ## warning
--Wall -Wshadow
+-Wall
 
 ## runtime error (RE)
 + chia cho 0
