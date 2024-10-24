@@ -12,6 +12,8 @@
 
 ## cpp
 
+* !g++ -std=c++17 -Wall /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h
+
 * %%writefile test.cpp
 
 * %%writefile input.txt
