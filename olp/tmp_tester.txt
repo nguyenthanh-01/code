@@ -1,0 +1,11 @@
+## warning
+-Wall -Wshadow
+
+## runtime error (RE)
++ chia cho 0
++ đệ quy vô hạn
++ tràn bộ nhớ
+
+## time limit exceeded (TLE)
++ vòng lặp vô hạn
++ độ phức tạp O(n³)
