@@ -6,9 +6,7 @@ int main() {
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
 
-    int a;
-    int b;
-    int c;
+    int a, b, c;
 
     cin >> a >> b >> c;
     // scanf("%d %d %d", &a, &b, &c);
