@@ -10,9 +10,11 @@ int main() {
     int b;
     int c;
 
-    scanf("%d %d %d", &a, &b, &c);
+    cin >> a >> b >> c;
+    // scanf("%d %d %d", &a, &b, &c);
 
-    printf("%d \n", a + b + c);
+    cout << a + b + c << "\n";
+    // printf("%d \n", a + b + c);
 
     return 0;
 }
