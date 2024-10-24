@@ -1,4 +1,4 @@
-# c
+## c
 
 * %%writefile test.c
 
@@ -6,9 +6,11 @@
 
 * !gcc -std=c17 -Wall -o test test.c -lm
   
-* !./test < input.txt
+* !./test
 
-# cpp
+* !cat output.txt
+
+## cpp
 
 * %%writefile test.cpp
 
@@ -16,9 +18,11 @@
 
 * !g++ -std=c++17 -Wall -o test test.cpp
   
-* !./test < input.txt
+* !./test
 
-# py
+* !cat output.txt
+
+## py
 
 * %%writefile test.py
 
