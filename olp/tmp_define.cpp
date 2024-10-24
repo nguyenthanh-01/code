@@ -15,7 +15,7 @@ inline bool cmp(int &a, int &b) {return a > b;}
 
 int main() {
     ios::sync_with_stdio(false);
-    cin.tie(NULL);
+    cin.tie(nullptr);
 
     return 0;
 }
