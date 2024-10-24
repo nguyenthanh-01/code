@@ -4,7 +4,7 @@
 
 * %%writefile input.txt
 
-* !gcc -O2 -std=c17 -Wall -o test test.c -lm
+* !gcc -std=c17 -Wall -o test test.c -lm
   
 * !./test < input.txt
 
@@ -14,7 +14,7 @@
 
 * %%writefile input.txt
 
-* !g++ -O2 -std=c++17 -Wall -o test test.cpp
+* !g++ -std=c++17 -Wall -o test test.cpp
   
 * !./test < input.txt
 
