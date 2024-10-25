@@ -10,6 +10,8 @@ using namespace std;
 #define FOR(i, a, b) for(int i = (a), _b = (b); i < _b; i++)
 #define REP(i, n) for(int i = 0, _n = (n); i < _n; i++)
 
+typedef bool (*func_cmp)(int &, int &);
+
 const int MOD = (int) 1e9 + 7;
 const double PI = acos(-1);
 
