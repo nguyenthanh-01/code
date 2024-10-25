@@ -5,3 +5,4 @@
 * arr : mảng
 * vi : vector int
 * pos : vị trí
+* cnt : biến đếm
