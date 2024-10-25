@@ -7,3 +7,4 @@
 * pos : vị trí
 * cnt : biến đếm
 * num : số
+* dx, dy : trục x, trục y
