@@ -4,7 +4,7 @@
 
 * %%writefile input.txt
 
-* !gcc -std=c17 -Wall -o test test.c -lm
+* !gcc -std=c17 -Wall -Wextra -Wshadow -Wfloat-equal -o test test.c -lm
 * !./test < input.txt > output.txt
 * !cat output.txt
 
@@ -14,7 +14,7 @@
 
 * %%writefile input.txt
 
-* !g++ -std=c++17 -Wall -o test test.cpp
+* !g++ -std=c++17 -Wall -Wextra -Wshadow -Wfloat-equal -o test test.cpp
 * !./test < input.txt > output.txt
 * !cat output.txt
 
