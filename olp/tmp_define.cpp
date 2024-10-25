@@ -30,12 +30,17 @@ const double PI = acos(-1);
 
 inline bool cmp(int &a, int &b) {return a > b;}
 
+void setIO();
+
 int main() {
+    setIO();
+    return 0;
+}
+
+void setIO() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
-
-    return 0;
 }
