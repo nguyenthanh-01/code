@@ -4,3 +4,4 @@
 * tmp : biến tạm
 * arr : mảng
 * vi : vector int
+* pos : vị trí
