@@ -4,8 +4,9 @@
 * tmp : biến tạm
 * arr : mảng
 * vi : vector int
-* pos : vị trí
+* pos : con trỏ
 * cnt : biến đếm
 * num : số
 * dx, dy : tọa độ
 * square : bình phương
+* index : vị trí
