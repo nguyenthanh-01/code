@@ -1,7 +1,20 @@
 #include <cstdio>
 #include <cmath>
 #include <iostream>
+#include <vector>
 using namespace std;
+
+using ll = long long;
+
+using vi = vector<int>;
+#define pb push_back
+#define all(x) (x).begin(), (x).end()
+#define sz(x) (int) (x).size()
+
+using pi = pair<int, int>;
+#define fi first
+#define se second
+#define mp make_pair
 
 #define MASK(i) (1LL << (i))
 #define BIT(x, i) (((x) >> (i)) & 1)
