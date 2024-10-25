@@ -3,3 +3,4 @@
 * sum : phép cộng
 * tmp : biến tạm
 * arr : mảng
+* vi : vector int
