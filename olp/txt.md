@@ -10,3 +10,4 @@
 * dx, dy : tọa độ
 * square : bình phương
 * index : vị trí
+* mask : bit
