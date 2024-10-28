@@ -11,3 +11,4 @@
 * square : bình phương
 * index : vị trí
 * mask : bit
+* cow : 
