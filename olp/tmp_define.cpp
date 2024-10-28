@@ -41,6 +41,6 @@ void setIO() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    (void) !freopen("input.txt", "r", stdin);
-    (void) !freopen("output.txt", "w", stdout);
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
 }
