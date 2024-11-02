@@ -12,6 +12,7 @@ using vi = vector<int>;
 #define all(x) (x).begin(), (x).end()
 #define sz(x) (int) (x).size()
 
+using mp = map<int, int>;
 using pi = pair<int, int>;
 #define fi first
 #define se second
